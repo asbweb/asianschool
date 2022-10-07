@@ -1,0 +1,160 @@
+@forward 'components'; 
+
+:root {
+  --asb-main: #d47a0c; 
+  --asb-main-light: #feebd6;
+  --asb-secondary: #707070; 
+  --asb-accent: #ededed; 
+  --asb-font-headings: 'Roboto', sans-serif;
+  --asb-font-paragraph: 'Roboto', sans-serif;
+}
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+
+// Source mixins
+
+// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+// @include media-breakpoint-up(sm) { ... }
+// @include media-breakpoint-up(md) { ... }
+// @include media-breakpoint-up(lg) { ... }
+// @include media-breakpoint-up(xl) { ... }
+// @include media-breakpoint-up(xxl) { ... }
+
+// @media (min-width: 1200px) {
+//   .container{
+      // max-width: 67.5em;
+      // max-width: 75em;
+      // max-width: 50.75em;
+//   }
+// }
+*{
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--asb-font-paragraph);
+  font-size: 18px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: var(--asb-font-headings);
+}
+
+h1{
+  font-size:  2.2rem;//40px;
+}
+
+h2{
+  font-size:  1.8rem;//34px;
+}
+
+h3{
+  font-size:  1.6rem;//30px;
+}
+
+h4{
+  font-size:  1.4rem;//26px;
+}
+
+h5{
+  font-size:  1.2rem; //22px;
+}
+
+h6{
+  font-size:  0.8rem; //16px
+}
+
+p{
+  font-family: var(--asb-font-paragraph);
+  font-size: 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  &:hover{
+    color: var(--asb-main);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+.page-title{
+  text-align: center;
+  text-transform: uppercase;
+  margin: 4rem 0;
+}
+
+.resource-link{
+  text-decoration: none;
+  color: var(--asb-primary);
+  & :hover{
+    color: var(--asb-secondary);
+  }
+}
+
+.contact{
+  line-height: 1.5rem;
+  padding-left: 0;
+  & li {
+    margin-left: 0;
+    list-style: none;
+    & a {
+      text-decoration: none;
+      color: inherit;
+      font-weight: 600;
+      transition: color 0.5s ease-out;
+      &:hover {
+        color: var(--asb-primary);
+      }
+    }
+  }
+}
+
+ul { 
+  list-style-image: url('https://api.iconify.design/ant-design/right-circle-twotone.svg?color=%23d47a0c');
+  &.admission-li{
+
+    padding-left: 1px ;
+  }
+}
+
+li { 
+  margin-bottom: 0.25rem;
+}
+
+.admission-li > ::marker{
+    content: '';
+} 
+ 
+
+.achievement{
+  width: 25ch;
+  margin: 0 auto;
+}
+ 
+
+/************************/
