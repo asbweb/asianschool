@@ -1,0 +1,23 @@
+[
+  {
+    "title": "SCIENCE LABS",
+    "text": "The state of the art science labs at the school provide the space and the equipment for students to safely conduct experiments. Be it the analysis of organisms or the human body, the study of light and electricity or the wonder of chemical reactions, our science laboratories with a capacity for forty students to work concurrently provide the most conducive environment for high quality practical work in science.",
+    "order": "order-last my-auto",
+    "images": [
+      { "img": "/images/gallery/Consolidated-Lab.jpg"},
+      { "img": "/images/gallery/Chemistry-Lab.jpg"},
+      { "img": "/images/gallery/Physics-Lab.jpg"},
+      { "img": "/images/gallery/Biology-Lab.jpg"}
+      
+    ]
+  },
+  {
+    "title": "COMPUTER LABS",
+    "text": "IT has become an indispensable part of our everyday lives. Keeping this in mind, the school has four dedicated Computer labs that can each accommodate 36 students concurrently. Students have unlimited supervised access to computers and the professional software tools that go with them. Our teaching laboratories are equipped with computers all networked to common file servers and connected to the outside world via the internet.",
+    "order": "order-first my-auto",
+    "images": [
+      { "img": "/images/gallery/Computer-Lab1.jpg" },
+      { "img": "/images/gallery/Computer-Lab2.jpg" }
+    ]
+  }
+]

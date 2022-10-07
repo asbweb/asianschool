@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Admission Fee",
+    "text": "Payable once at the time of admission only"
+  },
+  {
+    "title": "Annual Fee",
+    "text": "Payable once at the beginning of every Academic year"
+  },
+  { 
+    "title": "Tuition Fee", 
+    "text": "Payable monthly at the beginning of every month" 
+  },
+  {
+    "title": "Transport Fee",
+    "text": "Payable monthly if school transport is availed"
+  }
+]

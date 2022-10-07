@@ -1,0 +1,90 @@
+{
+  "career": [
+    {
+      "title": "Career Guidance Handbook from CBSE",
+      "image": "/images/useful-resources/Career-Guidance-Handbook.jpg",
+      "btntext": "Download",
+      "URL": "/forms/Application-for-School-Transport.pdf"
+    },
+    {
+      "title": "Career Guidance Handbook",
+      "image": "/images/useful-resources/Career-Guidance-Handbook.jpg",
+      "btntext": "Download",
+      "URL": "/forms/Application-for-Transport-Stop-Change-or-Cancellation.pdf"
+    }
+  ],
+  "resources": [
+    {
+      "title": "CBSE Guess",
+      "image": "/images/useful-resources/CBSE-Guess.jpg",
+      "btntext": "Download",
+      "URL": "/forms/Application-to-join-the-School-Band.pdf"
+    },
+    {
+      "title": "CBSE Academic",
+      "image": "/images/useful-resources/CBSE-Academic.jpg",
+      "btntext": "Download",
+      "URL": "/forms/Application-for-Misc-Certificates.pdf"
+    },
+    {
+      "title": "CBSE Results",
+      "image": "/images/useful-resources/CBSE-Results.jpg",
+      "btntext": "Download",
+      "URL": "/forms/Application-for-Student-Data-updation.pdf"
+    },
+    {
+      "title": "BioDigital",
+      "image": "/images/useful-resources/BioDigital.jpg",
+      "btntext": "Download",
+      "URL": "/forms/Application-to-enroll-for-Computer-Classes.pdf"
+    },
+    {
+        "title": "Khan Academy",
+        "image": "/images/useful-resources/Khan-Academy.png",
+        "btntext": "Download",
+        "URL": "/forms/Application-for-Transfer-Certificate.pdf"
+    },
+    {
+      "title": "Gutenberg",
+      "image": "/images/useful-resources/Gutenberg.jpg",
+      "btntext": "Download",
+      "URL": "/forms/Application-for-Bonafide-Certificate.pdf"
+    },
+    {
+      "title": "My CBSE Guide",
+      "image": "/images/useful-resources/My-CBSE-Guide.jpg",
+      "btntext": "Download",
+      "URL": "/forms/Health-Report-Form-for-HKG-students.pdf"
+    },
+    {
+      "title": "Instructables",
+      "image": "/images/useful-resources/Instructables.png",
+      "btntext": "Fill online ",
+      "URL": "#"
+    },
+    {
+      "title": "Mathway",
+      "image": "/images/useful-resources/Mathway.png",
+      "btntext": "Fill online ",
+      "URL": "#"
+    },
+    {
+      "title": "Make Me Genius",
+      "image": "/images/useful-resources/Make-Me-Genius.png",
+      "btntext": "Go to CBSE site",
+      "URL": "https://www.cbse.gov.in/"
+    },
+    {
+      "title": "Physics",
+      "image": "/images/useful-resources/Physics.jpg",
+      "btntext": "Fill online ",
+      "URL": "#"
+    },
+    {
+      "title": "BrainPOP",
+      "image": "/images/useful-resources/BrainPOP.jpg",
+      "btntext": "Go to CBSE site",
+      "URL": "https://www.cbse.gov.in/"
+    }
+  ]
+}
