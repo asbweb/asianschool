@@ -1,0 +1,134 @@
+import React, { useState } from "react";
+import Head from "next/head";
+import Container from "react-bootstrap/Container";
+import Accordion from "react-bootstrap/Accordion";
+import CurriculumAcademicterms from "../../components/curriculum/curriculum-academicterms";
+import CurriculumItemsAccordian from "../../components/curriculum/curriculum-items-accordian";
+import CurriculumAssessmentAccordian from "../../components/curriculum/curriculum-assessment-accordian";
+import PromotionCriteria from "../../components/curriculum/promotion-criteria";
+import CoScholasticAssessment from "../../components/curriculum/co-scholastic-assessment ";
+import CurriculumAssessment from "../../data/curriculum-assement.json";
+
+export default function Curriculum({ curriculumItems }) {
+  const [activeEventKey, setActiveEventKey] = useState(0);
+  return (
+    <>
+      <Head>
+        <title>Asian Scool Bharain</title>
+        <meta name="description" content="Asian Scool Bharain" />
+        <link rel="icon" href="/images/asbfavicon.png" />
+      </Head>
+      <main>
+        <h2 className="page-title">Curriculum</h2>
+        <section className="my-5">
+          <Container>
+            <CurriculumAcademicterms />
+          </Container>
+        </section>
+
+        <section className="my-5 py-5">
+          <Accordion
+            activeeventkey={activeEventKey}
+            onToggle={setActiveEventKey}
+          >
+            {curriculumItems.map((a, index) => (
+              <CurriculumItemsAccordian
+                key={index}
+                weight={a.weight}
+                title={a.title}
+                description={a.description}
+              />
+            ))}
+          </Accordion>
+        </section>
+
+        <section className="my-5 py-5 bg-asb-accent">
+          <Container className="my-5">
+            <h3 className="fw-bold mb-3"> Evalution Criteria </h3>
+            <h4 className="fw-bold"> Scholastic Assessment </h4>
+          </Container>
+          <Accordion
+            activeeventkey={activeEventKey}
+            onToggle={setActiveEventKey}
+          >
+            {CurriculumAssessment.map((a, index) => (
+              <CurriculumAssessmentAccordian
+                key={index}
+                weight={a.weight}
+                title={a.title}
+                url={a.url}
+              />
+            ))}
+          </Accordion>
+
+          <Container className="mt-5">
+            <CoScholasticAssessment />
+          </Container>
+        </section>
+
+        <section className="my-5 py-5">
+          <Container>
+            <PromotionCriteria />
+          </Container>
+        </section>
+      </main>
+    </>
+  );
+}
+
+export async function getStaticProps() {
+  const result = await fetch(
+    `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}/environments/master`,
+
+    {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${process.env.CONTENTFUL_DELIVERY_TOKEN}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        query: `
+        query {
+          curriculumCollection(order: weight_ASC, limit: 5) {
+            items {
+              sys {
+                id
+              }
+              weight
+              title
+              description {
+                json
+                links {
+                  assets {
+                    block {
+                      sys {
+                        id
+                      }
+                      url
+                      description
+                    }
+                  }
+                }
+              }
+            }
+          }
+          
+        }`,
+      }),
+    }
+  );
+
+  if (!result.ok) {
+    console.error(result);
+    return {};
+  }
+
+  const { data } = await result.json();
+  const curriculumItems = data.curriculumCollection.items;
+
+  return {
+    props: {
+      curriculumItems,
+    },
+  };
+}
