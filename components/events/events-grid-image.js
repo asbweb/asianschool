@@ -10,7 +10,7 @@ export default function EventsGridImage ({ key, index, left, top, photo, onClick
       style={{ left, top, height, width }}
     >
       <div className="overlay-container">
-        <Image src={url} alt={alt} title={title} width={width} height={height} layout="responsive"/>
+        <Image src={src} alt={alt} title={title} width={width} height={height} layout="responsive"/>
         <div className="caption">
           <h6>{title}</h6>
         </div>
