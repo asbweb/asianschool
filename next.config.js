@@ -9,11 +9,11 @@ const nextConfig = {
   images: {
     domains: ["images.ctfassets.net"],
   },
-  experimental: { 
-    images: { 
-      allowFutureImage: true 
-    } 
-  },
+  // experimental: { 
+  //   images: { 
+  //     allowFutureImage: true 
+  //   } 
+  // },
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
     // prependData: `@import "main.scss";`
