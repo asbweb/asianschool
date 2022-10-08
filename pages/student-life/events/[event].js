@@ -72,7 +72,10 @@ export default function EventPage({ event }) {
 
               <div className="my-5">
                 <EventsImageMosaic
-                  images={images}
+                  images={images.map((image) => ({
+                    src: image.url,
+                    title: image.title,
+                    }))}
                   handleClick={(e, { index }) => {
                     setCurrentIndex(index);
                     setOpen(true);
