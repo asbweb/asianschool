@@ -46,8 +46,6 @@ export default function InTheNews() {
               images={images.map((image) => ({
                 src: image.url,
                 title: image.title,
-                width: image.width, 
-                height: image.height,
               }))}
             />
           </div>
