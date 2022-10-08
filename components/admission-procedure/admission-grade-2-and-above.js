@@ -9,7 +9,7 @@ export default function AdmissionGrade2andAbove() {
     <>
       <Row className="bg-asb-accent">
         <Col>
-          <div className="mx-5 mt-5 mb-3 p-5">
+          <div className="mx-1 mx-lg-5 mt-5 mb-3 py-5 py-lg-5 px-0 px-lg-5">
             <p className="fw-bold mb-4">
               Before applying for admission, please make sure that ...
             </p>
@@ -63,7 +63,7 @@ export default function AdmissionGrade2andAbove() {
             </ul>
           </div>
 
-          <div className="m-5 px-5">
+          <div className="m-5 px-1 px-lg-5">
             <h4 className="text-uppercase mb-4">Step 1</h4>
             <p>
               <strong>
@@ -144,7 +144,7 @@ export default function AdmissionGrade2andAbove() {
 
             <div className="my-5 py-3 px-md-5 bg-white border border-asb-main">
               <Row>
-                <Col md={6}>
+                <Col md={6} className="mb-2">
                   <strong>For new students with siblings at ASB</strong>
                   <DownloadButton btnicon="">
                     <h6 className="fw-6 mb-0">
@@ -157,7 +157,7 @@ export default function AdmissionGrade2andAbove() {
                     </h6>
                   </DownloadButton>
                 </Col>
-                <Col md={6}>
+                <Col md={6} className="mb-2">
                   <strong>For new students with no siblings at ASB</strong>
                   <DownloadButton btnicon="">
                     <h6 className="fw-6 mb-0">
@@ -185,7 +185,7 @@ export default function AdmissionGrade2andAbove() {
             </Row>
           </div>
 
-          <div className="m-5 px-5">
+          <div className="m-5 px-1 px-lg-5">
             <h4 className="text-uppercase mb-4">Step 4</h4>
             <p>
               <strong>A draw is conducted to select candidates</strong>
@@ -206,7 +206,7 @@ export default function AdmissionGrade2andAbove() {
             </p>
           </div>
 
-          <div className="m-5 px-5">
+          <div className="m-5 px-1 px-lg-5">
             <h4 className="text-uppercase mb-4">Step 5</h4>
             <p>
               <strong>
@@ -259,7 +259,7 @@ export default function AdmissionGrade2andAbove() {
             </Row>
           </div>
 
-          <div className="m-5 px-5">
+          <div className="m-5 px-1 px-lg-5">
             <h4 className="text-uppercase mb-4">Step 6</h4>
             <p>
               <strong>
@@ -275,7 +275,7 @@ export default function AdmissionGrade2andAbove() {
             </p>
           </div>
 
-          <div className="m-5 px-5">
+          <div className="m-5 px-1 px-lg-5">
             <h4 className="text-uppercase mb-4">Step 7</h4>
             <p>
               <strong>
@@ -291,7 +291,7 @@ export default function AdmissionGrade2andAbove() {
             </p>
           </div>
 
-          <div className="m-5 px-5">
+          <div className="m-5 px-1 px-lg-5">
             <h4 className="text-uppercase mb-4">Step 8</h4>
             <p>
               <strong>
