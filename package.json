@@ -11,6 +11,7 @@
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^15.12.1",
     "@contentful/rich-text-types": "^15.13.2",
+    "@popperjs/core": "^2.11.6",
     "@use-gesture/react": "^10.2.20",
     "bootstrap": "^5.2.0",
     "contentful": "^9.1.34",
