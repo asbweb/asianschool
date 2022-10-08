@@ -1,3 +1,4 @@
+import { SITE_NAME, SITE_FAVICON, SITE_DESCRIPTION,  imgblurDataURL, HOME_OG_IMAGE_URL } from "../../lib/constants";
 import Head from "next/head";
 import Container from "react-bootstrap/Container";
 
@@ -5,9 +6,9 @@ export default function Admission() {
   return (
     <div>
       <Head>
-        <title>Asian Scool Bharain</title>
-        <meta name="description" content="Asian Scool Bharain" />
-        <link rel="icon" href="/images/asbfavicon.png" />
+        <title>{ SITE_NAME } </title>
+        <meta name="description" content={SITE_DESCRIPTION} />
+        <link rel="icon" href={SITE_FAVICON} />
       </Head>
 
       <main>
