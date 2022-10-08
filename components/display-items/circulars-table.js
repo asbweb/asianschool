@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-key */
 import React, { useMemo } from "react";
-import Link from "next/Link";
+import Link from "next/link";
 import { useTable, useSortBy, useGlobalFilter } from "react-table"; 
 import Table from "react-bootstrap/Table";
 import Col from "react-bootstrap/Col";
