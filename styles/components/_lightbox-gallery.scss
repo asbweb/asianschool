@@ -29,7 +29,7 @@ header {
     cursor: auto;
     display: flex;
     justify-content: space-between;
-    padding: 0.1rem;
+    padding: 0.4rem 1.4rem;
     color: inherit;
     background-color: var(--asb-secondary);
   }
@@ -76,7 +76,7 @@ h4.gallery-subheading {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.4rem;
+  // padding: 0.4rem;
 }
 
 span {
@@ -106,7 +106,7 @@ span {
   z-index: 10;
   background: none;
   border-style: none;
-  font-size: 3rem;
+  font-size: 1.5rem;
   padding: 0;
   margin: 0;
   color: white;

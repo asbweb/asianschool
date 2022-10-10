@@ -96,25 +96,25 @@ body {
 .timeline-container .icon {
   position: absolute;
   display: inline-block;
-  width: 60px;
-  height: 60px;
+  width: 3rem;
+  height: 3rem;
   padding: 9px 0;
-  top: calc(50% - 30px);
+  top: calc(50% - 1.5rem);
   background: var(--asb-accent);
   border: 2px solid var(--asb-main);
-  border-radius: 40px;
+  border-radius: 2.5rem;
   text-align: center;
-  font-size: 18px;
+  font-size: 1rem;
   color: var(--asb-main);
   z-index: 1;
 }
 
 .timeline-container.left .icon {
-  right: 56px;
+  right: 3rem; //56px
 }
 
 .timeline-container.right .icon {
-  left: 56px;
+  left: 3rem; //56px
 }
 
 .timeline-container .content {
@@ -131,15 +131,15 @@ body {
 
 .timeline-container .content h2 {
   margin: 0 0 10px 0;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: normal;
   color: var(--asb-accent);
 }
 
 .timeline-container .content p {
   margin: 0;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
   color: #000000;
 }
 
@@ -187,3 +187,5 @@ body {
     border-radius: 500px 0 0 500px;
   }
 }
+
+ 
