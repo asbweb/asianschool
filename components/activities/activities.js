@@ -21,8 +21,9 @@ export default function ActivitiesItem({ bg, order, title, text, images }) {
                   <Carousel.Item key={index}>
                     <div className="text-center">
                       <Image
+                        className="img-fluid"
                         src={item.img}
-                        alt="test"
+                        alt={item.img}
                         width={600}
                         height={400}
                       />
