@@ -18,15 +18,21 @@ export default function FacilitiesItem({ order, title, text, images }) {
             <Carousel fade indicators={false}>
               {images.map((item, index) => (
                 <Carousel.Item key={index}>
-                  <div className="text-center">
-                    <Image src={item.img} alt="test" width={600} height={400} />
+                  <div className="text-center mb-3">
+                    <Image
+                      className="img-fluid"
+                      src={item.img}
+                      alt={item.img}
+                      width={600}
+                      height={400}
+                    />
                   </div>
                 </Carousel.Item>
               ))}
             </Carousel>
           </Col>
         </Row>
-      </Container> 
+      </Container>
     </>
   );
 }
