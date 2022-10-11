@@ -1,4 +1,10 @@
-import { SITE_NAME, SITE_FAVICON, SITE_DESCRIPTION,  imgblurDataURL, HOME_OG_IMAGE_URL } from "../../../lib/constants";
+import {
+  SITE_NAME,
+  SITE_FAVICON,
+  SITE_DESCRIPTION,
+  imgblurDataURL,
+  HOME_OG_IMAGE_URL,
+} from "../../../lib/constants";
 import React, { useState } from "react";
 import Head from "next/head";
 import Image from "next/future/image";
@@ -7,7 +13,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { BLOCKS } from "@contentful/rich-text-types";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import DateFormatter from "../../../components/display-items/date-formatter"; 
+import DateFormatter from "../../../components/display-items/date-formatter";
 import RichTextImage from "../../../components/display-items/rich-text-image";
 import SmallRoundIconButton from "../../../components/buttons/small-round-icon-button";
 import EventsImageMosaic from "../../../components/events/events-image-mosaic";
@@ -28,29 +34,37 @@ export default function EventPage({ event }) {
   const [isOpen, setOpen] = useState(false);
   const [currentImageIndex, setCurrentIndex] = useState(0);
   const images = event.imagesCollection.items;
-  console.log(images)
+  console.log(images);
   return (
     <>
       <Head>
-        <title>{ SITE_NAME } | {event.title} </title>
+        <title>
+          {SITE_NAME} | {event.title}{" "}
+        </title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href={SITE_FAVICON} />
       </Head>
 
       <main>
         <section className="my-5">
-          <Link href="/student-life/events">
-            <a className="float-end me-3">
-              <SmallRoundIconButton btnicon="material-symbols:arrow-back">
-                Back
-              </SmallRoundIconButton>
-            </a>
-          </Link>
           <Container>
             <Row>
-              <h4 className="text-center"> {event.title} </h4>
-              <div className="text-center">
-                <DateFormatter dateString={event.date} />
+              <div className="d-flex justify-content-center">
+                <div className="flex-grow-1">
+                  <h4 className="text-center"> {event.title} </h4>
+                  <div className="text-center">
+                    <DateFormatter dateString={event.date} />
+                  </div>
+                </div>
+                <div >
+                  <Link href="/student-life/events">
+                    <a className=" me-3">
+                      <SmallRoundIconButton btnicon="material-symbols:arrow-back">
+                        Back
+                      </SmallRoundIconButton>
+                    </a>
+                  </Link>
+                </div>
               </div>
 
               <div className="text-center mt-2">
@@ -74,17 +88,17 @@ export default function EventPage({ event }) {
 
               <div className="my-5">
                 <EventsImageMosaic
-                   images={images.map((image) => ({
+                  images={images.map((image) => ({
                     src: image.url,
                     title: image.title,
-                    width: image.width, 
+                    width: image.width,
                     height: image.height,
                   }))}
-                   handleClick={(e, { index }) => {
-                     setCurrentIndex(index);
-                     setOpen(true);
-                   }}
-                 />
+                  handleClick={(e, { index }) => {
+                    setCurrentIndex(index);
+                    setOpen(true);
+                  }}
+                />
 
                 <EventsImageLightbox
                   currentImageIndex={currentImageIndex}
@@ -94,11 +108,11 @@ export default function EventPage({ event }) {
                   images={images.map((image) => ({
                     src: image.url,
                     title: image.title,
-                    width: image.width, 
+                    width: image.width,
                     height: image.height,
                   }))}
                 />
-              </div> 
+              </div>
             </Row>
           </Container>
         </section>
