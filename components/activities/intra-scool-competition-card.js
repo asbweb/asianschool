@@ -1,15 +1,21 @@
 import React from "react";
 import Image from "next/future/image";
-import Col from "react-bootstrap/Col"; 
+import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 
 export default function IntraScoolCompetionCard({ title, text, img }) {
   return (
     <>
-      <Col md={4} className="py-3 px-1 mx-auto bg-asb-accent">
+      <Col md={6} lg={4} className="py-3 px-1 mx-auto bg-asb-accent">
         <Card className="border-0 rounded-0 bg-asb-accent">
           <div className="text-center">
-            <Image src={img} alt={title} width={300} height={200} /> 
+            <Image
+              className="img-fluid"
+              src={img}
+              alt={title}
+              width={300}
+              height={200}
+            />
           </div>
           <Card.Body>
             <h5 className="text-center">{title}</h5>
