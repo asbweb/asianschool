@@ -19,7 +19,7 @@ export default function InterScoolCompetionCard({ title, text, img }) {
           </div>
           <Card.Body>
             <h5 className="text-center">{title}</h5>
-            <h6 className="text-center">{text}</h6>
+            <h6 className="text-center fw-normal text-asb-secondary">{text}</h6>
           </Card.Body>
         </Card>
       </Col>
