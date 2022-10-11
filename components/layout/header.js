@@ -54,7 +54,7 @@ export default function Header() {
                       key={index}
                     >
                       <Link href={item.URL}>
-                        <a
+                        <a 
                           className="header nav-link"
                           onClick={() => setExpanded(false)}
                         >
@@ -73,7 +73,7 @@ export default function Header() {
                       // bg="asb-accent"
                     >
                       {item.children.map((item, index) => (
-                        <li key={index} className="mx-auto">
+                        <li key={index} className=" ">
                           <Link href={item.URL}>
                             <a
                               className="dropdown-item  "
