@@ -2,7 +2,7 @@ export default function NewStudentTransport() {
   return (
     <>
       <section className="p-2 p-lg-5 bg-asb-accent">
-        <h2 className="page-title">Transport</h2> 
+        <h3 className="page-title">Transport</h3> 
           <p>
             Transport is provided in Air Conditioned buses to staff and students
             covering most parts of Bahrain. Transportation of students is not an

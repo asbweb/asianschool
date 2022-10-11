@@ -25,7 +25,7 @@ export default function NewStudentUniform() {
   return (
     <>
       <section className="p-2 p-lg-5 bg-asb-accent">
-        <h2 className="page-title">Uniform</h2>
+        <h3 className="page-title">Uniform</h3>
         <p>
           The School places great emphasis on the values of wearing the correct
           uniform and dressing appropriately. Wearing a uniform is a badge of

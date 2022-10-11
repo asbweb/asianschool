@@ -2,7 +2,7 @@ export default function NewStudentRulesAndRecommendations() {
   return (
     <>
         <section className="p-2 p-lg-5 bg-asb-accent">
-          <h2 className="page-title">Rules and Recommendations</h2>
+          <h3 className="page-title">Rules and Recommendations</h3>
           <ul>
             <li>
               The ID Card and Lanyard provided to students from the school must
