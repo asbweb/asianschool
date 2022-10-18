@@ -22,7 +22,7 @@ export default function HomeHero({ image, title, btntext, link }) {
             <a>
               <Button
                 variant="light"
-                className="rounded-5 py-2 px-4 shadow-sm text-asb-main text-uppercase fw-bold"
+                className="rounded-5 py-2 px-4 shadow text-asb-main text-uppercase fw-bold"
               >
                 {btntext}
               </Button>
