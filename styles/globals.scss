@@ -45,6 +45,7 @@ body {
   margin: 0;
   font-family: var(--asb-font-paragraph);
   font-size: 18px;
+  overflow-x: hidden;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -86,6 +87,7 @@ a {
   text-decoration: none;
   &:hover{
     color: var(--asb-main);
+    cursor: pointer;
   }
 }
 
@@ -93,15 +95,6 @@ a {
   box-sizing: border-box;
 }
 
-// @media (prefers-color-scheme: light) {
-//   html {
-//     color-scheme: dark;
-//   }
-//   body {
-//     color: white;
-//     background: black;
-//   }
-// }
 
 .page-title{
   text-align: center;
@@ -146,7 +139,7 @@ ul {
 }
 
 li { 
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.8rem;
 }
 
 .admission-li > ::marker{
@@ -161,3 +154,13 @@ li {
  
 
 /************************/
+
+// @media (prefers-color-scheme: light) {
+//   html {
+//     color-scheme: dark;
+//   }
+//   body {
+//     color: white;
+//     background: black;
+//   }
+// }
