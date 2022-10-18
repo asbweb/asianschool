@@ -93,15 +93,15 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: light) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: black;
-    background: white;
-  }
-}
+// @media (prefers-color-scheme: light) {
+//   html {
+//     color-scheme: dark;
+//   }
+//   body {
+//     color: black;
+//     background: white;
+//   }
+// }
 
 .page-title{
   text-align: center;
