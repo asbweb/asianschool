@@ -1,0 +1,34 @@
+{
+  "students": [
+    {
+      "img": "/images/achievements/1-1.jpg",
+      "name": "Tushar",
+      "text": "FIRST RANK (97.8%) AND SCIENCE (99%) & FRENCH (98%) TOPPER"
+    },
+    {
+      "img": "/images/achievements/2-1.jpg",
+      "name": "Tushar",
+      "text": "FIRST RANK (97.8%) AND SCIENCE (99%) & FRENCH (98%) TOPPER"
+    },
+    {
+      "img": "/images/achievements/1-1.jpg",
+      "name": "Tushar",
+      "text": "FIRST RANK (97.8%) AND SCIENCE (99%) & FRENCH (98%) TOPPER"
+    },
+    {
+      "img": "/images/achievements/Adnan.jpg",
+      "name": "Adnan",
+      "text": "FIRST RANK (97.8%) AND SCIENCE (99%) & FRENCH (98%) TOPPER"
+    },
+    {
+      "img": "/images/achievements/Shruti.jpg",
+      "name": "Shruti",
+      "text": "FIRST RANK (97.8%) AND SCIENCE (99%) & FRENCH (98%) TOPPER"
+    },
+    {
+      "img": "/images/achievements/Tushar.jpg",
+      "name": "Tushar",
+      "text": "FIRST RANK (97.8%) AND SCIENCE (99%) & FRENCH (98%) TOPPER"
+    }
+  ]
+}

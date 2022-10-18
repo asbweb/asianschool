@@ -1,0 +1,17 @@
+[
+  { 
+    "name": "Adnan",
+    "achievement": "First Rank (97.8%) and Science (99%) & French (98%) Topper",
+    "profilPicture": "/images/achievements/Adnan.jpg"
+  },
+  { 
+    "name": "Shruti",
+    "achievement": "Fifth Rank (96%) and English (97%) Topper",
+    "profilPicture": "/images/achievements/Shruti.jpg"
+  },
+  { 
+    "name": "Tushar",
+    "achievement": "Malayalam (98%) Topper",
+    "profilPicture": "/images/achievements/Tushar.jpg"
+  }
+]

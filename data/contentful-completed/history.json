@@ -1,0 +1,99 @@
+[
+  {
+    "weight": "1",
+    "leftRight": "timeline-container left",
+    "text": "The school was started by Mr. Joseph Thomas with 65 children and 3 teachers. It was called The Asian Kindergarten",
+    "year": "1983",
+    "icon": "openmoji:school"
+  },
+  {
+    "weight": "2",
+    "leftRight": "timeline-container right",
+    "text": "School was renamed to The Asian School",
+    "year": "1984",
+    "icon": "openmoji:school"
+  },
+  {
+    "weight": "3",
+    "leftRight": "timeline-container left",
+    "text": "Umm Al Hassam campus was started",
+    "year": "1989",
+    "icon": "openmoji:school"
+  },
+  {
+    "weight": "4",
+    "leftRight": "timeline-container right",
+    "text": "The school was accorded recognition up to the primary level by the Ministry of Education, Kingdom of Bahrain",
+    "year": "1989",
+    "icon": "openmoji:sports-medal"
+  },
+
+  {
+    "weight": "5",
+    "leftRight": "timeline-container left",
+    "text": "Appraised by the Central Board of Secondary Education, Delhi, India and the school was granted affiliation (No. 5230002) to the Secondary level",
+    "year": "1992",
+    "icon": "openmoji:sports-medal"
+  },
+
+  {
+    "weight": "6",
+    "leftRight": "timeline-container right",
+    "text": "The first batch of Grade 10 students appeared for the All India Secondary School Examination and the school achieved a 100% pass result",
+    "year": "1997",
+    "icon": "openmoji:woman-student-medium-skin-tone"
+  },
+  {
+    "weight": "7",
+    "leftRight": "timeline-container left",
+    "text": "Juffair campus was started",
+    "year": "1999",
+    "icon": "openmoji:school"
+  },
+  {
+    "weight": "8",
+    "leftRight": "timeline-container right",
+    "text": "School strength surpasses 2500 students",
+    "year": "2003",
+    "icon": "openmoji:woman-student-medium-skin-tone"
+  },
+
+  {
+    "weight": "9",
+    "leftRight": "timeline-container left",
+    "text": "The Silver Jubilee of the school was celebrated with much fervor. The event was graced by government and other important dignitaries from India and Bahrain",
+    "year": "2008",
+    "icon": "openmoji:2nd-place-medal"
+  },
+
+  {
+    "weight": "10",
+    "leftRight": "timeline-container right",
+    "text": "The whole school was moved to an 8.2 acre campus in Tubli which was inaugurated by H.E. Dr. Majid bin Ali Al Nuaimi, Honourable Minister of Education, Kingdom of Bahrain",
+    "year": "2015",
+    "icon": "openmoji:location-indicator-red"
+  },
+
+  {
+    "weight": "11",
+    "leftRight": "timeline-container left",
+    "text": "The school auditorium was christened as the Dr. Abdul Kalam Memorial Auditorium by the Indian Ambassador to the Kingdom of Bahrain, Mr. Alok Kumar Sinha",
+    "year": "2016",
+    "icon": "openmoji:authority-building"
+  },
+  {
+    "weight": "12",
+    "leftRight": "timeline-container right",
+    "text": "Appraised by the Central Board of Secondary Education, Delhi, India and the school was upgraded to the Senior Secondary level",
+    "year": "2017",
+    "icon": "openmoji:sports-medal"
+  },
+
+  {
+    "weight": "13",
+    "leftRight": "timeline-container left",
+    "text": "The new extension block of the school was inaugurated increasing the size of the campus to 10.75 acres. The school strength surpasses 4500 students with the inclusion of the first batch of Grade 11 students",
+    "year": "2019",
+    "icon": "openmoji:office-building"
+  }
+]
