@@ -11,10 +11,10 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
-import AdmissionSteps from "@admission-procedure/admission-steps"; 
+import AdmissionSteps from "@admission-procedure/admission-steps";
 import AdmissionEmailInfo from "@admission-procedure/admission-email-info";
 import AdmissionChecklist from "@admission-procedure/admission-checklist";
-import AdmissionParentPortal from "@admission-procedure/admission-parent-portal"; 
+import AdmissionParentPortal from "@admission-procedure/admission-parent-portal";
 import AdmissionCertificateAuthentications from "@admission-procedure/admission-certificate-authentications";
 
 export default function Procedure({
@@ -36,8 +36,7 @@ export default function Procedure({
       <main>
         <h2 className="page-title">Admissions Procedure</h2>
         <section className="my-5 ">
-          <Container> 
-
+          <Container>
             <Tabs
               defaultActiveKey="kg-grade1"
               id="uncontrolled-tab-example"
@@ -49,9 +48,9 @@ export default function Procedure({
                 title="KG & GRADE 1"
                 className="homemenu "
               >
-                <Row className="py-5 bg-asb-accent">
+                <Row className="py-5 mx-0 bg-asb-accent">
                   <Col>
-                     <AdmissionChecklist />
+                    <AdmissionChecklist />
                     {KGG1Step1.map((a, index) => (
                       <AdmissionSteps
                         key={index}
@@ -78,14 +77,14 @@ export default function Procedure({
                       />
                     ))}
                     <AdmissionCertificateAuthentications />
-                  </Col>  
+                  </Col>
                 </Row>
               </Tab>
 
               <Tab eventKey="grade2andabove" title="GRADE 2 & ABOVE">
                 {/* <AdmissionGrade2andAbove /> */}
-                 <Row className="py-5 bg-asb-accent">
-                    <Col>
+                <Row className="py-5 mx-0 bg-asb-accent">
+                  <Col>
                     <AdmissionChecklist />
                     {G2AboveStep1.map((a, index) => (
                       <AdmissionSteps
@@ -113,8 +112,8 @@ export default function Procedure({
                       />
                     ))}
                     <AdmissionCertificateAuthentications />
-                  </Col>  
-                </Row>  
+                  </Col>
+                </Row>
               </Tab>
             </Tabs>
           </Container>
