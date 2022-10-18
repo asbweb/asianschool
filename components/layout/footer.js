@@ -65,13 +65,13 @@ export default function Footer() {
 
           <Col md={12} lg={{ span: 3, offset: 1 }} className="me-0 my-4 text-center text-lg-end footer-links">
             <Link href="/Parent portal">
-              <a className="footer nav-link my-2">Parent portal</a>
+            <h6> <a className="footer nav-link my-2">Parent portal</a> </h6>
             </Link>
             <Link href="http://portal.asianschool.bh/ASBDC/">
-              <a target="_blank" rel="noopener noreferrer" className="footer nav-link my-2">Careers</a>
+           <h6>    <a target="_blank" rel="noopener noreferrer" className="footer nav-link my-2">Careers</a> </h6>
             </Link>
             <Link href="https://assets.ctfassets.net/r8i2n0sro59j/2l65UcNnWpKyHPCLQdhuQg/4be51fba6cb5911c72c6fe1d4a017cc1/School-Profile.pdf">
-              <a target="_blank" rel="noopener noreferrer" className="footer nav-link my-2">Public disclosure</a>
+            <h6> <a target="_blank" rel="noopener noreferrer" className="footer nav-link my-2">Public disclosure</a> </h6>
             </Link>
           </Col>
         </Row>

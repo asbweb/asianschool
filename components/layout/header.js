@@ -70,10 +70,10 @@ export default function Header() {
                       // bg="asb-accent"
                     >
                       {item.children.map((item, index) => (
-                        <li key={index} className=" ">
+                        <li key={index} className="nav-item">
                           <Link href={item.URL}>
                             <a
-                              className="dropdown-item  "
+                              className="dropdown-item"
                               onClick={() => setExpanded(false)}
                             >
                               {item.name}
