@@ -29,7 +29,7 @@ export default function CustomToggle({ children, eventKey }) {
               className="me-3 my-auto"
               width={25}
             />
-            <h5 className="text-uppercase fw-bold mb-0">{children}</h5>
+            <h5 className="text-uppercase text-dark fw-bold mb-0">{children}</h5>
           </button>
         </Col>
       </Container>
