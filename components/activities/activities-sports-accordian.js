@@ -22,6 +22,7 @@ export default function ActivitiesSportsAccordian({ weight, title, images, text 
                   <Carousel.Item key={index}>
                     <div className="text-center">
                       <Image
+                        className="img-fluid"
                         src={item.img}
                         alt="test"
                         width={600}
