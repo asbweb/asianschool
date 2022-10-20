@@ -14,7 +14,7 @@ export default function Header() {
       <LogoHeader />
 
       <Navbar
-        className="menu py-0 bg-header overflow-hidden"
+        className="menu py-0 bg-header"
         sticky="top"
         expand="lg"
         expanded={expanded}
@@ -63,7 +63,7 @@ export default function Header() {
                 {
                   return (
                     <NavDropdown
-                      className="text-uppercase text-center position-static"
+                      className="text-uppercase text-center position-static overflow-hidden"
                       title={item.name}
                       id="nav-dropdown"
                       key={index}
