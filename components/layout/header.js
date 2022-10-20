@@ -63,7 +63,7 @@ export default function Header() {
                 {
                   return (
                     <NavDropdown
-                      className="text-uppercase text-center position-static overflow-hidden"
+                      className="text-uppercase text-center position-static"
                       title={item.name}
                       id="nav-dropdown"
                       key={index}
