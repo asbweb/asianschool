@@ -14,7 +14,7 @@ export default function Header() {
       <LogoHeader />
 
       <Navbar
-        className="menu py-0 bg-header"
+        className="menu py-0 bg-header overflow-hidden"
         sticky="top"
         expand="lg"
         expanded={expanded}
