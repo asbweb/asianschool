@@ -22,7 +22,6 @@
     "react-bootstrap": "^2.5.0",
     "react-dom": "18.2.0",
     "react-image-lightbox": "^5.1.4",
-    "react-medium-image-zoom": "^5.0.3",
     "react-photo-gallery": "^8.0.0",
     "react-spring-lightbox": "^1.7.1",
     "react-table": "^7.8.0",

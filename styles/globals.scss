@@ -1,0 +1,80 @@
+@forward 'components'; 
+
+:root {
+  --asb-main: #d47a0c; 
+  --asb-main-light: #feebd6;
+  --asb-secondary: #707070; 
+  --asb-accent: #ededed; 
+  --asb-font-headings: 'Roboto', sans-serif;
+  --asb-font-paragraph: 'Roboto', sans-serif;
+}
+ 
+*{
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--asb-font-paragraph);
+  font-size: 18px;
+}
+
+main{
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  &:hover{
+    color: var(--asb-main);
+    cursor: pointer;
+  }
+}
+
+ul{ 
+  //  list-style: disc;
+  & li { 
+    margin-bottom: 0.8rem;
+    // color: #d47a0c;
+  //   &::before{
+  //    content: "";
+  //     // content: url('https://api.iconify.design/ant-design/right-circle-twotone.svg?color=%23d47a0c');
+  //     color: #d47a0c;
+  //     padding: 0 0.8rem 0 0;
+  //     display: inline-block;
+  //     vertical-align: middle;
+  //   } 
+  }
+}
+
+
+ul.admission-checklist{ 
+  list-style: none;
+  & li{ 
+    padding: 0 0 0 1rem;
+    & ::before{
+      content: url('https://api.iconify.design/prime/check-circle.svg?color=%23d47a0c&width=40'); 
+      padding: 0 1rem 0 0;
+      display: inline-block;
+      vertical-align: middle;
+    } 
+  }
+}
+
+
+ 
+
+/***********************************************************/
+
+// @media (prefers-color-scheme: light) {
+//   html {
+//     color-scheme: dark;
+//   }
+//   body {
+//     color: white;
+//     background: black;
+//   }
+// }
