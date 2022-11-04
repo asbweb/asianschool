@@ -48,7 +48,7 @@ export default function Header() {
                 if (!item.children)
                   return (
                     <li
-                      className="nav-item text-uppercase text-center mx-3"
+                      className="nav-item text-uppercase text-center"
                       key={index}
                     >
                       <Link href={item.URL}>
