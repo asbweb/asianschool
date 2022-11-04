@@ -9,6 +9,7 @@ import LogoHeader from "./header-logo";
 
 export default function Header() {
   const [expanded, setExpanded] = useState(false);
+
   return (
     <>
       <LogoHeader />
@@ -53,9 +54,7 @@ export default function Header() {
                       <Link href={item.URL}>
                         <a
                           className="header nav-link"
-                          onClick={() => setExpanded(false)}
-                          // onMouseEnter={() => setExpanded(true)}
-                          // onMouseLeave={() => setExpanded(false)}
+                          onClick={() => setExpanded(false)} 
                         >
                           {item.name}
                         </a>
@@ -69,6 +68,7 @@ export default function Header() {
                       title={item.name}
                       id="nav-dropdown"
                       key={index}
+                      renderMenuOnMount={true} 
                     >
                       {item.children.map((item, index) => (
                         <li key={index} className="nav-item">
@@ -76,7 +76,6 @@ export default function Header() {
                             <a
                               className="dropdown-item"
                               onClick={() => setExpanded(false)}
-                              // onClick={() => setExpanded(expanded ? false : "expanded")}
                             >
                               {item.name}
                             </a>
