@@ -34,9 +34,9 @@
   &.show {
     display: flex !important; 
     justify-content: center !important;
-  } 
+  }
 }
-
+ 
 .dropdown:hover>.dropdown-menu {
   display: flex;
   justify-content: center; 
@@ -61,16 +61,16 @@ li > .dropdown-item::before{
 .dropdown-toggle::after {
   border: none ; 
   content: '';
-  // content: url('https://api.iconify.design/fa6-solid/chevron-down.svg?color=white'); 
-  // vertical-align: middle; 
   & :focus, &:active{
     font-weight: bold;
   }
 }
 
-.dropdown-toggle:hover::after{
+.dropdown-toggle:hover::after,
+.dropdown-toggle:focus::after,
+.dropdown-toggle:active::after{
   content: url('https://api.iconify.design/fa6-solid/chevron-down.svg?color=white') !important;
-  vertical-align: middle; /* to center vertically */ 
+  vertical-align: middle;
 }
 
 .navbar-toggler:focus,
@@ -141,8 +141,6 @@ li > .dropdown-item::before{
   }
 }
 
-
 .updates-header{
   padding: 0.25rem 0;
-  // overflow-x: hidden; 
 }
