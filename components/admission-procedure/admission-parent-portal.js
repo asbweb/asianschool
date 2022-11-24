@@ -12,7 +12,7 @@ export default function AdmissionParentPortal() {
         <Row className="my-1">
           <Col md={6} className="text-center my-3">
             <strong>For new students with siblings at ASB</strong>
-            <Link href="/admission-instructions/Online-Admission-Process-for-Siblings-Applications.pdf">
+            <Link href="/pdf/admission-instructions/Online-Admission-Process-for-Siblings-Applications.pdf">
               <a target="_blank" rel="noopener noreferrer">
                 <DownloadButton btnicon="">
                   <h6 className="fw-6 mb-0">
@@ -29,7 +29,7 @@ export default function AdmissionParentPortal() {
           </Col>
           <Col md={6} className="text-center my-3">
             <strong>For new students with no siblings at ASB</strong>
-            <Link href="/admission-instructions/Online-Admission-Process-for-General-Applications.pdf">
+            <Link href="/pdf/admission-instructions/Online-Admission-Process-for-General-Applications.pdf">
               <a target="_blank" rel="noopener noreferrer">
                 <DownloadButton btnicon="">
                   <h6 className="fw-6 mb-0">

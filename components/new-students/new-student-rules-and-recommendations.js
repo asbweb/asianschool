@@ -19,7 +19,7 @@ export default function NewStudentRulesAndRecommendations() {
             <li>
               Applications for long leave, transfer certificate, change of bus
               stop or any other school related purpose should be submitted in
-              original. Applications sent by fax or email will not be accepted.
+              original.
             </li>
             <li>
               Parents are advised to not send their children to school with any

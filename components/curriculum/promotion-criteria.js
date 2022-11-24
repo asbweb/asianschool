@@ -9,10 +9,10 @@ export default function PromotionCriteria() {
           (‘D’ grade) in all subjects.
         </li>
         <li>Minimum 33% in all practicals for Grades 11 and 12.</li>
-        <li>
+        {/* <li>
           Overall grade will not be given if a student is absent or has failed
           in any subject including co-scholastic subjects.
-        </li>
+        </li> */}
         <li>
           It is compulsory for a student to appear for all examinations and
           tests. If a student fails to appear for the Half Yearly Examination
@@ -63,10 +63,10 @@ export default function PromotionCriteria() {
           Grade 10 or Grade 12 Board Examination will not be allowed to continue
           in the same grade.
         </li>
-        <li>
-          A student failing in the Grade 10 Board Examination will not be
-          allowed to continue in the same grade.
-        </li>
+          {/* <li>
+            A student failing in the Grade 10 Board Examination will not be
+            allowed to continue in the same grade.
+          </li> */}
         <li>
           Indians who have acquired a Bahraini passport should inform the
           concerned school authorities about the same. Bahraini passport holders
@@ -77,17 +77,17 @@ export default function PromotionCriteria() {
       <h4 className="mt-5 mb-3">Exceptions</h4>
       <ol>
         <li className="mb-2">
-          In the case of an LKG to Grade 3 student securing ‘E1’ grade (below
+          In the case of an LKG to Grade 3 student securing ‘E’ grade (below
           40%)
           <ol type="a">
             <li>
-              ) in one subject If a student secures above 35% in that subject then
+              ) in one subject: If a student secures above 35% in that subject then
               promotion will be granted. If he/she secures below 35% then he/she
               will have to appear for a supplementary examination in that
               subject and secure at least 40% to get promoted.
             </li>
             <li>
-              ) in more than one subject The student will have to appear for a
+              ) in more than one subject: The student will have to appear for a
               supplementary examination in those subjects and secure at least
               40% in each of those subjects to get promoted.
             </li>
@@ -95,7 +95,7 @@ export default function PromotionCriteria() {
         </li>
         <li> 
           A student of Grades 6 to 9 or 11 securing less than 33% (‘E’ grade) in
-          any subject will have to appear for a supplementary examination for
+          one or two subjects will have to appear for a supplementary examination for
           the subject(s) and obtain a minimum of 33% (‘D’ grade) to get
           promoted. If he/she does not pass in the supplementary examination,
           they will have to repeat the year.

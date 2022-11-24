@@ -42,7 +42,7 @@ export default function Header() {
           onClick={() => setExpanded(expanded ? false : "expanded")}
         />
         <Navbar.Collapse id="navbarScroll">
-          <Nav className="mx-auto my-0">
+          <Nav className="mx-auto my-0 py-0">
             <ul className="navbar-nav">
               {Menuitems.menu.mainmenu.map((item, index) => {
                 if (!item.children)
@@ -64,14 +64,17 @@ export default function Header() {
                 {
                   return (
                     <NavDropdown
-                      className="text-uppercase text-center position-static py-0"
+                      className="text-uppercase text-center position-static py-0 "
                       title={item.name}
                       id="nav-dropdown"
                       key={index}
                       renderMenuOnMount={true} 
                     >
                       {item.children.map((item, index) => (
-                        <li key={index} className="nav-item">
+                        <li 
+                          key={index} 
+                          className="nav-item" 
+                          >
                           <Link href={item.URL}>
                             <a
                               className="dropdown-item"
