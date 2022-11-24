@@ -1,68 +1,69 @@
 {
   "newsletters": [
     { 
+      "weight": 1,
       "title": "ISSUE 16",
       "subtitle": "(Mar 2018)",
       "btnicon": "material-symbols:download-rounded",
       "btntext": "Download",
-      "URL": "#"
+      "URL": "/pdf/newsletter/Campus-News-Volume-16.pdf"
     },
     { 
+      "weight": 1,
       "title": "ISSUE 15",
       "subtitle": "(Mar 2017)",
       "btnicon": "material-symbols:download-rounded",
       "btntext": "Download",
-      "URL": "#"
+      "URL": "/pdf/newsletter/Campus-News-Volume-15.pdf"
     },
     { 
+      "weight": 1,
       "title": "ISSUE 14",
       "subtitle": "(Mar 2016)",
       "btnicon": "material-symbols:download-rounded",
       "btntext": "Download",
-      "URL": "#"
+      "URL": "/pdf/newsletter/Campus-News-Volume-14.pdf"
     },
     {
+      "weight": 1,
       "date": "31-08-2022",
       "title": "ISSUE 13",
       "subtitle": "(Oct 2015)",
       "btnicon": "material-symbols:download-rounded",
       "btntext": "Download",
-      "URL": "#"
+      "URL": "/pdf/newsletter/Campus-News-Volume-13.pdf"
     },
     { 
+      "weight": 1,
       "title": "ISSUE 12",
       "subtitle": "(Dec 2013)",
       "btnicon": "material-symbols:download-rounded",
       "btntext": "Download",
-      "URL": "#"
+      "URL": "/pdf/newsletter/Campus-News-Volume-12.pdf"
     },
     { 
+      "weight": 1,
       "title": "ISSUE 11",
       "subtitle": "(Jan 2013)",
       "btnicon": "material-symbols:download-rounded",
       "btntext": "Download",
-      "URL": "#"
+      "URL": "/pdf/newsletter/Campus-News-Volume-11.pdf"
     },
     { 
+      "weight": 1,
       "title": "ISSUE 10",
       "subtitle": "(Dec 2010)",
       "btnicon": "material-symbols:download-rounded",
       "btntext": "Download",
-      "URL": "#"
+      "URL": "/pdf/newsletter/Campus-News-Volume-10.pdf"
     },
     { 
+      "weight": 1,
       "title": "ISSUE 9",
       "subtitle": "(May 2008)",
       "btnicon": "material-symbols:download-rounded",
       "btntext": "Download",
-      "URL": "#"
-    },
-    { 
-      "title": "ISSUE 9",
-      "subtitle": "(May 2008)",
-      "btnicon": "material-symbols:download-rounded",
-      "btntext": "Download",
-      "URL": "#"
+      "URL": "/pdf/newsletter/Campus-News-Volume-9.pdf"
     }
   ]
 }
