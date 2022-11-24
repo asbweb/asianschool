@@ -1,4 +1,10 @@
-import { SITE_NAME, SITE_FAVICON, SITE_DESCRIPTION,  imgblurDataURL, HOME_OG_IMAGE_URL } from "../../lib/constants";
+import {
+  SITE_NAME,
+  SITE_FAVICON,
+  SITE_DESCRIPTION,
+  imgblurDataURL,
+  HOME_OG_IMAGE_URL,
+} from "../../lib/constants";
 import React from "react";
 import Head from "next/head";
 import Image from "next/image";
@@ -11,11 +17,11 @@ export default function Awards() {
     <>
       <Head>
         {/* <title>{ SITE_NAME } | Awards </title> */}
-        <title> Asian Scool Bahrain |  Awards </title>
+        <title> Asian Scool Bahrain | Awards </title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href={SITE_FAVICON} />
       </Head>
-      
+
       <main>
         <h2 className="page-title">Awards</h2>
         <section className="my-5">
@@ -23,30 +29,42 @@ export default function Awards() {
             <h5> PRINCIPAL’S HONOR LIST</h5>
 
             <p>
-              To be enlisted in the Principal’s Honor list a student should
+            To be enlisted in the Principal&apos;s Honor list a student should fulfil the following criteria
+              {/* To be enlisted in the Principal’s Honor list a student should
               perform outstandingly and achieve an aggregate of ’10’ grade
-              points.
+              points. */}
             </p>
 
-            <ul>
+            <ol>
+              <li>The student must achieve an A1 in all subjects.</li>
+              <li>
+                The student must attend all the Examinations and Tests in the
+                academic year.
+              </li>
+              <li>A minimum of 85% attendance is compulsory.</li>
+              <li>
+                The student must also have a clear disciplinary record and
+                should have displayed superior behavioural performance during
+                the year.
+              </li>
               <li>
                 The Honor student should also have a clear disciplinary record
                 and should have displayed superior behavioral performance during
                 the year.
               </li>
               <li>
-                The highest scorers in the Grade 10 Board Examination achieving
+                The highest scorers in the Grade 10 Board Examination
                 achieving A1 grade in all subjects will be awarded.
               </li>
-            </ul>
+            </ol>
 
-            <h5> SPORTS </h5>
+            <h5 className="mt-5"> SPORTS </h5>
             <p>
               The individual Championship Trophy will be awarded to the student
               scoring the highest points in each group.
             </p>
 
-            <h5> CULTURAL </h5>
+            <h5 className="mt-5"> CULTURAL </h5>
             <p>
               The titles ‘KALASHIROMANI – Senior’ (for girls from Grades 8 to
               12) and ‘KALASHIROMANI – Junior’ (for girls from Grades 5 to 7)

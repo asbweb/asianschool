@@ -21,7 +21,11 @@ export default function SchoolNewsletter() {
         <section className="my-5">
           <Container>
             <Col md={10} className="mx-auto">
-              <Row>
+
+              <p>
+              The Campus News is the yearly newsletter of The Asian School. It has a distribution of over 5000 copies to parents, associated businesses, prominent personalities in Bahrain and India, friends and well-wishers.
+              </p>
+              <Row className="my-5">
                 {NewsletterList.newsletters.map((a, index) => (
                   <Col md={4} key={index} className="text-center p-1 mb-5">
                     <NewsletterItem
@@ -34,6 +38,9 @@ export default function SchoolNewsletter() {
                   </Col>
                 ))}
               </Row>
+              <p className=" fw-light text-center text-muted">
+              * If you would like to advertise in the Campus News, please contact Mr. Gigi Sebastian at the school office.
+              </p>
             </Col>
           </Container>
         </section>

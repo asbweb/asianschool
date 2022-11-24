@@ -152,11 +152,7 @@ export default function Fees() {
               </li>
               <li>
                 Cost of books and other stationery are not included in the fees.
-              </li>
-              <li>
-                Any original / duplicate Certificate will only be issued after
-                all pending fees and other dues are cleared.
-              </li>
+              </li> 
               <li>Part payments will not be accepted.</li>
               <li>
                 In the beginning of the new academic year, second term or third
