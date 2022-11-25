@@ -16,8 +16,8 @@
     "order": "order-md-last my-auto",
     "bg": "my-5 py-5",
     "images": [
-      { "img": "/images/gallery/YOGA2.jpg" },
-      { "img": "/images/gallery/YOGA3.jpg" }
+      { "img": "/images/gallery/Yoga2.jpg" },
+      { "img": "/images/gallery/Yoga3.jpg" }
     ]
   },
 
