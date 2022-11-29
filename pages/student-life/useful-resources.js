@@ -150,5 +150,6 @@ export async function getStaticProps() {
       usefulResourcesListCareerCollection,
       usefulResourcesListResourcesCollection,
     },
+    revalidate: 60,
   };
 }
