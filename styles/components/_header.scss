@@ -29,14 +29,14 @@
   width: 100vw !important;
   background-color: var(--asb-main-light) !important;
   margin-top: -1px !important;
-  padding: 0.3rem 0;
+  padding: 0.2rem 0;
   border-bottom: 2px solid var(--asb-main); 
   &.show {
     display: flex !important; 
-    justify-content: center !important;
+    justify-content: center !important; 
   }
 }
- 
+
 .dropdown:hover>.dropdown-menu {
   display: flex;
   justify-content: center; 
@@ -69,7 +69,8 @@ li > .dropdown-item::before{
 .dropdown-toggle:hover::after,
 .dropdown-toggle:focus::after,
 .dropdown-toggle:active::after{
-  content: url('https://api.iconify.design/fa6-solid/chevron-down.svg?color=white') !important;
+  // content: url('https://api.iconify.design/fa6-solid/chevron-down.svg?color=white') !important;
+  content: url('https://api.iconify.design/charm/chevron-down.svg?color=white') !important;
   vertical-align: middle;
 }
 
@@ -144,3 +145,4 @@ li > .dropdown-item::before{
 .updates-header{
   padding: 0.25rem 0;
 }
+ 
