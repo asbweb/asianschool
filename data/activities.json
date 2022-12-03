@@ -5,8 +5,9 @@
     "order": "my-auto",
     "bg": "my-5 py-5 bg-light",
     "images": [
-      { "img": "/images/gallery/KG1.jpg" },
-      { "img": "/images/gallery/KG2.jpg" }
+      { "img": "/images/gallery/KG-Play-Area-1.jpg" },
+      { "img": "/images/gallery/KG-Play-Area-2.jpg" },
+      { "img": "/images/gallery/KG-Play-Area-3.jpg" }
     ]
   },
 
