@@ -17,16 +17,13 @@ import AdmissionParentPortal from "@admission-procedure/admission-parent-portal"
 
 import RichTextBlock from "@display-items/rich-text-block";
 
-export default function Procedure({
-  KGG1Step1,
-  KGG1Step2and3,
-  KGG1Step4to8,
-  G2AboveStep1,
-  G2AboveStep2and3,
-  G2AboveStep4to8,
+export default function Procedure({ 
+  KGG1Step1to3,
+  KGG1Step3andUp,
+  G2AboveStep1and2,
+  G2AboveStep3andUp,
   KGGrade1Checklist,
   Grade2AboveChecklist,
-  InfoforemailAdmissions,
   AuthTC,
 }) {
   const item = KGGrade1Checklist.map((a, index) => (
@@ -70,26 +67,8 @@ export default function Procedure({
                           description={a.description}
                         />
                       ))}
-                    </div>
-
-                    {KGG1Step1.map((a, index) => (
-                      <AdmissionSteps
-                        key={index}
-                        steps={a.steps}
-                        description={a.description}
-                      />
-                    ))}
- 
-                    <div className="step-container bg-light border border-asb-main">
-                      {InfoforemailAdmissions.map((a, index) => (
-                        <RichTextBlock
-                          key={index}
-                          title={a.title}
-                          description={a.description}
-                        />
-                      ))}
-                    </div>
-                    {KGG1Step2and3.map((a, index) => (
+                    </div> 
+                    {KGG1Step1to3.map((a, index) => (
                       <AdmissionSteps
                         key={index}
                         steps={a.steps}
@@ -97,7 +76,7 @@ export default function Procedure({
                       />
                     ))}
                     <AdmissionParentPortal />
-                    {KGG1Step4to8.map((a, index) => (
+                    {KGG1Step3andUp.map((a, index) => (
                       <AdmissionSteps
                         key={index}
                         steps={a.steps}
@@ -105,15 +84,6 @@ export default function Procedure({
                       />
                     ))}
  
-                    <div className="step-container bg-light border border-asb-main">
-                      {AuthTC.map((a, index) => (
-                        <RichTextBlock
-                          key={index}
-                          title={a.title}
-                          description={a.description}
-                        />
-                      ))}
-                    </div>
                   </Col>
                 </Row>
               </Tab>
@@ -133,24 +103,7 @@ export default function Procedure({
                       ))}
                     </div>
 
-                    {G2AboveStep1.map((a, index) => (
-                      <AdmissionSteps
-                        key={index}
-                        steps={a.steps}
-                        description={a.description}
-                      />
-                    ))} 
-                    <div className="step-container bg-light border border-asb-main">
-                      {InfoforemailAdmissions.map((a, index) => (
-                        <RichTextBlock
-                          key={index}
-                          title={a.title}
-                          description={a.description}
-                        />
-                      ))}
-                    </div>
-
-                    {G2AboveStep2and3.map((a, index) => (
+                    {G2AboveStep1and2.map((a, index) => (
                       <AdmissionSteps
                         key={index}
                         steps={a.steps}
@@ -158,7 +111,7 @@ export default function Procedure({
                       />
                     ))}
                     <AdmissionParentPortal />
-                    {G2AboveStep4to8.map((a, index) => (
+                    {G2AboveStep3andUp.map((a, index) => (
                       <AdmissionSteps
                         key={index}
                         steps={a.steps}
@@ -198,21 +151,9 @@ export async function getStaticProps() {
       },
       body: JSON.stringify({
         query: `query {
-          KGG1Step1: admissionProcedureStepsCollection(
-            where: { grades_contains_all: "KG and Grade 1", steps: "Step 1" }
-          ) {
-            items {
-              grades
-              steps
-              description {
-                json
-              }
-            }
-          }
-          KGG1Step2and3: admissionProcedureStepsCollection(
+          KGG1Step1to3: admissionProcedureStepsCollection(
             where: { grades_contains_all: "KG and Grade 1" }
-            skip: 1
-            limit: 2
+            limit: 3
             order: steps_ASC
           ) {
             items {
@@ -223,7 +164,7 @@ export async function getStaticProps() {
               }
             }
           }
-          KGG1Step4to8: admissionProcedureStepsCollection(
+          KGG1Step3andUp: admissionProcedureStepsCollection(
             where: { grades_contains_all: "KG and Grade 1" }
             order: steps_ASC
             skip: 3
@@ -236,20 +177,8 @@ export async function getStaticProps() {
               }
             }
           }
-          G2AboveStep1: admissionProcedureStepsCollection(
-            where: { grades_contains_all: "Grade 2 and Above", steps: "Step 1" }
-          ) {
-            items {
-              grades
-              steps
-              description {
-                json
-              }
-            }
-          }
-          G2AboveStep2and3: admissionProcedureStepsCollection(
-            where: { grades_contains_all: "Grade 2 and Above" }
-            skip: 1
+          G2AboveStep1and2: admissionProcedureStepsCollection(
+            where: { grades_contains_all: "Grade 2 and Above" } 
             limit: 2
             order: steps_ASC
           ) {
@@ -261,10 +190,10 @@ export async function getStaticProps() {
               }
             }
           }
-          G2AboveStep4to8: admissionProcedureStepsCollection(
+          G2AboveStep3andUp: admissionProcedureStepsCollection(
             where: { grades_contains_all: "Grade 2 and Above" }
             order: steps_ASC
-            skip: 3
+            skip: 2
           ) {
             items {
               grades
@@ -294,16 +223,6 @@ export async function getStaticProps() {
               }
             }
           }
-          InfoforemailAdmissions: contentCollection(
-            where: { title: "Info for email to  Admissions " }
-          ) {
-            items {
-              title
-              description {
-                json
-              }
-            }
-          }
           AuthTC: contentCollection(
             where: { title: "Authentications required  TC" }
           ) {
@@ -325,30 +244,25 @@ export async function getStaticProps() {
     return {};
   }
 
-  const { data } = await result.json();
-  const KGG1Step1 = data.KGG1Step1.items;
-  const KGG1Step2and3 = data.KGG1Step2and3.items;
-  const KGG1Step4to8 = data.KGG1Step4to8.items;
-  const G2AboveStep1 = data.G2AboveStep1.items;
-  const G2AboveStep2and3 = data.G2AboveStep2and3.items;
-  const G2AboveStep4to8 = data.G2AboveStep4to8.items;
+  const { data } = await result.json(); 
+  const KGG1Step1to3 = data.KGG1Step1to3.items;
+  const KGG1Step3andUp = data.KGG1Step3andUp.items;
+  const G2AboveStep1and2 = data.G2AboveStep1and2.items;
+  const G2AboveStep3andUp = data.G2AboveStep3andUp.items;
   const KGGrade1Checklist = data.KGGrade1Checklist.items;
   const Grade2AboveChecklist = data.Grade2AboveChecklist.items;
-  const InfoforemailAdmissions = data.InfoforemailAdmissions.items;
   const AuthTC = data.AuthTC.items;
 
   return {
-    props: {
-      KGG1Step1,
-      KGG1Step2and3,
-      KGG1Step4to8,
-      G2AboveStep1,
-      G2AboveStep2and3,
-      G2AboveStep4to8,
+    props: { 
+      KGG1Step1to3,
+      KGG1Step3andUp,
+      G2AboveStep1and2,
+      G2AboveStep3andUp,
       KGGrade1Checklist,
       Grade2AboveChecklist,
-      InfoforemailAdmissions,
       AuthTC,
     },
+    revalidate: 60,
   };
 }

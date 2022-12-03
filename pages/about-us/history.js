@@ -77,5 +77,6 @@ export async function getStaticProps() {
     props: {
       historyCollection,
     },
+    revalidate: 60,
   };
 }

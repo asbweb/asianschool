@@ -53,7 +53,7 @@ export default function Profile({
       </section> */}
 
       <section className="my-5">
-        <Accordion  >
+        <Accordion>
           <Card className="rounded-0">
             <Card.Header className="bg-asb-accent text-uppercase">
               <CustomToggle eventKey="0">School Crest & Motto</CustomToggle>
@@ -113,6 +113,7 @@ export default function Profile({
           </Card>
         </Accordion>
       </section>
+      <div className="p-3"/>
     </>
   );
 }
@@ -214,5 +215,6 @@ export async function getStaticProps() {
       VisionMission,
       SchoolSongs,
     },
+    revalidate: 60,
   };
 }

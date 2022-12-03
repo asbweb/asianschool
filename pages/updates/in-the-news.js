@@ -105,5 +105,6 @@ export async function getStaticProps() {
     props: {
       inTheNewsCollection,
     },
+    revalidate: 60,
   };
 }

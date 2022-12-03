@@ -105,5 +105,6 @@ export async function getStaticProps() {
     props: {
       galleryCollection,
     },
+    revalidate: 60,
   };
 }

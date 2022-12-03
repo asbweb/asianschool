@@ -154,5 +154,6 @@ export async function getStaticProps() {
       curriculumItems,
       curriculumAssementCollection,
     },
+    revalidate: 60,
   };
 }

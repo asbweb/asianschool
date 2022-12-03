@@ -176,5 +176,6 @@ export async function getStaticProps() {
     props: {
       circularsCollection, 
     },
+    revalidate: 60,
   };
 }

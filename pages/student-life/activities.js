@@ -7,10 +7,10 @@ import Col from "react-bootstrap/Col";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import Accordion from "react-bootstrap/Accordion";
-import ActivitiesItem from "../../components/activities/activities";
-import IntraScoolCompetionCard from "../../components/activities/intra-scool-competition-card";
-import InterScoolCompetionCard from "../../components/activities/inter-scool-competition-card";
-import ActivitiesSportsAccordian from "../../components/activities/activities-sports-accordian";
+import ActivitiesItem from "@activities/activities";
+import IntraScoolCompetionCard from "@activities/intra-scool-competition-card";
+import InterScoolCompetionCard from "@activities/inter-scool-competition-card";
+import ActivitiesSportsAccordian from "@activities/activities-sports-accordian";
 import ActivitiesList from "../../data/activities.json";
 import SportsList from "../../data/sports.json";
 import IntraSchoolCompetionList from "../../data/intra-school-competition.json";
@@ -77,7 +77,7 @@ export default function Activities() {
             <Tabs
               defaultActiveKey="intra-school-competions"
               id="uncontrolled-tab-example"
-              className="mb-0 mx-auto"
+              className="mx-auto"
               justify
             >
               <Tab
@@ -85,7 +85,7 @@ export default function Activities() {
                 title="intra school competions"
                 className="homemenu" 
               >
-                <Row className="bg-asb-accent py-5">
+                <Row className="bg-asb-accent py-5 mx-0">
                   {IntraSchoolCompetionList.map((a, index) => (
                     <IntraScoolCompetionCard
                       key={index}
@@ -102,7 +102,7 @@ export default function Activities() {
                 title="inter school competions"
                 className="homemenu"
               >
-                <Row className="bg-asb-accent py-5">
+                <Row className="bg-asb-accent py-5  mx-0">
                   {InterSchoolCompetionList.map((a, index) => (
                     <InterScoolCompetionCard
                       key={index}

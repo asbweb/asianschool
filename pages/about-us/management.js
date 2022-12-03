@@ -103,5 +103,6 @@ export async function getStaticProps() {
     props: {
       atTheHelmItems,
     },
+    revalidate: 60,
   };
 }

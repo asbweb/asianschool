@@ -145,5 +145,6 @@ export async function getStaticProps() {
       KGG1Step1,
       KGG1Step2and3,
     },
+    revalidate: 60,
   };
 }

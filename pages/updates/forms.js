@@ -91,5 +91,6 @@ export async function getStaticProps() {
     props: {
       formsCollection,
     },
+    revalidate: 60,
   };
 }

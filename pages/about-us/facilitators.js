@@ -159,5 +159,6 @@ export async function getStaticProps() {
       adminStaffCollectionItem,
       teachersCollection,
     },
+    revalidate: 60,
   };
 }

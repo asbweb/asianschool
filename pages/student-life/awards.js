@@ -29,10 +29,8 @@ export default function Awards() {
             <h5> PRINCIPAL’S HONOR LIST</h5>
 
             <p>
-            To be enlisted in the Principal&apos;s Honor list a student should fulfil the following criteria
-              {/* To be enlisted in the Principal’s Honor list a student should
-              perform outstandingly and achieve an aggregate of ’10’ grade
-              points. */}
+              To be enlisted in the Principal&apos;s Honor list a student should
+              fulfil the following criteria
             </p>
 
             <ol>
@@ -47,16 +45,19 @@ export default function Awards() {
                 should have displayed superior behavioural performance during
                 the year.
               </li>
-              <li>
-                The Honor student should also have a clear disciplinary record
-                and should have displayed superior behavioral performance during
-                the year.
-              </li>
-              <li>
-                The highest scorers in the Grade 10 Board Examination
-                achieving A1 grade in all subjects will be awarded.
-              </li>
             </ol>
+
+            <h4 className="mt-5">Other Awards</h4>
+            <h5 className="mt-5">Top Achievers</h5>
+
+            <p>
+              The highest scorers in the Grade 10 and Grade 12 Board Examination
+              will be awarded.
+            </p>
+            <p>
+              Students Scoring more than 90% in the Grade 10 and Grade 12 Board
+              Examination will be awarded.
+            </p>
 
             <h5 className="mt-5"> SPORTS </h5>
             <p>

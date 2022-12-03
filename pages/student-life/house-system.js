@@ -102,5 +102,6 @@ export async function getStaticProps() {
     props: {
       contentCollection,
     },
+    revalidate: 60,
   };
 }

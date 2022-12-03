@@ -162,5 +162,6 @@ export async function getStaticProps() {
       contentCollection,
       transferCertificatesCollection,
     },
+    revalidate: 60,
   };
 }

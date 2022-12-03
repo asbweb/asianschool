@@ -152,5 +152,6 @@ export async function getStaticProps() {
       updatesHeaderCollection,
       contentCollection,
     },
+    revalidate: 60,
   };
 }
