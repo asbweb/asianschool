@@ -4,6 +4,7 @@
       "paths": {
         "@achievements/*": ["components/achievements/*"],
         "@activities/*": ["components/activities/*"],
+        "@facilities/*": ["components/facilities/*"],
         "@admission-procedure/*": ["components/admission-procedure/*"],
         "@buttons/*": ["components/buttons/*"],
         "@curriculum/*": ["components/curriculum/*"],
