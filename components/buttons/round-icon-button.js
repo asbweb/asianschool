@@ -6,7 +6,7 @@ export default function RoundIconButton({ text, children, iconwidth, btnicon, on
   return (
     <>
       <Button 
-        className="round-button-container"
+        className="round-button-container text-center mx-auto"
         onClick={onClick}
       >
         <div className="round-button-icon-container shadow">
