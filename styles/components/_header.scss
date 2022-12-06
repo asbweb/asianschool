@@ -45,6 +45,7 @@
 li > .dropdown-item::before{
     content: '';
     padding: 0;
+    margin: 0;
   } 
 
 .dropdown-item:active,
