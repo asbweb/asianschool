@@ -73,7 +73,7 @@ export default function AdmissionParentPortal() {
 
             <div className="mx-auto my-3 text-center">
               <a
-                href="http://asbdc.ethdigitalcampus.com/RegistrationPortal/forms/Utility/Login.jsp"
+                href="http://asbdc.ethdigitalcampus.com/RegistrationPortal/?dbConnVar=ASBDC"
                 target="_blank"
                 rel="noopener noreferrer"
               >
