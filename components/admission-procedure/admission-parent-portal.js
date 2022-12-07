@@ -18,8 +18,8 @@ export default function AdmissionParentPortal() {
               Please read the instructional document AND LOGIN to the Parent
               Portal
             </h6>
-            <Link href="/pdf/admission-instructions/Online-Admission-Process-for-Siblings-Applications.pdf
-            /pdf/admission-instructions/Online-Admission-Process-for-General-Applications.pdf">
+            <Link href="/pdf/admission-instructions/Online-Admission-Process-for-Siblings-Applications.pdf">
+            {/* /pdf/admission-instructions/Online-Admission-Process-for-General-Applications.pdf"> */}
               <a target="_blank" rel="noopener noreferrer">
                 <DownloadButton btnicon="">
                   <h6 className="fw-6 mb-0">
