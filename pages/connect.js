@@ -125,9 +125,9 @@ export default function Connect() {
                     // sm={6}
                     className="d-flex justify-content-center mb-lg-5"
                   >
-                    <a href="tel:+97317720207263">
+                    <a href="tel:+97317720207">
                       <RoundIconButton btnicon="bi:printer-fill" iconwidth={30}>
-                        +973 17720207 263
+                        +973 17720207
                       </RoundIconButton>
                     </a>
                   </Col>
