@@ -21,9 +21,10 @@ export default function CustomToggle({ children, eventKey }) {
             onClick={handleClick}
           >
             <Icon
-              icon="bi:chevron-down"
+              // icon="bi:chevron-down"
+              icon= { isActive ? "bi:chevron-up" : "bi:chevron-down" }
               style={{
-                transform: isActive ? "rotate(180deg)" : "rotate(0deg)",
+                // transform: isActive ? "rotate(180deg)" : "rotate(0deg)",
                 transition: "transform 0.5s ease-in-out",
               }}
               className="me-3 my-auto"
