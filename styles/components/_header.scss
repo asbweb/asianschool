@@ -34,12 +34,28 @@
   &.show {
     display: flex !important; 
     justify-content: center !important; 
+    animation: fade_in_show 0.75s ease-in-out;
   }
+}
+
+@keyframes fade_in_show {
+     0% {
+          opacity: 0; 
+     }
+
+     100% {
+          opacity: 1;  
+     }
+}
+
+.nav-item{
+  list-style: none;
 }
 
 .dropdown:hover>.dropdown-menu {
   display: flex;
   justify-content: center; 
+  list-style: none;
 }
 
 li > .dropdown-item::before{
