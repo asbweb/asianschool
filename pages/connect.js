@@ -98,11 +98,9 @@ export default function Connect() {
                       </RoundIconButton>
                     </a>
                   </Col>
-
-                  </Row>
+                </Row>
 
                 <Row className="my-5">
-
                   <Col
                     // lg={6}
                     // md={6}
@@ -114,7 +112,10 @@ export default function Connect() {
                         btnicon="bi:envelope-fill"
                         iconwidth={30}
                       >
-                        <h4 className="round-button-text text-lowercase"> info@asianschool.bh</h4> 
+                        <h4 className="round-button-text text-lowercase">
+                          {" "}
+                          info@asianschool.bh
+                        </h4>
                       </RoundIconButton>
                     </a>
                   </Col>
