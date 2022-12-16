@@ -6,7 +6,7 @@ import EventsList from "@events/events-list";
 
 export default function Events({ events }) {
   const [filteredList, setFilteredList] = useState(events); 
-  const [selectedYear, setSelectedYear] = useState(2020);
+  const [selectedYear, setSelectedYear] = useState(2022);
 
  
   const filterByYear = (filteredData) => {
@@ -49,14 +49,14 @@ export default function Events({ events }) {
         <h2 className="page-title">Events</h2>
         <Container className="my-5">
         <div id="category-options"  className="text-asb-main justify-content-center mb-5" onClick={handleYearChange}>
-              <div className={selectedYear === 2019 ? "active-option" : "filter-option"} id="2019" >
-              2019 
-              </div> 
               <div className={selectedYear === 2020 ? "active-option" : "filter-option"} id="2020" >
               2020 
-              </div>
+              </div> 
               <div className={selectedYear === 2021 ? "active-option" : "filter-option"} id="2021" >
               2021 
+              </div>
+              <div className={selectedYear === 2022 ? "active-option" : "filter-option"} id="2022" >
+              2022 
               </div>
             </div> 
 
