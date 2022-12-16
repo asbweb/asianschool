@@ -43,7 +43,7 @@ export default function Facilitators({
                     profilPicture={a.profilPicture.url}
                     role={a.role}
                     name={a.name}
-                    qualification={a.qualification}
+                    qualifications={a.qualifications}
                   />
                 ))}
               </Row>
@@ -55,6 +55,8 @@ export default function Facilitators({
                     profilPicture={a.profilPicture.url}
                     role={a.role}
                     name={a.name}
+                    qualifications={a.qualifications}
+
                   />
                 ))}
               </Row>
@@ -122,6 +124,7 @@ export async function getStaticProps() {
               weight
               name
               role
+              qualifications
               profilPicture {
                 url
                 title
