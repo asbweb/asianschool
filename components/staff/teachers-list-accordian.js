@@ -22,9 +22,9 @@ export default function TeachersListAccordian({
         <Accordion.Collapse eventKey={weight}>
           <Card.Body>
             <Container className="py-5">
-              <Card.Body>
+              {/* <Card.Body> */}
                 <Col md={8} className="mx-auto">
-                  <Table size="sm" striped hover className="text-center"> 
+                  <Table size="sm" striped hover responsive className="text-center"> 
                     <thead>
                       <tr className="bg-asb-main text-white">
                         {tableHeaderName ? (
@@ -46,7 +46,7 @@ export default function TeachersListAccordian({
                     </tbody>
                   </Table>
                 </Col>
-              </Card.Body>
+              {/* </Card.Body> */}
             </Container>
           </Card.Body>
         </Accordion.Collapse>
