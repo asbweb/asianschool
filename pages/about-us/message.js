@@ -26,10 +26,10 @@ export default function Message() {
         <h2 className="page-title">Founder Chairman&apos;s Message</h2>
         <section className="my-5">
           <Container>
-            <Row className="my-5 bg-asb-accent p-5">
+            <Row className="my-5 bg-asb-accent py-5 p-md-5">
               <Col md={4} className="mx-auto">
                 <Image
-                  className="img-fluid"
+                  className="img-fluid mb-3"
                   src="/images/profile/joseph-thomas.jpg"
                   alt="test"
                   width={360}
