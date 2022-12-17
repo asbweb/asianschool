@@ -6,9 +6,30 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Menuitems from "@data/menu.json";
 import LogoHeader from "./header-logo";
+import { motion } from "framer-motion";
 
 export default function Header() {
   const [expanded, setExpanded] = useState(false);
+
+  const ddcontainer = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const dditem = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
 
   return (
     <>
@@ -54,7 +75,7 @@ export default function Header() {
                       <Link href={item.URL}>
                         <a
                           className="header nav-link"
-                          onClick={() => setExpanded(false)} 
+                          onClick={() => setExpanded(false)}
                         >
                           {item.name}
                         </a>
@@ -68,23 +89,37 @@ export default function Header() {
                       title={item.name}
                       id="nav-dropdown"
                       key={index}
-                      renderMenuOnMount={true} 
+                      renderMenuOnMount={true}
                     >
-                      {item.children.map((item, index) => (
-                        <li 
-                          key={index} 
-                          className="nav-item" 
+                      <motion.ul
+                        className=" d-lg-flex list-group-horizontal justify-content-around"
+                        variants={ddcontainer}
+                        initial="hidden"
+                        animate="visible"
+                      >
+                        {item.children.map((item, index) => (
+                          <motion.li
+                            key={index}
+                            className="nav-item "
+                            variants={dditem}
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{
+                              scale: 0.95, 
+                              borderRadius: "100%",
+                            }}
+                            transition={{ type: "spring" }}
                           >
-                          <Link href={item.URL}>
-                            <a
-                              className="dropdown-item"
-                              onClick={() => setExpanded(false)}
-                            >
-                              {item.name}
-                            </a>
-                          </Link>
-                        </li>
-                      ))}
+                            <Link href={item.URL}>
+                              <a
+                                className="dropdown-item"
+                                onClick={() => setExpanded(false)}
+                              >
+                                {item.name}
+                              </a>
+                            </Link>
+                          </motion.li>
+                        ))}
+                      </motion.ul>
                     </NavDropdown>
                   );
                 }
