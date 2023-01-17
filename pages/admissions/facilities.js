@@ -6,11 +6,11 @@ import Col from "react-bootstrap/Col";
 import Accordion from "react-bootstrap/Accordion";
 import FacilitiesItem from "@facilities/facilities-item";
 import FacilitiesAccordian from "@facilities/facilities-accordian";
-import Classroomlist from "../../data/classrooms.json";
-import Librarylist from "../../data/library.json";
-import Labslist from "../../data/labs.json";
-import Hallslist from "../../data/halls.json";
-import WellbeingList from "../../data/well-being.json";
+import Classroomlist from "@data/facilities/classrooms.json";
+import Librarylist from "@data/facilities/library.json";
+import Labslist from "@data/facilities/labs.json";
+import Hallslist from "@data/facilities/halls.json";
+import WellbeingList from "@data/facilities/well-being.json";
 
 export default function Facilities() {
   const [activeEventKey, setActiveEventKey] = useState(0);

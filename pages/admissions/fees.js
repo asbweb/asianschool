@@ -3,10 +3,10 @@ import Head from "next/head";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row"; 
 import Table from "react-bootstrap/Table"; 
-import FeesTypeItem from "../../components/fees/fees-type-item";
-import FeesTableItem from "../../components/fees/fees-table-item";
-import FeesTypeList from "../../data/fees-types.json";
-import FeesList from "../../data/fees.json";
+import FeesTypeItem from "@fees/fees-type-item";
+import FeesTableItem from "@fees/fees-table-item";
+import FeesTypeList from "@data/fees/fees-types.json";
+import FeesList from "@data/fees/fees.json";
 
 export default function Fees() {
   return (
