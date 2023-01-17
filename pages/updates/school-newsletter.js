@@ -3,7 +3,7 @@ import Head from "next/head";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col"; 
-import NewsletterList from "@data/newletter.json";
+// import NewsletterList from "@data/newletter.json";
 import NewsletterItem from "@display-items/newsletter-item";
 
 export default function SchoolNewsletter({schoolNewsLetterCollection}) {
