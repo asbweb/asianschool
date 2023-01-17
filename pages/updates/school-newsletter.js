@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 import NewsletterList from "@data/newletter.json";
 import NewsletterItem from "@display-items/newsletter-item";
 
-export default function SchoolNewsletter() {
+export default function SchoolNewsletter({schoolNewsLetterCollection}) {
   return (
     <div>
       <Head>
@@ -26,12 +26,14 @@ export default function SchoolNewsletter() {
               The Campus News is the yearly newsletter of The Asian School. It has a distribution of over 5000 copies to parents, associated businesses, prominent personalities in Bahrain and India, friends and well-wishers.
               </p>
               <Row className="my-5">
-                {NewsletterList.newsletters.map((a, index) => (
+                {schoolNewsLetterCollection.map((a, index) => (
                   <Col md={4} key={index} className="text-center p-1 mb-5">
                     <NewsletterItem
                       title={a.title}
                       subtitle={a.subtitle}
                       URL={a.URL}
+                      url={a.url} 
+                      link={a.link}
                       btnicon={a.btnicon}
                       btntext={a.btntext}
                     />
@@ -47,4 +49,53 @@ export default function SchoolNewsletter() {
       </main>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const result = await fetch(
+    `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}/environments/master`,
+
+    {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${process.env.CONTENTFUL_DELIVERY_TOKEN}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        query: `query { 
+          schoolNewsLetterCollection (order: weight_DESC){
+            items {
+              weight
+              url {
+                title
+                url
+                width
+                height
+              }
+              title
+              subtitle
+              btnicon
+              btntext
+            }
+          }
+        }
+        `,
+      }),
+    }
+  );
+
+  if (!result.ok) {
+    console.error(result);
+    return {};
+  }
+
+  const { data } = await result.json();
+  const schoolNewsLetterCollection = data.schoolNewsLetterCollection.items;
+
+  return {
+    props: {
+      schoolNewsLetterCollection,
+    },
+    revalidate: 60,
+  };
 }
