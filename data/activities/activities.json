@@ -1,0 +1,47 @@
+[
+  {
+    "title": "KINDERGARTEN PLAY AREA",
+    "text": "Gross Motor skills development is an important part of early childhood. The Kindergarten Play area has been designed and implemented with this in mind. It is a cordoned off space with safe play equipment which only Kindergarten children are allowed to use. The area is covered on 3 sides by the school building and also has a roof which provides essential shade from the sun.",
+    "order": "my-auto",
+    "bg": "my-5 py-5 bg-light",
+    "images": [
+      { "img": "/images/gallery/KG-Play-Area-1.jpg" },
+      { "img": "/images/gallery/KG-Play-Area-2.jpg" },
+      { "img": "/images/gallery/KG-Play-Area-3.jpg" }
+    ]
+  },
+
+  {
+    "title": "YOGA",
+    "text": "Unlike exercise which nurtures our physical personality, yoga caters to all aspects of our personality; physical, emotional, mental, psychic and spiritual, which leads to the making of a complete human being. Regular practice of this holistic science leads us to happiness and contentment. Yoga is integrated in the school curriculum for classes IX to X wherein children practice yoga for one period once a week and are also encouraged to practice outside of the school on a daily basis.",
+    "order": "order-md-last my-auto",
+    "bg": "my-5 py-5",
+    "images": [
+      { "img": "/images/gallery/Yoga2.jpg" },
+      { "img": "/images/gallery/Yoga3.jpg" }
+    ]
+  },
+
+  {
+    "title": "SCHOOL BAND",
+    "text": "The Asian School Band is a prestigious, well-disciplined and talented musical group established in 1992. The School Band has performed at every major School event and has also performed, by invitation, at outside venues and events in Bahrain. Band members are trained under a qualified Band Master.",
+    "order": "my-auto",
+    "bg": "my-5 py-5 bg-light",
+    "images": [
+      { "img": "/images/gallery/Band-in-School.jpg" },
+      { "img": "/images/gallery/Band-Outside.jpg" },
+      { "img": "/images/gallery/Band-outside-2.jpg" }
+    ]
+  },
+
+  {
+    "title": "MUSIC",
+    "text": "The school has a dedicated Music Room with instruments where music is taught. Music helps build imagination and intellectual curiosity, it helps with emotional development and memorization and most importantly helps children relax and have fun. The talented Asian School music group play at school events and are always a hit with the audience.",
+    "order": "order-md-last my-auto",
+    "bg": "my-5 py-5",
+    "images": [
+      { "img": "/images/gallery/Music-Room.jpg" },
+      { "img": "/images/gallery/Music-Room.jpg" }
+    ]
+  }
+]

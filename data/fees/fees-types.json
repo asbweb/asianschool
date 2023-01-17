@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Admission Fee",
+    "text": "Payable once at the time of admission only",
+    "feesamount": [
+      { "grade": "LKG to Grade 12", "amount": "BD. 48/- *"}
+    ]
+  },
+  {
+    "title": "Annual Fee",
+    "text": "Payable once at the beginning of every Academic year",
+    "feesamount": [
+      { "grade": "LKG to Grade 6", "amount": "BD. 18/-"},
+      { "grade": "Grades 7 & 8", "amount": "BD. 36/-"},
+      { "grade": "Grades 9 & 10", "amount": "BD. 48/-"},
+      { "grade": "Grades 11 & 12", "amount": "BD. 75/-"}
+    ]
+  },
+  {
+    "title": "Tuition Fee",
+    "text": "Payable monthly at the beginning of every month",
+    "feesamount": [
+      { "grade": "LKG to Grade 10", "amount": "BD. 36/-"},
+      { "grade": "Grades 11 & 12", "amount": "BD. 75/-"}
+    ]
+  },
+  {
+    "title": "Transport Fee",
+    "text": "Payable monthly if school transport is availed",
+    "feesamount": [
+      { "grade": "LKG to Grade 12", "amount": "BD. 15/-"}
+    ]
+  }
+]
