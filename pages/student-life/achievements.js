@@ -14,25 +14,25 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
-import StudentAchievers from "../../components/achievements/student-achievers";
-import GroupAchievers from "../../components/achievements/group-achievers";
-// import StudentAchieversList from "../../data/student-achievers.json";
-import Toppers10 from "@data/toppers-10.json";
-import Toppers12 from "@data/toppers-12.json";
-import GroupAchieversList from "../../data/group-achievers.json";
+import StudentAchievers from "@achievements/student-achievers";
+import GroupAchievers from "@achievements/group-achievers"; 
+import Toppers10 from "@data/achievements/toppers-10.json";
+import Toppers12 from "@data/achievements/toppers-12.json";
+import GroupAchieversList from "@data/achievements/group-achievers.json";
 import { useRouter } from "next/router";
 
 export default function Achievements() {
   const router = useRouter();
   const canonicalSlug = router.asPath;
-  const grade10toppers = Toppers10.grade10toppers.sort(function (a, b) {return a.weight - b.weight}); 
-  const grade1095AndAbove = Toppers10.grade1095AndAbove.sort(function (a, b) {return a.weight - b.weight});
-  const grade10SubjectToppers = Toppers10.grade10SubjectToppers.sort(function (a,b) {return a.weight - b.weight});
-  const grade12Humanities = Toppers12.grade12Humanities.sort(function (a, b) {return a.weight - b.weight});
-  const grade12Commerce = Toppers12.grade12Commerce.sort(function (a, b) {return a.weight - b.weight});
-  const grade12Science = Toppers12.grade12Science.sort(function (a, b) {return a.weight - b.weight});
-  const grade12FullA1 = Toppers12.grade12FullA1.sort(function (a, b) {return a.weight - b.weight});
-  const grade12SubjectToppers = Toppers12.grade12SubjectToppers.sort(function (a,b) { return a.weight - b.weight});
+  const sorted = function (a, b) {return a.weight - b.weight}
+  const grade10toppers = Toppers10.grade10toppers.sort(sorted); 
+  const grade1095AndAbove = Toppers10.grade1095AndAbove.sort(sorted);
+  const grade10SubjectToppers = Toppers10.grade10SubjectToppers.sort(sorted);
+  const grade12Humanities = Toppers12.grade12Humanities.sort(sorted);
+  const grade12Commerce = Toppers12.grade12Commerce.sort(sorted);
+  const grade12Science = Toppers12.grade12Science.sort(sorted);
+  const grade12FullA1 = Toppers12.grade12FullA1.sort(sorted);
+  const grade12SubjectToppers = Toppers12.grade12SubjectToppers.sort(sorted);
 
   return (
     <div>
@@ -74,7 +74,7 @@ export default function Achievements() {
                     />
                   ))} */}
 
-                  <h4 className="text-center text-uppercase my-3">GRADE 10</h4>
+                  <h3 className="text-center text-uppercase my-3">GRADE 10</h3>
 
                   {grade10toppers.map((a, index) => (
                     <StudentAchievers
@@ -119,7 +119,7 @@ export default function Achievements() {
 
                   {/* ************ */}
 
-                  <h4 className="text-center text-uppercase my-3">Grade 12 </h4>
+                  <h3 className="text-center text-uppercase my-3">Grade 12 </h3>
                   <h4 className="text-center text-uppercase my-3"> Humanities</h4>
 
                   {grade12Humanities.map((a, index) => (

@@ -11,10 +11,10 @@ import ActivitiesItem from "@activities/activities";
 import IntraScoolCompetionCard from "@activities/intra-scool-competition-card";
 import InterScoolCompetionCard from "@activities/inter-scool-competition-card";
 import ActivitiesSportsAccordian from "@activities/activities-sports-accordian";
-import ActivitiesList from "../../data/activities.json";
-import SportsList from "../../data/sports.json";
-import IntraSchoolCompetionList from "../../data/intra-school-competition.json";
-import InterSchoolCompetionList from "../../data/inter-school-competition.json";
+import ActivitiesList from "@data/activities/activities.json";
+import SportsList from "@data/activities/sports.json";
+import IntraSchoolCompetionList from "@data/activities/intra-school-competition.json";
+import InterSchoolCompetionList from "@data/activities/inter-school-competition.json";
 
 export default function Activities() {
   const [activeEventKey, setActiveEventKey] = useState(0);
