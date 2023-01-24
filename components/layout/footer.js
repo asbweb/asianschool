@@ -14,10 +14,10 @@ export default function Footer() {
       </Container>
 
       <Container className="bg-dark py-2 px-3" fluid>
-        <p className="text-center text-asb-secondary my-0 fs-6 d-flex justify-content-between">
+        <p className="text-center text-asb-secondary my-0 fs-6 d-md-flex justify-content-between">
           <small>
             © Copyright The Asian School, Bahrain. All Rights Reserved.
-          </small>
+          </small> {' '}
           <small>
           Designed and Developed by &nbsp;
           <a 
