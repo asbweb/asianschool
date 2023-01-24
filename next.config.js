@@ -6,15 +6,10 @@ const nextConfig = {
   swcMinify: true,
   images: {
     domains: ["images.ctfassets.net"],
+    formats: ['image/avif', 'image/webp'],
   },
-  // experimental: { 
-  //   images: { 
-  //     allowFutureImage: true 
-  //   } 
-  // },
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
-    // prependData: `@import "main.scss";`
   }
 }
 
