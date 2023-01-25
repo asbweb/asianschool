@@ -61,12 +61,34 @@ export default function Procedure({
                       <p className="fw-bold mb-4">
                         Before applying for admission, please make sure that ...
                       </p>
-                      {KGGrade1Checklist.map((a, index) => (
+
+                      <ul className="admission-checklist">
+                        <li>
+                          <p>
+                            The child is currently staying in The Kingdom of
+                            Bahrain AND has a valid CPR Number.
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            LKG: The child will have completed the age of 4 by
+                            31<sup>st</sup> December of the current year.
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            Grade 1: The child will have completed the age of 6
+                            by 31<sup>st</sup>  December of the current year.
+                          </p>
+                        </li>
+                      </ul>
+
+                      {/* {KGGrade1Checklist.map((a, index) => (
                         <AdmissionChecklist
                           key={index}
                           description={a.description}
                         />
-                      ))}
+                      ))} */}
                     </div>
                     {KGG1Step1to3.map((a, index) => (
                       <AdmissionSteps
