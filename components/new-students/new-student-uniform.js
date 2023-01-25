@@ -42,7 +42,7 @@ export default function NewStudentUniform() {
         <h5>UNIFORM SPECIFICATIONS</h5>
         <div className="text-center">
           <div className="my-5 mx-auto">
-            <ImageMosaic 
+            <ImageMosaic
               images={images.map((image) => ({
                 src: image.src,
                 title: image.title,
@@ -317,15 +317,14 @@ export default function NewStudentUniform() {
           </li>
         </ul>
 
-        <h4 className="fw-bold mt-5 mb-3">P.T. UNIFORM</h4>
-        <Image
+        {/* <h4 className="fw-bold mt-5 mb-3">P.E UNIFORM</h4>
+         <Image
           className="img-fluid my-4"
           src="/images/uniform/pt-uniform.jpg"
-          alt="uniform"
-          // layout="responsive"
+          alt="uniform" 
           width={600}
           height={400}
-        />
+        /> 
         <p className="mb-0">
           To be worn only on every Sunday. T-shirts should be long enough to be
           tucked into the pant/skirt.
@@ -338,8 +337,8 @@ export default function NewStudentUniform() {
         <p>
           <strong>Girls:</strong> White divided skirts with box pleats (knee
           length) and white t-shirts with the school logo.
-        </p>
-
+        </p>  
+        
         <h5>DIVIDED SKIRT</h5>
         <ul>
           <li>The color of the skirt should be white.</li>
@@ -353,6 +352,33 @@ export default function NewStudentUniform() {
           <li>
             Plain white sports shoes and white socks. No fancy shoes will be
             allowed.
+          </li>
+        </ul> */}
+
+        <h4 className="fw-bold mt-5 mb-3">P.E UNIFORM</h4>
+
+        <h5>T-SHIRT</h5>
+        <ul>
+          <li>
+            Girls and Boys will wear the prescribed custom designed house colour
+            t- shirt adorning the school name and logo on the chest. T- shirts
+            should be long enough to be tucked into the pant.
+          </li>
+        </ul>
+
+        <h5>PANT</h5>
+        <ul>
+          <li>
+            Girls and Boys will wear the prescribed custom designed grey colour
+            trusers with piping in house colour.
+          </li>
+        </ul>
+
+        <h5>SHOES and SOCKS</h5>
+        <ul>
+          <li>
+            Plain white sports shoes and white socks. No fancy shoes or socks
+            with designs will be allowed.
           </li>
         </ul>
 
