@@ -60,8 +60,8 @@ export default function Fees() {
             </Table>
             <p className="text-center fs-6">
               <small>
-                * Admission Fee is not applicable to Grade 10 students of the
-                The Asian School who join Grade 11
+                {/* * Admission Fee is not applicable to Grade 10 students of the The Asian School who join Grade 11 */}
+                * Admission Fee & Annual Fee is not applicable to Grade 10 students of The Asian School who join Grade 11.
               </small>
             </p>
           </Container>
