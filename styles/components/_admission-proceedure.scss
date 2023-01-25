@@ -9,6 +9,10 @@ ul.admission-checklist {
       display: inline-block;
       vertical-align: middle;
     }
+    & sup::before{
+      content: '';
+      margin-left: -0.5rem;
+    }
   }
 }
 
