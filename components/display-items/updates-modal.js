@@ -27,8 +27,8 @@ export default function UpdatesModal() {
           Please note the dates for distribution of Prospectus and Application
           for Admission to Kindergarten and Grade 1 of The Asian School.  <br/>
           Issue of Prospectus with Application for Admission to siblings of our
-          students only: 24th and 25th January, 2023. <br/>
-          Issue of Prospectus with Application for Admission to others: 7th and 8th February Prospectus
+          students only: 24<sup>th</sup> and 25<sup>th</sup> January, 2023. <br/>
+          Issue of Prospectus with Application for Admission to others: 7<sup>th</sup>  and 8<sup>th</sup>  February Prospectus
           can be procured from the school office between 8:00 a.m. and 1:00 p.m.
           on the allotted dates only
         </Modal.Body>
