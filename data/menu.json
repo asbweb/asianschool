@@ -44,7 +44,7 @@
         ]  
       },
       {
-        "name": "Admissions",
+        "name": "Admission",
         "URL": "/admissions",
         "weight": 3,
         "children": [
