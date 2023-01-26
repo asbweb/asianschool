@@ -51,7 +51,7 @@ export default function Circulars({circularsCollection}) {
       columns,
       data,
     },
-    useSortBy
+    // useSortBy
   );
 
   return (
@@ -72,7 +72,7 @@ export default function Circulars({circularsCollection}) {
                 striped
                 hover
                 {...getTableProps()}
-                className="text-center mx-auto"
+                className="text-center mx-auto" 
               >
                 <thead className="bg-asb-main text-white">
                   {headerGroups.map((headerGroup) => (
@@ -80,7 +80,7 @@ export default function Circulars({circularsCollection}) {
                       {headerGroup.headers.map((column) => ( 
                         <th
                           {...column.getHeaderProps(
-                            column.getSortByToggleProps()
+                            // column.getSortByToggleProps()
                           )}
                         >
                           {column.render("Header")}
@@ -148,7 +148,7 @@ export async function getStaticProps() {
       },
       body: JSON.stringify({
         query: `query {
-          circularsCollection(order: title_DESC) {
+          circularsCollection(order: date_DESC ) {
             items {
               date
               title
