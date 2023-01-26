@@ -33,6 +33,7 @@ export default function NewStudents() {
           <Accordion
             activeeventkey={activeEventKey}
             onToggle={setActiveEventKey}
+            alwaysOpen
           >
             <Card className="rounded-0">
               <Card.Header className="bg-asb-accent text-uppercase">

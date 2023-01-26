@@ -92,6 +92,7 @@ export default function Facilities() {
           <Accordion
             activeeventkey={activeEventKey}
             onToggle={setActiveEventKey}
+            alwaysOpen
           >
             {WellbeingList.map((a, index) => (
               <FacilitiesAccordian

@@ -4,17 +4,18 @@ import {
   SITE_DESCRIPTION,
   imgblurDataURL,
   HOME_OG_IMAGE_URL,
-} from "../../lib/constants"; 
+} from "../../lib/constants";
+import React, { useState } from "react";
 import Head from "next/head";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
-import Accordion from "react-bootstrap/Accordion"; 
+import Accordion from "react-bootstrap/Accordion";
 import SchoolProfile from "@profile/school-profile";
 import SchoolCrestMotto from "@profile/school-crest-motto";
 import SchoolVision from "@profile/school-vision";
-import SchoolSong from "@profile/school-song"; 
-import CustomToggle from "@buttons/custom-toggle"
+import SchoolSong from "@profile/school-song";
+import CustomToggle from "@buttons/custom-toggle";
 
 export default function Profile({
   About,
@@ -22,38 +23,24 @@ export default function Profile({
   VisionMission,
   SchoolSongs,
 }) {
- 
+  const [activeEventKey, setActiveEventKey] = useState(0);
   return (
     <>
-      <Head> 
+      <Head>
         {/* <title> Asian Scool Bahrain | Profile </title> */}
-        <title> Asian Scool Bahrain |  Profile </title>
+        <title> Asian Scool Bahrain | Profile </title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href={SITE_FAVICON} />
       </Head>
 
       <h2 className="page-title">Profile</h2>
-      {/* <section className="my-5">
-        <Container>
-          <Col md={10} className="mx-auto">
-            {About.map((a, index) => (
-              <SchoolProfile
-                key={index}
-                title={a.title}
-                image={a.image.url}
-                description={a.description}
-                btntext={a.btntext}
-                pdf={a.pdf}
-                btnIcon={a.btnIcon}
-                btnText={a.btnText}
-              />
-            ))}
-          </Col>
-        </Container>
-      </section> */}
 
       <section className="my-5">
-        <Accordion>
+        <Accordion
+          activeeventkey={activeEventKey}
+          onToggle={setActiveEventKey}
+          alwaysOpen
+        >
           <Card className="rounded-0">
             <Card.Header className="bg-asb-accent text-uppercase">
               <CustomToggle eventKey="0">School Crest & Motto</CustomToggle>
@@ -98,7 +85,7 @@ export default function Profile({
             <Accordion.Collapse eventKey="2">
               <Card.Body>
                 <Container className="py-5">
-                  <Col md={10} className="mx-auto"> 
+                  <Col md={10} className="mx-auto">
                     {SchoolSongs.map((a, index) => (
                       <SchoolSong
                         key={index}
@@ -113,7 +100,7 @@ export default function Profile({
           </Card>
         </Accordion>
       </section>
-      <div className="p-3"/>
+      <div className="p-3" />
     </>
   );
 }

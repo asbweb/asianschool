@@ -70,6 +70,7 @@ export default function Facilitators({
           <Accordion
             activeeventkey={activeEventKey}
             onToggle={setActiveEventKey}
+            alwaysOpen
           >
             {teachersCollection.map((a, index) => (
               <TeachersListAccordian

@@ -44,6 +44,7 @@ export default function Activities() {
           <Accordion
             activeeventkey={activeEventKey}
             onToggle={setActiveEventKey}
+            alwaysOpen
           >
             {SportsList.map((a, index) => (
               <ActivitiesSportsAccordian

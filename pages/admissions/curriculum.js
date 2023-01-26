@@ -41,6 +41,7 @@ export default function Curriculum({
           <Accordion
             activeeventkey={activeEventKey}
             onToggle={setActiveEventKey}
+            alwaysOpen
           >
             {curriculumItems.map((a, index) => (
               <CurriculumItemsAccordian
@@ -61,6 +62,7 @@ export default function Curriculum({
           <Accordion
             activeeventkey={activeEventKey}
             onToggle={setActiveEventKey}
+            alwaysOpen
           >
             {curriculumAssementCollection.map((a, index) => (
               <CurriculumAssessmentAccordian
