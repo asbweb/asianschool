@@ -18,6 +18,7 @@ export default function Facilitators({
   facilitatorsCollectionItem,
   adminStaffCollectionItem,
   teachersCollection,
+  administrationCollection,
 }) {
   const [activeEventKey, setActiveEventKey] = useState(0);
 
@@ -47,7 +48,7 @@ export default function Facilitators({
                   />
                 ))}
               </Row> 
-              <Row>
+              {/* <Row>
                 <h4 className="text-center my-5">ADMINISTRATION</h4>
                 {adminStaffCollectionItem.map((a, index) => (
                   <FacilitatorsItem
@@ -59,7 +60,7 @@ export default function Facilitators({
 
                   />
                 ))}
-              </Row>
+              </Row> */}
             </Col>
           </Container>
         </section>
@@ -83,6 +84,26 @@ export default function Facilitators({
               />
             ))}
           </Accordion>
+
+          <h4 className="text-center my-5">ADMINISTRATION</h4>
+
+          <Accordion
+            activeeventkey={activeEventKey}
+            onToggle={setActiveEventKey}
+            alwaysOpen
+          >
+            {administrationCollection.map((a, index) => (
+              <TeachersListAccordian
+                key={index}
+                weight={a.weight}
+                title={a.title}
+                tableHeaderName={a.tableHeaderName}
+                tableHeaderQualification={a.tableHeaderQualification}
+                teachersList={a.teachersList}
+              />
+            ))}
+          </Accordion>
+          
         </section>
       </main>
     </>
@@ -142,6 +163,15 @@ export async function getStaticProps() {
               teachersList
             }
           }
+          administrationCollection (order: weight_ASC) {
+            items {
+              title
+              weight
+              tableHeaderName
+              tableHeaderQualification
+              teachersList
+            }
+          }
         }`,
       }),
     }
@@ -156,12 +186,14 @@ export async function getStaticProps() {
   const facilitatorsCollectionItem = data.facilitatorsCollection.items;
   const adminStaffCollectionItem = data.adminStaffCollection.items;
   const teachersCollection = data.teachersCollection.items;
-
+  const administrationCollection = data.administrationCollection.items;
+  
   return {
     props: {
       facilitatorsCollectionItem,
       adminStaffCollectionItem,
       teachersCollection,
+      administrationCollection,
     },
     revalidate: 60,
   };
