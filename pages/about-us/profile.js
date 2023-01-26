@@ -27,8 +27,8 @@ export default function Profile({
   return (
     <>
       <Head>
-        {/* <title> Asian Scool Bahrain | Profile </title> */}
-        <title> Asian Scool Bahrain | Profile </title>
+        {/* <title> The Asian School Bahrain | Profile </title> */}
+        <title> The Asian School Bahrain | Profile </title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href={SITE_FAVICON} />
       </Head>

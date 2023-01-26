@@ -16,7 +16,7 @@ export default function Careers() {
       <Head>
         <title>
           {/* {SITE_NAME}  */}
-           The Asian Scool Bahrain | Careers</title>
+           The Asian School Bahrain | Careers</title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href={SITE_FAVICON} />
       </Head>

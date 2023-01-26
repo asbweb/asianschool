@@ -13,7 +13,7 @@ export default function Fees() {
     <>
       <Head>
         {/* <title>{ SITE_NAME } | Fees </title> */}
-        <title> Asian Scool Bahrain |  Fees </title>
+        <title> The Asian School Bahrain |  Fees </title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href={SITE_FAVICON} />
       </Head>

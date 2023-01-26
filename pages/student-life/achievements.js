@@ -33,7 +33,7 @@ export default function Achievements({
   return (
     <div>
       <Head>
-        <title> Asian Scool Bahrain | Achievements </title>
+        <title> The Asian School Bahrain | Achievements </title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href={SITE_FAVICON} />
         <link rel="canonical" href={`${BASE_PATH}${canonicalSlug}`} />

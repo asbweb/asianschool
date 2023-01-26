@@ -22,7 +22,7 @@ export default function NewStudents() {
     <div>
       <Head>
         {/* <title>{SITE_NAME} | New Students </title> */}
-        <title> Asian Scool Bahrain |  New Students </title>
+        <title> The Asian School Bahrain |  New Students </title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href={SITE_FAVICON} />
       </Head>

@@ -17,7 +17,7 @@ export default function Connect() {
   return (
     <>
       <Head>
-        <title> The Asian Scool Bahrain | Connect </title>
+        <title> The Asian School Bahrain | Connect </title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href={SITE_FAVICON} />
       </Head>

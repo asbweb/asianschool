@@ -10,7 +10,7 @@ export default function History({historyCollection}) {
     <>
       <Head>
         {/* <title>{ SITE_NAME } | History </title> */}
-        <title> Asian Scool Bahrain |  History </title>
+        <title> The Asian School Bahrain |  History </title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href={SITE_FAVICON} />
       </Head>

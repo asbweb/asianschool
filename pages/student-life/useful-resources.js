@@ -13,7 +13,7 @@ export default function UsefulResources({usefulResourcesListCareerCollection, us
     <>
       <Head>
         {/* <title>{ SITE_NAME } | Useful Resources </title> */}
-        <title> Asian Scool Bahrain |  Useful Resources </title>
+        <title> The Asian School Bahrain |  Useful Resources </title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href={SITE_FAVICON} />
       </Head>

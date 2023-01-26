@@ -14,7 +14,7 @@ export default function HouseAndPrefectorialSystem({ contentCollection }) {
     <>
       <Head>
         {/* <title>{SITE_NAME} | House and Prefectorial System </title> */}
-        <title> Asian Scool Bahrain |  House and Prefectorial System </title>
+        <title> The Asian School Bahrain |  House and Prefectorial System </title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href={SITE_FAVICON} />
       </Head>

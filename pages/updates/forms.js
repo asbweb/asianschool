@@ -16,7 +16,7 @@ export default function Forms({ formsCollection }) {
     <>
       <Head>
         {/* <title>{SITE_NAME} | Forms </title> */}
-        <title> Asian Scool Bahrain | Forms </title>
+        <title> The Asian School Bahrain | Forms </title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href={SITE_FAVICON} />
       </Head>

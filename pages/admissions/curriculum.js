@@ -24,7 +24,7 @@ export default function Curriculum({
     <>
       <Head>
         {/* <title>{SITE_NAME} | Curriculum </title> */}
-        <title> Asian Scool Bahrain |  Curriculum </title>
+        <title> The Asian School Bahrain |  Curriculum </title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href={SITE_FAVICON} />
       </Head>

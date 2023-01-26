@@ -25,7 +25,7 @@ export default function Facilitators({
     <>
       <Head>
         {/* <title>{SITE_NAME} | Facilitators </title> */}
-        <title> Asian Scool Bahrain |  Facilitators </title>
+        <title> The Asian School Bahrain |  Facilitators </title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href={SITE_FAVICON} />
       </Head>
@@ -36,7 +36,7 @@ export default function Facilitators({
           <Container>
             <Col md={10} className="mx-auto">
               <Row>
-                <h4 className="text-center mb-1">Faculty</h4>
+                <h4 className="text-center mb-1">LEADERSHIP TEAM</h4>
                 {facilitatorsCollectionItem.map((a, index) => (
                   <FacilitatorsItem
                     key={index}
@@ -48,7 +48,7 @@ export default function Facilitators({
                 ))}
               </Row> 
               <Row>
-                <h4 className="text-center my-5">Administrative Staff</h4>
+                <h4 className="text-center my-5">ADMINISTRATION</h4>
                 {adminStaffCollectionItem.map((a, index) => (
                   <FacilitatorsItem
                     key={index}

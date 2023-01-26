@@ -40,7 +40,7 @@ export default function Events({ events }) {
     <>
       <Head>
         {/* <title>{ SITE_NAME } | Events </title> */}
-        <title> Asian Scool Bahrain |  Events </title>
+        <title> The Asian School Bahrain |  Events </title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href={SITE_FAVICON} />
       </Head>

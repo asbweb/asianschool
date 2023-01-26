@@ -9,7 +9,7 @@ export default function Discipline() {
     <>
       <Head>
         {/* <title>{ SITE_NAME } | Discipline </title> */}
-        <title> Asian Scool Bahrain |  Discipline </title>
+        <title> The Asian School Bahrain |  Discipline </title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href={SITE_FAVICON} />
       </Head>

@@ -58,7 +58,7 @@ export default function Circulars({circularsCollection}) {
     <div>
       <Head>
         {/* <title>{SITE_NAME} | Circulars </title> */}
-        <title> Asian Scool Bahrain | Circulars </title>
+        <title> The Asian School Bahrain | Circulars </title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href={SITE_FAVICON} />
       </Head>

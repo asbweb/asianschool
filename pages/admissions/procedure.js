@@ -35,13 +35,13 @@ export default function Procedure({
   return (
     <div>
       <Head>
-        <title> Asian Scool Bahrain | Admissions Procedure </title>
+        <title> The Asian School Bahrain | Admissions Procedure </title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href={SITE_FAVICON} />
       </Head>
 
       <main>
-        <h2 className="page-title">Admissions Procedure</h2>
+        <h2 className="page-title">Admission Procedure</h2>
         <section className="my-5 ">
           <Container>
             <Tabs

@@ -19,7 +19,7 @@ export default function Facilities() {
     <>
       <Head>
         {/* <title>{ SITE_NAME } | Facilities </title> */}
-        <title> Asian Scool Bahrain |  Facilities </title>
+        <title> The Asian School Bahrain |  Facilities </title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href={SITE_FAVICON} />
       </Head>

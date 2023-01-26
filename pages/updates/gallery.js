@@ -28,7 +28,7 @@ export default function Gallery({ galleryCollection }) {
     <>
       <Head>
         {/* <title>{SITE_NAME} | Gallery </title> */}
-        <title> Asian Scool Bahrain | Gallery </title>
+        <title> The Asian School Bahrain | Gallery </title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href={SITE_FAVICON} />
       </Head>

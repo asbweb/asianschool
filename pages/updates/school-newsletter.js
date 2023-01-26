@@ -11,7 +11,7 @@ export default function SchoolNewsletter({schoolNewsLetterCollection}) {
     <div>
       <Head>
         {/* <title>{ SITE_NAME } | School Newsletter </title> */}
-        <title> Asian Scool Bahrain | School Newsletter </title>
+        <title> The Asian School Bahrain | School Newsletter </title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href={SITE_FAVICON} />
       </Head>

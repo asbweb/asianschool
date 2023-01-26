@@ -22,7 +22,7 @@ export default function InTheNews({ inTheNewsCollection }) {
     <>
       <Head>
         {/* <title>{SITE_NAME} | In The News </title> */}
-        <title> Asian Scool Bahrain | In The News </title>
+        <title> The Asian School Bahrain | In The News </title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href={SITE_FAVICON} />
       </Head>

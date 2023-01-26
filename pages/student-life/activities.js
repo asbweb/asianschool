@@ -22,7 +22,7 @@ export default function Activities() {
     <>
       <Head>
         {/* <title>{ SITE_NAME } | Activities </title> */}
-        <title> Asian Scool Bahrain |  Activities </title>
+        <title> The Asian School Bahrain |  Activities </title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href={SITE_FAVICON} />
       </Head>

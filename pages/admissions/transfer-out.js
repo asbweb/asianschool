@@ -66,7 +66,7 @@ export default function TransferOut({
     <div>
       <Head>
         {/* <title>{SITE_NAME} | Transfer Out </title> */}
-        <title> Asian Scool Bahrain |  Transfer Out </title>
+        <title> The Asian School Bahrain |  Transfer Out </title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href={SITE_FAVICON} />
       </Head>

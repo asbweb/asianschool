@@ -17,7 +17,7 @@ export default function Message() {
     <>
       <Head>
         {/* <title>{ SITE_NAME } | Management </title> */}
-        <title> Asian Scool Bahrain | Management </title>
+        <title> The Asian School Bahrain | Management </title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href={SITE_FAVICON} />
       </Head>
