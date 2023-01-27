@@ -21,7 +21,7 @@ export default function Careers() {
         <link rel="icon" href={SITE_FAVICON} />
       </Head>
       <main>
-        <h2 className="page-title">Connect</h2>
+        <h2 className="page-title">Join Us</h2>
 
         <section>
           <Container className="mb-5 py-5">
