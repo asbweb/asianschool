@@ -62,10 +62,8 @@ export default function Fees() {
               <small>
                 Computer Science (optional): BD. 5/- per month 
               </small>
-            </p>
-            <p className="text-center fs-6">
+            <br/>
               <small>
-                {/* * Admission Fee is not applicable to Grade 10 students of the The Asian School who join Grade 11 */}
                * Admission Fee & Annual Fee is not applicable to Grade 10 students of The Asian School who join Grade 11.
               </small>
             </p>
