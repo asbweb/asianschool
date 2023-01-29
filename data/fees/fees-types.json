@@ -18,7 +18,7 @@
   },
   {
     "title": "Tuition Fee",
-    "text": "Payable monthly before the 10th of every month",
+    "text": "Payable monthly before the 10\u1D57\u02B0 of every month",
     "feesamount": [
       { "grade": "LKG to Grade 10", "amount": "BD. 36/-"},
       { "grade": "Grades 11 & 12", "amount": "BD. 75/-"}
