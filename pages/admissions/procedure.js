@@ -65,7 +65,7 @@ export default function Procedure({
                       <ul className="admission-checklist">
                         <li>
                           <p>
-                            The child is currently located in the Kingdom of
+                            The child is currently staying in the Kingdom of
                             Bahrain AND has a valid CPR Number.
                           </p>
                         </li>
