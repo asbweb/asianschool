@@ -21,7 +21,7 @@ export default function Circulars({circularsCollection}) {
         },
       },
       {
-        Header: "Update",
+        Header: "Title",
         accessor: "title",
       },
       {
