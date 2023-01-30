@@ -53,7 +53,7 @@ export default function UpdatesModal() {
 
 
         </Modal.Body>
-        <Modal.Footer className="border-0 m-0">
+        <Modal.Footer className="border-0 mt-0 pt-0">
           <DownloadButton className="mt-0" onClick={handleClose}>
             Close
           </DownloadButton>
