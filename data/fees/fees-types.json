@@ -1,34 +1,45 @@
-[
-  {
-    "title": "Admission Fee",
-    "text": "Payable once at the time of admission only",
-    "feesamount": [
-      { "grade": "LKG to Grade 12", "amount": "BD. 48/- *"}
-    ]
-  },
-  {
-    "title": "Annual Fee",
-    "text": "Payable once at the beginning of every academic year",
-    "feesamount": [
-      { "grade": "LKG to Grade 6", "amount": "BD. 18/-"},
-      { "grade": "Grades 7 & 8", "amount": "BD. 36/-"},
-      { "grade": "Grades 9 & 10", "amount": "BD. 48/-"},
-      { "grade": "Grades 11 & 12", "amount": "BD. 75/-"}
-    ]
-  },
-  {
-    "title": "Tuition Fee",
-    "text": "Payable monthly before the 10\u1D57\u02B0 of every month",
-    "feesamount": [
-      { "grade": "LKG to Grade 10", "amount": "BD. 36/-"},
-      { "grade": "Grades 11 & 12", "amount": "BD. 75/-"}
-    ]
-  },
-  {
-    "title": "Transport Fee",
-    "text": "Payable monthly if school transport facility is availed",
-    "feesamount": [
-      { "grade": "LKG to Grade 12", "amount": "BD. 15/-"}
-    ]
-  }
-]
+{
+  "title": "Fees",
+  "subtitle": "There are 4 types of fees payable and the details of each are outlined below",
+  "feestypes": [
+    {
+      "title": "Admission Fee",
+      "text": "Payable once at the time of admission only"
+    },
+    {
+      "title": "Annual Fee",
+      "text": "Payable once at the beginning of every academic year"
+    },
+    {
+      "title": "Tuition Fee",
+      "text": "Payable monthly before the 10\u1D57\u02B0 of every month"
+    },
+    {
+      "title": "Transport Fee",
+      "text": "Payable monthly if school transport facility is availed"
+    }
+  ],
+  "subtext1": "Computer Science (optional): BD. 5/- per month",
+  "subtext2": "* Admission Fee & Annual Fee is not applicable to Grade 10 students of The Asian School who join Grade 11.",
+  "refundtitle": "REFUNDABLE DEPOSIT",
+  "refundtext": "At the time of admission, an interest free refundable deposit of BD. 30/- has to be paid. This amount will be refunded when the child leaves the school after clearing all outstanding dues if any, to the school.",
+  "feeguidelines": "FEE PAYMENT GUIDELINES",
+  "feeguidelinesitems": [
+    "In the first month of every academic year, the Annual Fee, Tuition Fee and Transport Fee needs to be paid. Thereafter, the Tuition Fee and the Transport Fee have to be paid on or before the 10th of every month.",
+    "If fees are not paid for a period of two months the defaulter’s name will be struck off from the school register hence making the student ineligible to attend classes. BD. 5/- will be charged if re-admission is granted. In such cases, all pending dues along with fees for the month of re-admission have to be paid.",
+    "All payments are to be made at the school office between 7:15 a.m. and 2:00 p.m. or via the school approved third party vendor and a receipt should be obtained. The school will not be responsible for any claim of payment without a proper receipt.",
+    "Parents are requested to not send fees with small children. School authorities will not bear responsibility for loss of money sent through children and the parents alone will be fully responsible for any such loss.",
+    "Contrary to this rule, if parents send the fees with their children, they must remit the exact amount at the counter and get a proper receipt. No money should be handed over to any employee of the School other than the cashier at the counter.",
+    "Fees can be paid by a crossed cheque drawn in favor of “The Asian School”. Post-dated cheques will not be accepted. Credit /Debit cards and payment wallets will not be accepted.",
+    "Students withdrawn during the term will be required to pay full fees for the remainder of the term.",
+    "Fees for the month of March for Grades 8 to 12 students should be paid along with the February fees.",
+    "In the case of an admission during the session, the full admission fee and all other fees will be charged.",
+    "No reduction or refund of fees will be made on account of any holiday, leave or absence for any reason. Parents going on holiday with their children are required to pay tuition and transport fees in advance along with the leave application.",
+    "Fees once collected will not be refunded under any circumstances.",
+    "The result of the Half Yearly / Annual Examination will not be declared until all pending dues are cleared.",
+    "Any original/duplicate Certificate will only be issued after all pending fees and other dues are cleared.",
+    "Cost of books and other stationery are not included in the fees.",
+    "Part payments will not be accepted.",
+    "In the beginning of the new academic year, second term or third term, if any student remains absent continuously for six days without a proper leave application, his/her name will be struck off from the school register and if re-admission is granted, a re-admission fee of BD. 5/- will be charged."
+  ]
+}
