@@ -64,13 +64,13 @@ export default function FooterLeft() {
             </li>
             <li className="my-2">
               <h6>
-                <a href={Contactdetails.fax.link}>
+                {/* <a href={Contactdetails.fax.link}> */}
                   <Icon
                     icon={Contactdetails.fax.icon}
                     className="my-auto me-2 pb-1"
                   />
                   {Contactdetails.fax.text}
-                </a>
+                {/* </a> */}
               </h6>
             </li>
           </ul>
