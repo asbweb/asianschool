@@ -107,14 +107,14 @@ export default function Connect() {
                   </Col>
 
                   <Col className="d-flex justify-content-center mb-lg-3">
-                    <a href={Contactdetails.fax.link}>
+                    {/* <a href={Contactdetails.fax.link}> */}
                       <RoundIconButton
                         btnicon={Contactdetails.fax.icon}
                         iconwidth={30}
                       >
                         {Contactdetails.fax.text}
                       </RoundIconButton>
-                    </a>
+                    {/* </a> */}
                   </Col>
                 </Row>
               </Col>
