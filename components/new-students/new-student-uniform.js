@@ -34,7 +34,7 @@ export default function NewStudentUniform() {
           smartly and take pride in their appearance. A uniform diminishes
           economic and social barriers between students and helps keep students
           focused on their education, not their clothes. The school has
-          authorized <strong>M/s Uniform City</strong> and{" "}
+          authorized <strong>M/s Uniform City</strong> and
           <strong>M/s Master Uniforms </strong>
           to supply The Asian School uniforms in the Kingdom of Bahrain.
         </p>
@@ -70,7 +70,6 @@ export default function NewStudentUniform() {
           className="img-fluid  my-4"
           src="/images/uniform/regular-uniform.jpg"
           alt="uniform"
-          // layout="responsive"
           width={600}
           height={400}
         />
@@ -316,44 +315,6 @@ export default function NewStudentUniform() {
             way around is unacceptable).
           </li>
         </ul>
-
-        {/* <h4 className="fw-bold mt-5 mb-3">P.E UNIFORM</h4>
-         <Image
-          className="img-fluid my-4"
-          src="/images/uniform/pt-uniform.jpg"
-          alt="uniform" 
-          width={600}
-          height={400}
-        /> 
-        <p className="mb-0">
-          To be worn only on every Sunday. T-shirts should be long enough to be
-          tucked into the pant/skirt.
-        </p>
-        <p className="mb-0">
-          <strong>Boys:</strong> Plain white shorts 4 inches above the knees
-          during summer or plain white trousers during winter along with white
-          t-shirts adorning the school logo.
-        </p>
-        <p>
-          <strong>Girls:</strong> White divided skirts with box pleats (knee
-          length) and white t-shirts with the school logo.
-        </p>  
-        
-        <h5>DIVIDED SKIRT</h5>
-        <ul>
-          <li>The color of the skirt should be white.</li>
-          <li>The skirt should have 2.5” pleats.</li>
-          <li>The zipper can be at the back or on the side.</li>
-          <li>The waist band of the skirt should be elastic.</li>
-        </ul>
-
-        <h5>P.T. SHOES (BOYS & GIRLS)</h5>
-        <ul>
-          <li>
-            Plain white sports shoes and white socks. No fancy shoes will be
-            allowed.
-          </li>
-        </ul> */}
 
         <h4 className="fw-bold mt-5 mb-3">P.E UNIFORM</h4>
 

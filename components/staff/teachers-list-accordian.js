@@ -24,7 +24,7 @@ export default function TeachersListAccordian({
             <Container className="py-5">
               {/* <Card.Body> */}
                 <Col md={8} className="mx-auto">
-                  <Table size="sm" striped hover responsive className="text-center"> 
+                  <Table size="sm" striped hover responsive> 
                     <thead>
                       <tr className="bg-asb-main text-white">
                         {tableHeaderName ? (

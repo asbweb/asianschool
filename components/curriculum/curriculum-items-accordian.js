@@ -1,10 +1,16 @@
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer"; 
-import Container from "react-bootstrap/Container"; 
+// import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
-import Accordion from "react-bootstrap/Accordion";  
-import CustomToggle from "../buttons/custom-toggle"
+import Accordion from "react-bootstrap/Accordion";
+import CustomToggle from "../buttons/custom-toggle";
+import CurriculumItems from "./curriculum-items";
+import DownloadButton from "@buttons/download-button";
 
-export default function CurriculumItemsAccordian({ weight, title, description }) {
+export default function CurriculumItemsAccordian({
+  weight,
+  title,
+  description,
+}) {
   return (
     <>
       <Card className="rounded-0">
@@ -13,12 +19,18 @@ export default function CurriculumItemsAccordian({ weight, title, description })
         </Card.Header>
         <Accordion.Collapse eventKey={weight}>
           <Card.Body>
-            <Container className="py-5">
-              {documentToReactComponents(description.json)}
+            <Container className="py-5 curriculum-container">
+              <CurriculumItems description={description} />
+              {/* <div className="col-md-8 col-lg-6"> */}
+                {/* For a complete perusal of the {title} syllabus and a look at the
+                monthly schedule of how the syllabus will be taught over the
+                year, please <a href="#">Click Here</a> */}
+                {/* <DownloadButton> Click here </DownloadButton> */}
+              {/* </div> */}
             </Container>
           </Card.Body>
         </Accordion.Collapse>
       </Card>
     </>
   );
-} 
+}

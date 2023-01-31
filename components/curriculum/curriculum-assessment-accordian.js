@@ -46,7 +46,6 @@ export default function CurriculumAssessmentAccordian({ weight, title, url }) {
                         className="img-fluid p-0"
                         src={url}
                         alt=""
-                        // layout="intrinsic"
                         width={1920}
                         height={1080}
                       />
