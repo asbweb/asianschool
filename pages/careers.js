@@ -28,7 +28,7 @@ export default function Careers() {
             <Col md={10} lg={8} className="mx-auto">
               <p className="text-center">
                 If you wish to be a part of the Asian School family, please send
-                us an email with your latest resume to <a href="mailto:careers@asianschool.bh"> careers@asianschool.bh</a>.
+                us an email with your latest resume to <b><a href="mailto:careers@asianschool.bh"> careers@asianschool.bh</a></b>.
                 Please mention your subject taught in the subject of the email.
               </p>
             </Col>
