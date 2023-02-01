@@ -17,12 +17,11 @@ export default function Admission() {
         <section className="my-5">
           <Container>
             <iframe
-              src="https://calendar.google.com/calendar/embed?src=info%40asianschool.bh&ctz=Asia%2FQatar"
+              src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23D47A0C&ctz=Asia%2FQatar&src=aW5mb0Bhc2lhbnNjaG9vbC5iaA&color=%23039BE5" 
               style={{ borderWidth: "0" }}
               width="100%"
               height="800"
             ></iframe> 
- 
           </Container>
         </section>
       </main>
