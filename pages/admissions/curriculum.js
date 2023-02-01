@@ -13,7 +13,7 @@ import CurriculumAcademicterms from "@curriculum/curriculum-academicterms";
 import CurriculumItemsAccordian from "@curriculum/curriculum-items-accordian";
 import CurriculumAssessmentAccordian from "@curriculum/curriculum-assessment-accordian";
 import PromotionCriteria from "@curriculum/promotion-criteria";
-import CoScholasticAssessment from "@curriculum/co-scholastic-assessment "; 
+import CoScholasticAssessment from "@curriculum/co-scholastic-assessment ";
 
 export default function Curriculum({
   curriculumItems,
@@ -24,7 +24,7 @@ export default function Curriculum({
     <>
       <Head>
         {/* <title>{SITE_NAME} | Curriculum </title> */}
-        <title> The Asian School Bahrain |  Curriculum </title>
+        <title> The Asian School Bahrain | Curriculum </title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href={SITE_FAVICON} />
       </Head>
@@ -37,7 +37,7 @@ export default function Curriculum({
           </Container>
         </section>
 
-        <section className="my-5 py-5">
+        <section className="py-5">
           <Accordion
             activeeventkey={activeEventKey}
             onToggle={setActiveEventKey}
@@ -54,10 +54,10 @@ export default function Curriculum({
           </Accordion>
         </section>
 
-        <section className="my-5 py-5 bg-asb-accent">
+        <section className="py-5 bg-asb-accent">
           <Container className="my-5">
-            <h3 className="fw-bold mb-3"> Evalution Criteria </h3>
-            <h4 className="fw-bold"> Scholastic Assessment </h4>
+            <h3 className="fw-bold mb-3">Evalution Criteria</h3>
+            <h4 className="fw-bold">Scholastic Assessment</h4>
           </Container>
           <Accordion
             activeeventkey={activeEventKey}
@@ -79,7 +79,7 @@ export default function Curriculum({
           </Container>
         </section>
 
-        <section className="my-5 py-5">
+        <section className="py-5">
           <Container>
             <PromotionCriteria />
           </Container>
