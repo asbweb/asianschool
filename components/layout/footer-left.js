@@ -7,25 +7,38 @@ export default function FooterLeft() {
   return (
     <Col md={12} lg={8} className="me-0 my-4">
       <Row>
-        <h6 className="fw-bold">{Contactdetails.schooladdress.school}</h6>
+        <h5 className="fw-bold">{Contactdetails.schooladdress.school}</h5>
         <Col md={4} lg={4}>
           <ul className="footer-contact">
             <li className="my-2">
-              <h6>{Contactdetails.schooladdress.add1}</h6>
+              {/* <h6> */}
+                <p className="mb-0"> 
+                {Contactdetails.schooladdress.add1}
+                </p>
+              {/* </h6> */}
             </li>
             <li className="my-2">
-              <h6>{Contactdetails.schooladdress.add2}</h6>
+              {/* <h6> */}
+              <p className="mb-0">
+                {Contactdetails.schooladdress.add2}
+                </p>
+              {/* </h6> */}
             </li>
             <li className="my-2">
-              <h6>{Contactdetails.schooladdress.add3}</h6>
+              {/* <h6> */}
+              <p>
+                {Contactdetails.schooladdress.add3}
+                </p>
+              {/* </h6> */}
             </li>
           </ul>
         </Col>
 
-        <Col md={4} lg={3}>
+        <Col md={4} lg={4}>
           <ul className="footer-contact">
             <li className="my-2 me-3">
-              <h6>
+              {/* <h6> */}
+                <p>
                 <a href={Contactdetails.phone1.link}>
                   <Icon
                     icon={Contactdetails.phone1.icon}
@@ -33,10 +46,12 @@ export default function FooterLeft() {
                   />
                   {Contactdetails.phone1.text}
                 </a>
-              </h6>
+                </p>
+              {/* </h6> */}
             </li>
             <li className="my-2 me-3">
-              <h6>
+               {/* <h6> */}
+               <p>
                 <a href={Contactdetails.phone2.link}>
                   <Icon
                     icon={Contactdetails.phone2.icon}
@@ -44,15 +59,17 @@ export default function FooterLeft() {
                   />
                   {Contactdetails.phone2.text}
                 </a>
-              </h6>
+                </p>
+              {/* </h6> */}
             </li>
           </ul>
         </Col>
 
-        <Col md={4} lg={3}>
+        <Col md={4} lg={4}>
           <ul className="footer-contact">
             <li className="my-2">
-              <h6>
+               {/* <h6> */}
+               <p>
                 <a href={Contactdetails.email.link}>
                   <Icon
                     icon={Contactdetails.email.icon}
@@ -60,10 +77,12 @@ export default function FooterLeft() {
                   />
                   {Contactdetails.email.text}
                 </a>
-              </h6>
+                </p>
+              {/* </h6> */}
             </li>
             <li className="my-2">
-              <h6>
+               {/* <h6> */}
+               <p>
                 {/* <a href={Contactdetails.fax.link}> */}
                   <Icon
                     icon={Contactdetails.fax.icon}
@@ -71,7 +90,8 @@ export default function FooterLeft() {
                   />
                   {Contactdetails.fax.text}
                 {/* </a> */}
-              </h6>
+                </p>
+              {/* </h6> */}
             </li>
           </ul>
         </Col>
