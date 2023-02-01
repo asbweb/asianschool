@@ -24,7 +24,14 @@
   &:hover {
     transform: scale(1.1);
     color: var(--asb-main-light) !important;
+  } 
+  &.disable{
+    &:hover{
+      transform: scale(0.99);
+      color: white !important;
+    }
   }
+
 }
 
 .round-button-text {
