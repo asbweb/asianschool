@@ -6,6 +6,11 @@
   &:hover {
     background-color: transparent !important;
   }
+  &.disable{
+    &:hover{ 
+      cursor: context-menu;
+    }
+  }
 }
 
 .round-button-icon-container {
@@ -29,6 +34,7 @@
     &:hover{
       transform: scale(0.99);
       color: white !important;
+      cursor: context-menu;
     }
   }
 
