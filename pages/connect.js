@@ -12,6 +12,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import RoundIconButton from "@buttons/round-icon-button";
 import Contactdetails from "@data/footer.json";
+import Button from "react-bootstrap/Button";
+import { Icon } from "@iconify/react";
 
 export default function Connect() {
   return (
@@ -26,9 +28,7 @@ export default function Connect() {
 
         <section>
           <Container>
-            <h4 className="text-center mb-5">
-            {Contactdetails.contacttext} 
-            </h4>
+            <h4 className="text-center mb-5">{Contactdetails.contacttext}</h4>
             <Row className="my-5">
               <Col lg={6} md={12} className="order-2  order-lg-first">
                 <iframe
@@ -45,23 +45,23 @@ export default function Connect() {
                   <Col md={6} sm={6} className="mb-3">
                     <p className="mb-0 text-center">
                       <strong className="text-decoration-underline">
-                      {Contactdetails.schooladdress.title}
+                        {Contactdetails.schooladdress.title}
                       </strong>{" "}
                       <br />
-                      {Contactdetails.schooladdress.add1} <br/>
-                      {Contactdetails.schooladdress.add2} <br/>
-                      {Contactdetails.schooladdress.add3} 
+                      {Contactdetails.schooladdress.add1} <br />
+                      {Contactdetails.schooladdress.add2} <br />
+                      {Contactdetails.schooladdress.add3}
                     </p>
                   </Col>
                   <Col md={6} sm={6} className="mb-3">
                     <p className="mb-0 text-center">
                       <strong className="text-decoration-underline">
-                      {Contactdetails.mailingaddress.title}
+                        {Contactdetails.mailingaddress.title}
                       </strong>
                       <br />
-                      {Contactdetails.mailingaddress.add1} <br/>
-                      {Contactdetails.mailingaddress.add2} <br/>
-                      {Contactdetails.mailingaddress.add3} 
+                      {Contactdetails.mailingaddress.add1} <br />
+                      {Contactdetails.mailingaddress.add2} <br />
+                      {Contactdetails.mailingaddress.add3}
                     </p>
                   </Col>
                 </Row>
@@ -107,14 +107,17 @@ export default function Connect() {
                   </Col>
 
                   <Col className="d-flex justify-content-center mb-lg-3">
-                    {/* <a href={Contactdetails.fax.link}> */}
-                      <RoundIconButton
-                        btnicon={Contactdetails.fax.icon}
-                        iconwidth={30}
-                      >
-                        {Contactdetails.fax.text}
-                      </RoundIconButton>
-                    {/* </a> */}
+                    <Button
+                      className="round-button-container text-center mx-auto bg-white"
+                       disabled
+                    >
+                      <div className="round-button-icon-container shadow">
+                        <Icon icon={Contactdetails.fax.icon} width={30} />
+                      </div>
+                      <h4 className="round-button-text">
+                      {Contactdetails.fax.text}
+                      </h4>
+                    </Button>
                   </Col>
                 </Row>
               </Col>
