@@ -9,7 +9,7 @@ export default function FooterRight() {
       lg={{ span: 3, offset: 1 }}
       className="me-0 my-4 text-center text-lg-end footer-links"
     >
-      <h6>
+      <p>
         <a
           href={Contactdetails.parentportal.link}
           target="_blank"
@@ -18,13 +18,13 @@ export default function FooterRight() {
         >
           {Contactdetails.parentportal.text}
         </a>
-      </h6>
+      </p>
 
       <Link href={Contactdetails.careers.link} className="footer nav-link my-2">
-        <h6>{Contactdetails.careers.text}</h6>
+        <p>{Contactdetails.careers.text}</p>
       </Link>
 
-      <h6>
+      <p>
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -33,7 +33,7 @@ export default function FooterRight() {
         >
           {Contactdetails.publicdisclosure.text}
         </a>
-      </h6>
+      </p>
     </Col>
   );
 }
