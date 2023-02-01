@@ -91,26 +91,25 @@
             "order": 1
           },
           {
+            "name": "Activities",
+            "URL": "/student-life/activities",
+            "order": 2
+          },
+          {
             "name": "House System",
             "URL": "/student-life/house-system",
-            "order": 2
+            "order": 3
           },
           {
             "name": "Awards",
             "URL": "/student-life/awards",
-            "order": 3
+            "order": 4
           },
           {
             "name": "Achievements",
             "URL": "/student-life/achievements",
-            "order": 4
-          },
-          {
-            "name": "Activities",
-            "URL": "/student-life/activities",
             "order": 5
-          },
-          
+          },          
           {
             "name": "Events",
             "URL": "/student-life/events",
