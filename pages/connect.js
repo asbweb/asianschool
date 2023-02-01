@@ -108,7 +108,7 @@ export default function Connect() {
 
                   <Col className="d-flex justify-content-center mb-lg-3">
                     <Button
-                      className="round-button-container  text-center mx-auto bg-white"
+                      className="round-button-container disable text-center mx-auto bg-white"
                     >
                       <div className="round-button-icon-container disable shadow">
                         <Icon icon={Contactdetails.fax.icon} width={30} />
