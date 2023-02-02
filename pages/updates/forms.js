@@ -25,7 +25,7 @@ export default function Forms({ formsCollection }) {
       <section className="my-5">
         <Container>
           <h5 className="text-center">
-            Downloaded the form, fill in all relevant details and submit a hard copy to the school office or email a soft copy to <b><a href="mailto:info@asianschool.bh"> info@asianschool.bh</a></b>
+            Download the form, fill in all relevant details and submit a hard copy to the school office or email a soft copy to <b><a href="mailto:info@asianschool.bh"> info@asianschool.bh</a></b>
           </h5>
           <Row>
             {formsCollection.map((a, index) => (
