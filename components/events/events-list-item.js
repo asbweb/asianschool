@@ -8,7 +8,7 @@ export default function EventsListItem({ slug, title, date, featuredImage }) {
   return (
     <>
       <Col md={4} className="events-card">
-        <Link href={`/student-life/events/${slug}`}>
+        <Link href={`/updates/events/${slug}`}>
           
             <Card className="shadow-sm border p-3">
               <div className="text-center">
