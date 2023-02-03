@@ -107,7 +107,7 @@
           },
           {
             "name": "Forms",
-            "URL": "/updates/forms",
+            "URL": "/student-life/forms",
             "order": 5
           },
           {
@@ -144,12 +144,12 @@
           },
           {
             "name": "Achievements",
-            "URL": "/student-life/achievements",
+            "URL": "/updates/achievements",
             "order": 5
           },
           {
             "name": "Events",
-            "URL": "/student-life/events",
+            "URL": "/updates/events",
             "order": 6
           },
           {
