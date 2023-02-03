@@ -35,6 +35,7 @@ export default function Facilitators({
 
       <main>
         <h2 className="page-title">Facilitators</h2>
+        <h4 className="text-center mb-1">LEADERSHIP TEAM</h4>
 
         <section className="my-5">
           <Container>
@@ -70,8 +71,7 @@ export default function Facilitators({
         <section className="my-5">
           <Container>
             <Col md={10} className="mx-auto">
-              <Row>
-                <h4 className="text-center mb-1">LEADERSHIP TEAM</h4>
+              <Row> 
                 {facilitatorsCollectionItem.map((a, index) => (
                   <FacilitatorsItem
                     key={index}
