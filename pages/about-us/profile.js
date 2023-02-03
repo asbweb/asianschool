@@ -36,7 +36,7 @@ export default function Profile({
       <h2 className="page-title">Profile</h2>
      
       <section>
-        <Container className="mb-5 py-5">
+        <Container className="my-5">
           <Col md={10} lg={8} className="mx-auto">
             <p className="text-left">
               The Asian School is a privately owned secular co-educational institution officially opened on the 11<sup>th</sup> of May 1983 
