@@ -49,6 +49,7 @@ export default function Curriculum({
                 weight={a.weight}
                 title={a.title}
                 description={a.description}
+                syllabus={a.syllabus.url}
               />
             ))}
           </Accordion>
@@ -109,6 +110,9 @@ export async function getStaticProps() {
               }
               weight
               title
+              syllabus{
+                url
+              }
               description {
                 json
                 links {
