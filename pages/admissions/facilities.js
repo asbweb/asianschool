@@ -39,6 +39,18 @@ export default function Facilities() {
           ))}
         </section>
 
+        {/* <section className="my-5 py-5">
+          {Librarylist.map((a, index) => (
+            <FacilitiesItem
+              key={index}
+              order={a.order}
+              title={a.title}
+              text={a.text}
+              images={a.images}
+            />
+          ))}
+        </section> */}
+
         <section className="my-5 py-5 bg-light">
           <h4 className="page-title">LABORATORIES</h4>
           {Labslist.map((a, index) => (
@@ -52,19 +64,9 @@ export default function Facilities() {
           ))}
         </section>
 
-        <section className="my-5 py-5">
-          {Librarylist.map((a, index) => (
-            <FacilitiesItem
-              key={index}
-              order={a.order}
-              title={a.title}
-              text={a.text}
-              images={a.images}
-            />
-          ))}
-        </section>
+        
 
-        <section className="my-5 py-5  bg-light">
+        <section className="my-5 py-5">
           <h4 className="page-title">AUDITORIUMS AND HALLS</h4>
           {Hallslist.map((a, index) => (
             <FacilitiesItem
@@ -77,10 +79,10 @@ export default function Facilities() {
           ))}
         </section>
 
-        <section className="my-5 py-5">
+        <section className="my-5 py-5 bg-light">
           <Container>
             <Col className="my-5">
-              <h4>WELL BEING</h4>
+            <h4 className="page-title">WELL BEING</h4> 
               <p>
                 In addition to all the facilities that help develop the
                 scholastic and co-scholastic abilities of students, the school
