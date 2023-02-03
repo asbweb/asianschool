@@ -24,7 +24,7 @@ export default function Careers() {
         <h2 className="page-title">Join Us</h2>
 
         <section>
-          <Container className="my-5">
+          <Container className="mb-5 py-5">
             <Col md={10} lg={8} className="mx-auto">
               <p className="text-center">
                 If you wish to be a part of the Asian School family, please send
