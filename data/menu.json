@@ -17,6 +17,11 @@
             "order": 1
           },
           {
+            "name": "History",
+            "URL": "/about-us/history",
+            "order": 2
+          },
+          {
             "name": "Message",
             "URL": "/about-us/message",
             "order": 2
@@ -24,11 +29,6 @@
           {
             "name": "Foreword",
             "URL": "/about-us/foreword",
-            "order": 2
-          },
-          {
-            "name": "History",
-            "URL": "/about-us/history",
             "order": 2
           },
           {
