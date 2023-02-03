@@ -7,15 +7,14 @@ import DateFormatter from "@display-items/date-formatter";
 export default function EventsListItem({ slug, title, date, featuredImage }) {
   return (
     <>
-      <Col md={4} className="events-card">
+      <Col md={4} className="events-card mb-3">
         <Link href={`/updates/events/${slug}`}>
           
             <Card className="shadow-sm border p-3">
-              <div className="text-center">
+              <div className="text-center overflow-hidden">
                 <Image
-                  // className="img-fluid"
+                  className="img-fluid"
                   src={featuredImage}
-                  // layout="responsive"
                   // placeholder="blur"
                   // blurDataURL={imgblurDataURL}
                   width="360"
