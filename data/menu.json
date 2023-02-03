@@ -106,19 +106,14 @@
             "order": 4
           },
           {
-            "name": "Achievements",
-            "URL": "/student-life/achievements",
+            "name": "Forms",
+            "URL": "/updates/forms",
             "order": 5
-          },          
-          {
-            "name": "Events",
-            "URL": "/student-life/events",
-            "order": 6
           },
           {
             "name": "Useful Resources",
             "URL": "/student-life/useful-resources",
-            "order": 7
+            "order": 6
           }
         ]
       },
@@ -138,24 +133,29 @@
             "order": 2
           },
           {
-            "name": "Forms",
-            "URL": "/updates/forms",
-            "order": 3
-          },
-          {
             "name": "School Newsletter",
             "URL": "/updates/school-newsletter",
-            "order": 4
+            "order": 3
           },
           {
             "name": "In The News",
             "URL": "/updates/in-the-news",
+            "order": 4
+          },
+          {
+            "name": "Achievements",
+            "URL": "/student-life/achievements",
             "order": 5
+          },
+          {
+            "name": "Events",
+            "URL": "/student-life/events",
+            "order": 6
           },
           {
             "name": "Gallery",
             "URL": "/updates/gallery",
-            "order": 6
+            "order": 7
           }
         ]
       },
