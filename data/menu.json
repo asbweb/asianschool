@@ -123,7 +123,7 @@
         "weight": 5,
         "children": [
           {
-            "name": "School Calendar",
+            "name": "Calendar",
             "URL": "/updates/school-calendar",
             "order": 1
           },
@@ -133,7 +133,7 @@
             "order": 2
           },
           {
-            "name": "School Newsletter",
+            "name": "Newsletter",
             "URL": "/updates/school-newsletter",
             "order": 3
           },
