@@ -46,7 +46,7 @@ export default function EventPage({ event }) {
                   </div>
                 </div>
                 <div >
-                  <Link href="/student-life/events"  className=" me-3">
+                  <Link href="/updates/events"  className=" me-3">
                       <SmallRoundIconButton btnicon="material-symbols:arrow-back">
                         Back
                       </SmallRoundIconButton> 
