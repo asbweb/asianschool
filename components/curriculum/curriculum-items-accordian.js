@@ -10,6 +10,7 @@ export default function CurriculumItemsAccordian({
   weight,
   title,
   description,
+  syllabus,
 }) {
   return (
     <>
@@ -21,12 +22,11 @@ export default function CurriculumItemsAccordian({
           <Card.Body>
             <Container className="py-5 curriculum-container">
               <CurriculumItems description={description} />
-              {/* <div className="col-md-8 col-lg-6"> */}
-                {/* For a complete perusal of the {title} syllabus and a look at the
+              <div className="col-md-8 ">
+                For a complete perusal of the {title} syllabus and a look at the
                 monthly schedule of how the syllabus will be taught over the
-                year, please <a href="#">Click Here</a> */}
-                {/* <DownloadButton> Click here </DownloadButton> */}
-              {/* </div> */}
+                year, please <a href={syllabus} target="_blank" rel="noopener noreferrer">Click Here</a> 
+                </div>  
             </Container>
           </Card.Body>
         </Accordion.Collapse>
