@@ -118,7 +118,7 @@
         ]
       },
       {
-        "name": "Updates",
+        "name": "#Updates",
         "URL": "/updates",
         "weight": 5,
         "children": [
