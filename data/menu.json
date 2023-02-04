@@ -7,7 +7,7 @@
         "weight": 1
       },
       {
-        "name": "About Us",
+        "name": "About",
         "URL": "/about-us",
         "weight": 2,
         "children": [
@@ -81,7 +81,7 @@
         ]
       },
       {
-        "name": "Student Life",
+        "name": "@School",
         "URL": "/student-life",
         "weight": 4,
         "children": [
