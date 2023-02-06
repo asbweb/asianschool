@@ -2,7 +2,7 @@
   "parents": [
     { "target":"","btnicon": "lucide:graduation-cap", "iconwidth": 30, "text": "Admissions", "url":"/admissions/procedure"},
     { "target":"_blank","btnicon": "fa-solid:door-open", "iconwidth": 30, "text": "Parent Portal", "url":"http://portal.asianschool.bh/ASBDC/"},
-    { "target":"","btnicon": "fa-solid:pen", "iconwidth": 30, "text": "Forms", "url":"/updates/forms"},
+    { "target":"","btnicon": "fa-solid:pen", "iconwidth": 30, "text": "Forms", "url":"/student-life/forms"},
     { "target":"","btnicon": "fa-solid:newspaper", "iconwidth": 30, "text": "Press", "url":"/updates/in-the-news"}
   ],
 
