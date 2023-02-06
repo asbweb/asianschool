@@ -27,9 +27,8 @@ export default function Careers() {
           <Container className="mb-5 py-5">
             <Col md={10} lg={8} className="mx-auto">
               <p className="text-center">
-                /*If you wish to be a part of the Asian School family, please send
-                us an email with your latest resume to <a href="mailto:careers@asianschool.bh"> careers@asianschool.bh</a>.
-                Please mention your subject taught in the subject of the email.*/
+                If you wish to be a part of the Asian School family, please go to the website 
+                <a href="http://careers.asianschool.bh"><b>careers.asianschool.bh</b></a> and submit your detailed profile.
               </p>
             </Col>
           </Container>
