@@ -15,7 +15,7 @@ import FacilitatorsItem from "@staff/facilitators";
 import TeachersListAccordian from "@staff/teachers-list-accordian";
 
 export default function Facilitators({
-  facilitatorsCollectionItem,
+  facilitatorsCollectionItem, 
   teachersCollection,
   administrationCollection,
 }) {
@@ -23,7 +23,8 @@ export default function Facilitators({
 
   return (
     <>
-      <Head> 
+      <Head>
+        {/* <title>{SITE_NAME} | Facilitators </title> */}
         <title> The Asian School Bahrain |  Facilitators </title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href={SITE_FAVICON} />
@@ -122,23 +123,7 @@ export async function getStaticProps() {
                 description
               }
             }
-          }
-          adminStaffCollection(order: weight_ASC) {
-            items {
-              sys {
-                id
-              }
-              weight
-              name
-              role
-              qualifications
-              profilPicture {
-                url
-                title
-                description
-              }
-            }
-          }
+          } 
           teachersCollection(order: weight_ASC) {
             items {
               title
@@ -168,13 +153,13 @@ export async function getStaticProps() {
   }
 
   const { data } = await result.json();
-  const facilitatorsCollectionItem = data.facilitatorsCollection.items;
+  const facilitatorsCollectionItem = data.facilitatorsCollection.items; 
   const teachersCollection = data.teachersCollection.items;
   const administrationCollection = data.administrationCollection.items;
   
   return {
     props: {
-      facilitatorsCollectionItem,
+      facilitatorsCollectionItem, 
       teachersCollection,
       administrationCollection,
     },
