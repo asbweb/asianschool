@@ -26,6 +26,8 @@ export default function UpdatesModal() {
           {/* {UpdatesInfo.text.map((a, index) => (
             <p key={index}>{a}</p>
           ))} */}
+
+          {/* 
           <p>
             Please note the dates for distribution of Prospectus and Application
             for Admission to Kindergarten and Grade 1 of The Asian School.{" "}
@@ -43,8 +45,8 @@ export default function UpdatesModal() {
             Prospectus can be procured from the school office between 8:00 a.m. and 1:00 p.m. on the
             allotted dates only.
           </p>
-
-          {/* <Link href="#" target="_blank" rel="noopener noreferrer">
+          
+          <Link href="#" target="_blank" rel="noopener noreferrer">
             <DownloadButton btnicon="">Click here</DownloadButton>
           </Link>
 {' '}
