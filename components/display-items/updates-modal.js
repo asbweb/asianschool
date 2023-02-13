@@ -34,7 +34,7 @@ export default function UpdatesModal() {
           <p>
             Issue of Prospectus with Application for Admission to siblings of
             our students only: 24<sup>th</sup> and 25<sup>th</sup> January,
-            2023.
+            2023
           </p>
           <p>
             Issue of Prospectus with Application for Admission to others: 7
