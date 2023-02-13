@@ -27,8 +27,7 @@ export default function UpdatesModal() {
             <p key={index}>{a}</p>
           ))} */}
 
-          {/* 
-          <p>
+          {/* <p>
             Please note the dates for distribution of Prospectus and Application
             for Admission to Kindergarten and Grade 1 of The Asian School.{" "}
           </p>
