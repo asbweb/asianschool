@@ -46,8 +46,8 @@ export default function Home({
                 <HomeHero
                   image={a.image.url}
                   title={a.title}
-                  btnText={a.btnText}
-                  btnIcon={a.btnIcon}
+                  btntext={a.btntext}
+                  btnicon={a.btnicon}
                   link={a.link}
                 />
               </Carousel.Item>
