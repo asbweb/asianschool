@@ -1,0 +1,30 @@
+[
+  {
+    "title": "MULTI-PURPOSE AUDITORIUM",
+    "text": "The air conditioned Dr. Abdul Kalam Memorial Auditorium encloses an area of 1630 sq.m. and is currently one of the biggest auditoriums in the Kingdom of Bahrain. The auditorium has a VIP room with a separate entrance and direct access to the stage and also individual male and female Green rooms. The 200 sq.m. stage coupled with a seating capacity of 2500 is big enough to host the biggest of events. The MPH also houses 4 Badminton courts, 1 Volleyball/Throwball court, 1 Basketball court and 2 Table Tennis tables.",
+    "order": "order-first my-auto",
+    "images": [
+      { "img": "/images/gallery/MPH1.jpg" },
+      { "img": "/images/gallery/MPH2.jpg" },
+      { "img": "/images/gallery/MPH3.jpg" }
+    ]
+  },
+  {
+    "title": "OPEN AIR AUDITORIUM",
+    "text": "The open air auditorium of the school has enough open space to accommodate more than 5000 people. The stage is enclosed on 3 sides and has industrial sockets to power the most demanding light and sound shows. The back of the stage has entrances from multiple connected classrooms that can be used as Green Rooms.",
+    "order": "order-last my-auto",
+    "images": [
+      { "img": "/images/gallery/OA1.jpg" },
+      { "img": "/images/gallery/OA2.jpg" }
+    ]
+  },
+  {
+    "title": "FLEXIBLE HALL",
+    "text": "The flexible hall is a set of five classrooms that are separated by movable partitions. When not being used as language classrooms, the partitions can be moved and the rooms transform into one big hall. Partitions can be closed to make smaller halls which help when multiple events need to be conducted simultaneously.",
+    "order": "order-first my-auto",
+    "images": [
+      { "img": "/images/gallery/FH1.jpg" },
+      { "img": "/images/gallery/FH2.jpg" }
+    ]
+  }
+]

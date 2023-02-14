@@ -1,0 +1,20 @@
+[
+  {
+    "title": "LIBRARY",
+    "text": "The school Library is a learning area where students and teachers have access to a wide range of resources in different formats in order to meet their teaching and learning needs. Students are encouraged to cultivate good reading habits and to use the library as an important center for learning. The school has excellent library facilities with over 11634 volumes of books, comprising prescribed texts, popular fiction and non-fiction and 1571 reference books. The school subscribes to 2 newspapers, 50 magazines and 3 periodicals.",
+    "order": "order-last my-auto",
+    "images": [
+      { "img": "/images/gallery/Library1.jpg" },
+      { "img": "/images/gallery/Library1.jpg" }
+    ]
+  },
+  {
+    "title": "Bookstore",
+    "text": "The school has a well equipped bookstore which stocks academic books for all grades from Kindergarten to Grade 12. Books can be procured from the store all through the year. The bookstore is housed in the main school building with direct access from the school grounds or from the reception. It is open on all working days between 8:00 a.m. and 12:00 p.m. Books are available on a first come first served basis.",
+    "order": "order-first my-auto",
+    "images": [
+      { "img": "/images/gallery/Library1.jpg" },
+      { "img": "/images/gallery/Library1.jpg" }
+    ]
+  }
+]

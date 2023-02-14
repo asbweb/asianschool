@@ -1,0 +1,71 @@
+[
+  {
+    "weight": 1,
+    "title": "FOOTBALL",
+    "text": "The Asian School is proud to be one of the only schools in the Kingdom to have a regulation size football ground.",
+    "order": "order-md-last my-auto",
+    "eventKey": "football",
+    "images": [
+      { "img": "/images/gallery/Football-Ground.jpg" },
+      { "img": "/images/gallery/Football-Ground-with-kids1.jpg" },
+      { "img": "/images/gallery/Football-Ground-with-kids2.jpg" }
+    ]
+  },
+  {
+    "weight": 2,
+    "title": "BASKETBALL",
+    "text": "The school has 3 outdoor basketball courts of which one is built to competition standards. There is also an indoor court in the air conditioned Multi-Purpose Auditorium for the summer months.",
+    "order": "my-auto",
+    "eventKey": "basketball",
+    "images": [
+      { "img": "/images/gallery/Indoor-basketball-court.jpg" },
+      { "img": "/images/gallery/Indoor-basketball-court1.jpg" },
+      { "img": "/images/gallery/Basketball1.jpg" },
+      { "img": "/images/gallery/Basketball2.jpg" },
+      { "img": "/images/gallery/Basketball3.jpg" },
+      { "img": "/images/gallery/Basketball4.jpg" }
+    ]
+  },
+  {
+    "weight": 3,
+    "title": "VOLLEYBALL/THROWBALL",
+    "text": "There are 2 outdoor courts that can be used for Volleyball or Throwball. There is also an indoor court in the air conditioned Multi-Purpose Auditorium that can be used in the summer.",
+    "order": "order-md-last my-auto",
+    "eventKey": "Volleyball",
+    "images": [
+      { "img": "/images/gallery/Volleyball1.jpg" },
+      { "img": "/images/gallery/Volleyball2.jpg" },
+      { "img": "/images/gallery/Indoor-Volleyball.jpg" }
+    ]
+  },
+  {
+    "weight": 4,
+    "title": "BADMINTON",
+    "text": "The Multi-Purpose Auditorium has 4 badminton courts that can be used simultaneously along with the other indoor games available in the auditorium.",
+    "order": "my-auto",
+    "eventKey": "badminton",
+    "images": [
+      { "img": "/images/gallery/Indoor-badminton.jpg" },
+      { "img": "/images/gallery/Indoor-badminton1.jpg" }
+    ]
+  },
+  {
+    "weight": 5,
+    "title": "TABLE TENNIS",
+    "text": "There are multiple portable table tennis tables of which some are placed in the auditorium while some are in the main school building.",
+    "order": "order-md-last my-auto",
+    "eventKey": "table-tennis",
+    "images": [{ "img": "/images/gallery/TT.jpg" }, { "img": "/images/gallery/TT.jpg" }]
+  },
+  {
+    "weight": 6,
+    "title": "LONG JUMP",
+    "text": "There is a Long Jump pit that is used for both Long Jump and High Jump.",
+    "order": "my-auto",
+    "eventKey": "long-jump ",
+    "images": [
+      { "img": "/images/gallery/Long-Jump-Pit.jpg" },
+      { "img": "/images/gallery/Long-Jump-Pit.jpg" }
+    ]
+  }
+]

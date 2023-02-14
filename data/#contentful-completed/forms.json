@@ -1,0 +1,102 @@
+{
+  "forms": [
+    {
+      "title": "Application for availing School Transport",
+      "subtitle": "",
+      "icon": "iconoir:bus-outline",
+      "btnicon": "material-symbols:download-rounded",
+      "btntext": "Download",
+      "url": "/forms/Application-for-School-Transport.pdf"
+    },
+    {
+      "title": "Application for Bus Stop Change /Cancellation ",
+      "subtitle": "",
+      "icon": "iconoir:bus-stop",
+      "btnicon": "material-symbols:download-rounded",
+      "btntext": "Download",
+      "url": "/forms/Application-for-Transport-Stop-Change-or-Cancellation.pdf"
+    },
+    {
+      "title": "Application for joining the School Band ",
+      "subtitle": " ",
+      "icon": "la:drum",
+      "btnicon": "material-symbols:download-rounded",
+      "btntext": "Download",
+      "url": "/forms/Application-to-join-the-School-Band.pdf"
+    },
+    {
+      "title": "Application for Miscellaneous Certificates/duplicates/Transcripts",
+      "subtitle": "",
+      "icon": "iconoir:copy",
+      "btnicon": "material-symbols:download-rounded",
+      "btntext": "Download",
+      "url": "/forms/Application-for-Misc-Certificates.pdf"
+    },
+    {
+      "title": "Application for Student personal data change",
+      "subtitle": "",
+      "icon": "icons8:student",
+      "btnicon": "material-symbols:download-rounded",
+      "btntext": "Download",
+      "url": "/forms/Application-for-Student-Data-updation.pdf"
+    },
+    {
+      "title": "Application for Computer class enrollment",
+      "subtitle": "",
+      "icon": "iconoir:computer",
+      "btnicon": "material-symbols:download-rounded",
+      "btntext": "Download",
+      "url": "/forms/Application-to-enroll-for-Computer-Classes.pdf"
+    },
+    {
+        "title": "Application for Transfer Certificate",
+        "subtitle": "",
+        "icon": "ph:user-switch",
+        "btnicon": "material-symbols:download-rounded",
+        "btntext": "Download",
+        "url": "/forms/Application-for-Transfer-Certificate.pdf"
+    },
+    {
+      "title": "Application for Bonafide Certificate",
+      "subtitle": "",
+      "icon": "fluent:certificate-20-regular",
+      "btnicon": "material-symbols:download-rounded",
+      "btntext": "Download",
+      "url": "/forms/Application-for-Bonafide-Certificate.pdf"
+    },
+    {
+      "title": "Health Report Form for HKG Students",
+      "subtitle": "",
+      "icon": "healthicons:health-worker-form-outline",
+      "btnicon": "material-symbols:download-rounded",
+      "btntext": "Download",
+      "url": "/forms/Health-Report-Form-for-HKG-students.pdf"
+    },
+    {
+      "title": "Grade 9 CBSE Registration Form",
+      "subtitle": "(open only in April/May)",
+      "icon": "wpf:check-book",
+      "btnicon": "material-symbols:edit-document",
+      "btntext": "Fill online ",
+      "url": "#"
+    },
+    {
+      "title": "Grade 11 CBSE Registration Form",
+      "subtitle": "(open only in April/May)",
+      "icon": "wpf:check-book",
+      "btnicon": "material-symbols:edit-document",
+      "btntext": "Fill online ",
+      "url": "#"
+    },
+    {
+      "title": "CBSE Forms",
+      "subtitle": "(Document correction/duplicates)",
+      "icon": "fluent:document-checkmark-20-regular",
+      "btnicon": "material-symbols:read-more",
+      "btntext": "Go to CBSE site",
+      "url": "https://www.cbse.gov.in/"
+    }
+  ]
+}
+
+ 

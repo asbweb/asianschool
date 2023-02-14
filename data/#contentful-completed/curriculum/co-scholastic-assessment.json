@@ -1,0 +1,33 @@
+{
+  "heading": "Co-Scholastic Assessment",
+  "lkggrade8": {
+    "title": "Co-scholastic Activities for LKG to Grade 8:",
+    "subtitle": "For the holistic development of the student, co-curricular activities in the following areas will be conducted and will be graded on a 3 point grading scale (A – Outstanding, B – Good, C – Fair).",
+    "items": [
+      "Work Education",
+      "Health and Physical Education",
+      "Music (for LKG to Grade 5) "
+    ]
+  },
+
+  "grades9and10": {
+    "title": "Co-scholastic Activities for Grades 9 and 10:",
+    "subtitle": "Co-curricular activities in the following areas will be conducted and will be graded on a 3 point grading scale (A to C).",
+    "items": [
+      "Art Education",
+      "Health and Physical Education",
+      "Work Education"
+    ]
+  },
+
+  "grades11and12": {
+    "title": "Co-scholastic Activities for Grades 11 and 12:",
+    "subtitle": "Co-curricular activities in the following areas will be conducted and will be graded on a 5 point grading scale (A to E).",
+    "items": ["Computer Education Program", "Health and Physical Education"]
+  },
+
+  "discipline": {
+    "title": "Discipline:",
+    "subtitle": "All students of Grades 6 to 10 will also be assessed for discipline, which will be based on factors such as attendance, sincerity, behavior, values, respect for rules and regulations, attitude towards society and the nation, among others. Grading of discipline will be done on a 5 point grading scale (A to E) for Grades 9 and 10 and a 3 point scale (A to C) for Grades 6 to 8."
+  }
+}
