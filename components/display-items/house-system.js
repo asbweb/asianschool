@@ -4,7 +4,6 @@ import Container from "react-bootstrap/Container";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { BLOCKS } from "@contentful/rich-text-types";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
-import RichTextImage from "../#test/rich-text-image";
 import SmallRoundIconButton from "@buttons/small-round-icon-button";
 
 const customMarkdownOptions = (description) => ({
