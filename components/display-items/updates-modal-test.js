@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import RichTextBlock from "./rich-text-block"; 
 
-export default function UpdatesModal({
+export default function UpdatesModalTest({
   title,
   description,
   btnText,
