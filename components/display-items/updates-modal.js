@@ -11,7 +11,7 @@ export default function UpdatesModal({
   btnIcon, 
 }) {
   const [show, setShow] = useState(false);
-  useEffect(() => setShow(false), []);
+  useEffect(() => setShow(true), []);
   const handleClose = () => setShow(false); 
 
   return (
