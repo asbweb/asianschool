@@ -11,7 +11,7 @@ export default function UpdatesModalTest({
   btnIcon, 
 }) {
   const [show, setShow] = useState(false);
-  useEffect(() => setShow(true), []);
+  useEffect(() => setShow(false), []);
   const handleClose = () => setShow(false); 
 
   return (
