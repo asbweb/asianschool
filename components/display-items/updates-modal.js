@@ -29,7 +29,7 @@ export default function UpdatesModal() {
 
           <p>
             Please note the dates for distribution of Prospectus and Application
-            for Admission to Kindergarten and Grade 1 of The Asian School.{" "}
+            for Admission to Kindergarten and Grade 1 of The Asian School{" "}
           </p>
           <p>
             Issue of Prospectus with Application for Admission to siblings of
@@ -38,7 +38,7 @@ export default function UpdatesModal() {
           </p>
           <p>
             Issue of Prospectus with Application for Admission to others: 7
-            <sup>th</sup> and 8<sup>th</sup> February, 2023.
+            <sup>th</sup> and 8<sup>th</sup> February, 2023
           </p>
           <p>
             Prospectus can be procured from the school office between 8:00 a.m. and 1:00 p.m. on the
