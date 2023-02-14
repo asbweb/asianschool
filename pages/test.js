@@ -15,7 +15,7 @@ import QuickLinks from "@home-page/quick-links";
 import HomeHero from "@home-page/home-hero";
 import HomeAbout from "@home-page/home-about";
 import Carousel from "react-bootstrap/Carousel";
-import UpdatesModal from "@display-items/updates-modal";
+import UpdatesModalTest from "@display-items/updates-modal-test";
 
 export default function Home({
   homeSliderCollection,
@@ -33,7 +33,7 @@ export default function Home({
       </Head>
 
       <main>
-        <UpdatesModal
+        <UpdatesModalTest
           title={updatesModal.title}
           description={updatesModal.description}
           btnText={updatesModal.btnText}
