@@ -21,8 +21,7 @@ export default function CurriculumItemsAccordian({
             <Container className="py-5 curriculum-container">
               <RichTextBlock description={description} />
               <div className="col-md-8 mt-5 ">
-                For a complete perusal of the {title} school syllabus and a look at the monthly schedule of how the syllabus will be taught over the
-                year, please <a href={syllabus} target="_blank" rel="noopener noreferrer"><b>Click Here</b></a> 
+                For a complete perusal of the {title} school syllabus and a look at the monthly schedule of how the syllabus will be taught over the year, please <a href={syllabus} target="_blank" rel="noopener noreferrer"><b>Click Here</b></a> 
                 </div>  
             </Container>
           </Card.Body>
