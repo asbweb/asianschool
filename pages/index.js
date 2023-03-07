@@ -137,8 +137,7 @@ export default function Home({
   );
 }
 
-export async function getStaticProps(context) {
-  console.log("context: ", context)
+export async function getStaticProps() {
   const result = await fetch(
     `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}/environments/master`,
 
