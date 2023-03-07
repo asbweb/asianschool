@@ -5,25 +5,30 @@ import {
   imgblurDataURL,
   HOME_OG_IMAGE_URL,
 } from "../lib/constants";
+import { useState } from "react";
 import Head from "next/head";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import ListGroup from "react-bootstrap/ListGroup";
-import QuickLinks from "@home-page/quick-links"; 
+import QuickLinks from "@home-page/quick-links";
 import HomeHero from "@home-page/home-hero";
 import HomeAbout from "@home-page/home-about";
 import Carousel from "react-bootstrap/Carousel";
 import UpdatesModal from "@display-items/updates-modal";
 
-export default function Home({
+export default function HomePreview({
   homeSliderCollection,
   updatesModal,
+  updatesModalPreview,
   parents,
   students,
   abouttheSchool,
 }) {
+  // const [isPreview, setIsPreview] = useState(false);
+  // console.log(isPreview);
+
   return (
     <div>
       <Head>
@@ -33,20 +38,40 @@ export default function Home({
       </Head>
 
       <main>
+        <div className="position-absolute top-0 ms-1 text-white">
+          <label>
+            {/* <input
+              type="checkbox"
+              className="me-1"
+              checked={isPreview}
+              onChange={() => setIsPreview(!isPreview)}
+            /> */}
+            Preview Mode
+          </label>
+        </div>
+
+        <div>
+          {updatesModalPreview ? (
+            <UpdatesModal
+              title={updatesModalPreview.title}
+              display={updatesModalPreview.display}
+              description={updatesModalPreview.description}
+              url={updatesModalPreview.url}
+              link={updatesModalPreview.link}
+              btnText={updatesModalPreview.btnText}
+              displayBtn={updatesModalPreview.displayBtn}
+            />
+          ) : null}
+        </div> 
+
         {/* <UpdatesModal
-          title={updatesModal.title}
-          description={updatesModal.description}
-          btnText={updatesModal.btnText}
-        /> */}
-        <UpdatesModal
           title={updatesModal.title}
           display={updatesModal.display}
           description={updatesModal.description}
           url={updatesModal.url}
           link={updatesModal.link}
           btnText={updatesModal.btnText}
-          displayBtn={updatesModal.displayBtn}
-        />
+        /> */}
 
         <Container fluid className="gx-0">
           <Carousel fade indicators={false} interval={1500}>
@@ -76,10 +101,7 @@ export default function Home({
                 className="mx-auto"
                 justify
               >
-                <Tab eventKey="parents"
-                  title="parents"
-                  className="homemenu"
-                >
+                <Tab eventKey="parents" title="parents" className="homemenu">
                   <ListGroup
                     horizontal
                     className="d-flex flex-wrap justify-content-evenly border-0 rounded-0 p-2 p-lg-5 bg-asb-accent"
@@ -96,10 +118,7 @@ export default function Home({
                     ))}
                   </ListGroup>
                 </Tab>
-                <Tab eventKey="students"
-                  title="students"
-                  className="homemenu"
-                >
+                <Tab eventKey="students" title="students" className="homemenu">
                   <ListGroup
                     horizontal
                     className="d-flex flex-wrap justify-content-evenly border-0 rounded-0 p-2 p-lg-5 bg-asb-accent"
@@ -137,19 +156,18 @@ export default function Home({
   );
 }
 
-export async function getStaticProps(context) {
-  console.log("context: ", context)
+export async function getStaticProps() {
   const result = await fetch(
     `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}/environments/master`,
 
     {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${process.env.CONTENTFUL_DELIVERY_TOKEN}`,
+        Authorization: `Bearer ${process.env.CONTENTFUL_PREVIEW_ACCESS_TOKEN}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        query: `query {
+        query: `query($isPreview: Boolean = true) {
           homeSliderCollection(order: weight_ASC) {
             items {
               title
@@ -163,6 +181,12 @@ export async function getStaticProps(context) {
             }
           }
           updatesModal: updatesModal(id: "2oOLDEdhgPSotCNO7tuUTW") {
+            ...updates
+          }
+          updatesModalPreview: updatesModal(
+            id: "2oOLDEdhgPSotCNO7tuUTW"
+            preview: $isPreview
+          ) @include(if: $isPreview) {
             ...updates
           }
           parents: quickLinksCollection(
@@ -220,6 +244,7 @@ export async function getStaticProps(context) {
   const { data } = await result.json();
   const homeSliderCollection = data.homeSliderCollection.items;
   const updatesModal = data.updatesModal;
+  const updatesModalPreview = data.updatesModalPreview;
   const parents = data.parents.items;
   const students = data.students.items;
   const abouttheSchool = data.abouttheSchool;
@@ -228,6 +253,7 @@ export async function getStaticProps(context) {
     props: {
       homeSliderCollection,
       updatesModal,
+      updatesModalPreview,
       parents,
       students,
       abouttheSchool,
@@ -235,13 +261,3 @@ export async function getStaticProps(context) {
     revalidate: 60,
   };
 }
-
-
-
-// updatesModal: content(id: "PPWsvSLv2VCb2Z0ZyE8Ul") {
-//   title
-//   btnText
-//   description {
-//     json
-//   }
-// }
