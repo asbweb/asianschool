@@ -12,7 +12,8 @@ import { GTM_ID } from "../lib/gtm";
 export default function MyApp({ Component, pageProps, connect }) {
   const router = useRouter();
   useEffect(() => {
-    TagManager.initialize({ gtmId: `GTM-5R72Q3K` });
+//     TagManager.initialize({ gtmId: `GTM-5R72Q3K` });
+        TagManager.initialize({ gtmId: `${process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID}` });
   }, []);
 
   return (
