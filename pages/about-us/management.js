@@ -4,14 +4,14 @@ import {
   SITE_DESCRIPTION,
   imgblurDataURL,
   HOME_OG_IMAGE_URL,
-} from "../../lib/constants";
-import React from "react";
+} from "../../lib/constants"; 
 import Head from "next/head";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import TopManagement from "@staff/top-management";
+import Director from "@staff/director";
 
-export default function Management({ atTheHelmItems }) {
+export default function Management({ managingDirector, director }) {
   return (
     <>
       <Head>
@@ -25,8 +25,19 @@ export default function Management({ atTheHelmItems }) {
         <section className="my-5">
           <Container>
             <Col className="mx-auto">
-              {atTheHelmItems.map((a) => (
+              {managingDirector.map((a) => (
                 <TopManagement
+                  key={a.sys.id}
+                  profilePicture={a.profilePicture.url}
+                  role={a.role}
+                  name={a.name}
+                  description={a.description}
+                />
+              ))} 
+            </Col>
+            <Col className="mx-auto">
+              {director.map((a) => (
+                <Director
                   key={a.sys.id}
                   profilePicture={a.profilePicture.url}
                   role={a.role}
@@ -54,22 +65,28 @@ export async function getStaticProps() {
       },
       body: JSON.stringify({
         query: `query {
-          atTheHelmCollection(order: weight_ASC, limit: 1) {
-            items {
-              sys {
-                id
-              }
-              weight
-              name
-              role
-              profilePicture {
-                url
-                title
-                description
-              }
-              description {
-                json
-              }
+          managingDirector: atTheHelmCollection(order: weight_ASC, limit: 1) {
+            ...directors
+          }
+          director: atTheHelmCollection(order: weight_ASC, skip: 4, limit: 10) {
+            ...directors
+          }
+        }
+        fragment directors on AtTheHelmCollection {
+          items {
+            sys {
+              id
+            }
+            weight
+            name
+            role
+            profilePicture {
+              url
+              title
+              description
+            }
+            description {
+              json
             }
           }
         }`,
@@ -83,11 +100,13 @@ export async function getStaticProps() {
   }
 
   const { data } = await result.json();
-  const atTheHelmItems = data.atTheHelmCollection.items;
+  const managingDirector = data.managingDirector.items;
+  const director = data.director.items;
 
   return {
     props: {
-      atTheHelmItems,
+      managingDirector,
+      director,
     },
     revalidate: 60,
   };
