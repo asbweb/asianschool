@@ -4,6 +4,7 @@
   "schooladdress": {
     "title": "Physical Address",
     "school": "THE ASIAN SCHOOL, BAHRAIN",
+    "icon": "fa-solid:map-marker-alt",
     "add1": "263, Avenue 13",
     "add2": "Block 701, Tubli,",
     "add3": "Kingdom of Bahrain"
