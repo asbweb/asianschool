@@ -9,7 +9,7 @@ export default function TestFooterLeft() {
       md={12}
       lg={{ span: 10, offset: 1 }}
       xl={{ span: 8, offset: 2 }}
-      className="me-0 my-4 text-center"
+      className="me-0 my-1 text-center"
     >
       <Row>
         <h5 className="fw-bold">{Contactdetails.schooladdress.school}</h5>
