@@ -7,7 +7,7 @@ export default function TestFooterRight() {
   return (
     <Col lg={{ span: 6, offset: 3 }} className="me-0 my-4 text-center text-lg-end footer-links">
       <div className="d-md-flex justify-content-evenly">
-        <p>
+        <h5>
           <a
             href={Contactdetails.parentportal.link}
             target="_blank"
@@ -16,16 +16,16 @@ export default function TestFooterRight() {
           >
             {Contactdetails.parentportal.text}
           </a>
-        </p>
+        </h5>
 
         <Link
           href={Contactdetails.careers.link}
           className="footer nav-link my-2"
         >
-          <p>{Contactdetails.careers.text}</p>
+          <h5>{Contactdetails.careers.text}</h5>
         </Link>
 
-        <p>
+        <h5>
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -34,7 +34,7 @@ export default function TestFooterRight() {
           >
             {Contactdetails.publicdisclosure.text}
           </a>
-        </p>
+        </h5>
       </div>
     </Col>
   );

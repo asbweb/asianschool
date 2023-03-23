@@ -14,6 +14,10 @@ export default function TestFooterLeft() {
       <Row>
         <h5 className="fw-bold">{Contactdetails.schooladdress.school}</h5>
         <p className="mb-2">
+          <Icon
+            icon={Contactdetails.schooladdress.icon}
+            className="my-auto me-2 pb-1"
+          />
           {Contactdetails.schooladdress.add1}{" "}
           {Contactdetails.schooladdress.add2}{" "}
           {Contactdetails.schooladdress.add3}
