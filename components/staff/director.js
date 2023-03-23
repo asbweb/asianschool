@@ -20,8 +20,8 @@ export default function Director({
                 src={profilePicture}
                 placeholder="blur"
                 blurDataURL={imgblurDataURL}
-                width="250"
-                height="250"
+                width="200"
+                height="200"
                 alt="Asian School Bharain"
               />
             ) : null}
