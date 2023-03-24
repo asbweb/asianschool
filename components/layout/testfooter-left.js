@@ -3,23 +3,24 @@ import Col from "react-bootstrap/Col";
 import { Icon } from "@iconify/react";
 import Contactdetails from "@data/footer.json";
 
+
 export default function TestFooterLeft() {
   return (
     <Col
       md={12}
       lg={{ span: 10, offset: 1 }}
       xl={{ span: 8, offset: 2 }}
-      className="me-0 my-1 text-center"
+      className="me-0 my-5 text-center"
     >
       <Row>
         <h5 className="fw-bold">{Contactdetails.schooladdress.school}</h5>
-        <p className="mb-2">
+        <p className="mb-0">
           <Icon
             icon={Contactdetails.schooladdress.icon}
             className="my-auto me-2 pb-1"
           />
           {Contactdetails.schooladdress.add1}{" "}
-          {Contactdetails.schooladdress.add2}{" "}
+          {Contactdetails.schooladdress.add2}{" "}<br className="d-block d-sm-none"/>
           {Contactdetails.schooladdress.add3}
         </p>
         <Col md={12} lg={12}>
