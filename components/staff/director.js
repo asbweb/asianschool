@@ -13,10 +13,10 @@ export default function Director({
     <>
       <Card className="border-0 mb-5">
         <Card.Body>
-          <div className="float-md-start">
+          <div className="text-center float-md-start ">
             {profilePicture ? (
               <Image
-                className="img-fluid mb-3 me-0 me-md-3 me-lg-5"
+                className="img-fluid mx-auto  mb-3 me-0 me-md-3 me-lg-5"
                 src={profilePicture}
                 placeholder="blur"
                 blurDataURL={imgblurDataURL}
@@ -27,7 +27,7 @@ export default function Director({
             ) : null}
 
             {name ? (
-              <h6 className="text-center text-asb-secondary me-0 me-md-3 me-lg-5">
+              <h6 className=" text-asb-secondary me-0 me-md-3 me-lg-5">
                 {name}
               </h6>
             ) : null}
