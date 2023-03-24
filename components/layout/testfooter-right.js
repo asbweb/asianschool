@@ -11,7 +11,7 @@ export default function TestFooterRight() {
       className="me-0 mt-4 text-center text-lg-end footer-links"
     >
       <div className="d-md-flex justify-content-evenly">
-        <h5 className="mb-0">
+        <h5 className="mb-0 text-decoration-underline">
           <a
             href={Contactdetails.parentportal.link}
             target="_blank"
@@ -28,7 +28,7 @@ export default function TestFooterRight() {
             {Contactdetails.parentportal.text}
           </a>
         </h5>
-        <h5 className="mb-0">
+        <h5 className="mb-0 text-decoration-underline">
           <Link
             href={Contactdetails.careers.link}
             className="footer nav-link my-2 "
@@ -43,7 +43,7 @@ export default function TestFooterRight() {
             {Contactdetails.careers.text}
           </Link>
         </h5>
-        <h5 className="mb-0">
+        <h5 className="mb-0 text-decoration-underline">
           <a
             target="_blank"
             rel="noopener noreferrer"
