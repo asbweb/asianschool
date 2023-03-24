@@ -26,15 +26,15 @@
     "icon": "fa-solid:phone-alt",
     "text": "+973 17728857"
   },
-  "email": {
-    "link": "mailto:info@asianschool.bh",
-    "icon": "fa-solid:envelope",
-    "text": "info@asianschool.bh"
-  },
   "fax": {
     "link": "",
     "icon": "fa-solid:fax",
     "text": "+973 17720207"
+  },
+  "email": {
+    "link": "mailto:info@asianschool.bh",
+    "icon": "fa-solid:envelope",
+    "text": "info@asianschool.bh"
   },
   "parentportal": {
     "link": "http://portal.asianschool.bh/ASBDC/",
