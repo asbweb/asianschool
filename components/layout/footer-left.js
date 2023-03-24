@@ -53,6 +53,15 @@ export default function FooterLeft() {
           <ul className="footer-contact">
             <li className="my-2">
               <p>
+                <Icon
+                  icon={Contactdetails.fax.icon}
+                  className="my-auto me-2 pb-1"
+                />
+                {Contactdetails.fax.text}
+              </p>
+            </li>
+            <li className="my-2">
+              <p>
                 <a href={Contactdetails.email.link}>
                   <Icon
                     icon={Contactdetails.email.icon}
@@ -60,15 +69,6 @@ export default function FooterLeft() {
                   />
                   {Contactdetails.email.text}
                 </a>
-              </p>
-            </li>
-            <li className="my-2">
-              <p>
-                <Icon
-                  icon={Contactdetails.fax.icon}
-                  className="my-auto me-2 pb-1"
-                />
-                {Contactdetails.fax.text}
               </p>
             </li>
           </ul>
