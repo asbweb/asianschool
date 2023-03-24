@@ -54,7 +54,7 @@ export default function Header() {
           </div>
         </Navbar.Brand>
         <Navbar.Toggle
-          className="my-2 me-2 border-0"
+          className="my-0 me-2 border-0 position-absolute top-0 end-0"
           aria-controls="basic-navbar-nav"
           data-bs-toggle="collapse"
           data-bs-target="#basic-navbar-nav"
