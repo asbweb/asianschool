@@ -1,5 +1,5 @@
 {
-  "contacttext" : "The Asian School is located in Tubli, off the arterial Shaikh Isa Bin Salman Highway",
+  "contacttext": "The Asian School is located in Tubli, off the arterial Shaikh Isa Bin Salman Highway.",
   "googlemap": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7160.181562923028!2d50.537855!3d26.193725!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4a68ae60ae86c3e7!2sThe%20Asian%20School!5e0!3m2!1sen!2sin!4v1663048245133!5m2!1sen!2sin",
   "schooladdress": {
     "title": "Physical Address",
@@ -18,35 +18,37 @@
   },
   "phone1": {
     "link": "tel:+97317722886",
-    "icon": "fa-solid:phone-alt", 
+    "icon": "fa-solid:phone-alt",
     "text": "+973 17722886"
   },
   "phone2": {
     "link": "tel:+97317728857",
-    "icon": "fa-solid:phone-alt", 
+    "icon": "fa-solid:phone-alt",
     "text": "+973 17728857"
   },
   "email": {
     "link": "mailto:info@asianschool.bh",
-    "icon": "fa-solid:envelope", 
+    "icon": "fa-solid:envelope",
     "text": "info@asianschool.bh"
   },
   "fax": {
     "link": "",
-    "icon": "fa-solid:fax", 
+    "icon": "fa-solid:fax",
     "text": "+973 17720207"
   },
   "parentportal": {
     "link": "http://portal.asianschool.bh/ASBDC/",
+    "icon": "/images/parent-portal.svg",
     "text": "Parent Portal"
   },
-  "careers": { 
-    "link": "https://careers.asianschool.bh/", 
-    "text": "Careers" 
+  "careers": {
+    "link": "https://careers.asianschool.bh/",
+    "icon": "/images/careers.svg",
+    "text": "Careers"
   },
   "publicdisclosure": {
     "link": "https://assets.contentful.com/r8i2n0sro59j/2l65UcNnWpKyHPCLQdhuQg/93174fcd1045a72a8379f8f0e2933ccb/Public_Disclosure.pdf",
+    "icon": "/images/public-disclosure.svg",
     "text": "Public Disclosure"
   }
 }
- 
