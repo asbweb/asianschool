@@ -3,28 +3,29 @@ import Col from "react-bootstrap/Col";
 import { Icon } from "@iconify/react";
 import Contactdetails from "@data/footer.json";
 
-export default function FooterLeft() {
+
+export default function TestFooterLeft() {
   return (
-    <Col md={12} lg={8} className="me-0 my-4">
+    <Col
+      md={12}
+      lg={{ span: 10, offset: 1 }}
+      xl={{ span: 8, offset: 2 }}
+      className="me-0 mt-5 text-center"
+    >
       <Row>
         <h5 className="fw-bold">{Contactdetails.schooladdress.school}</h5>
-        <Col md={4} lg={4}>
-          <ul className="footer-contact">
-            <li className="my-2">
-              <p className="mb-0">{Contactdetails.schooladdress.add1}</p>
-            </li>
-            <li className="my-2">
-              <p className="mb-0">{Contactdetails.schooladdress.add2}</p>
-            </li>
-            <li className="my-2">
-              <p>{Contactdetails.schooladdress.add3}</p>
-            </li>
-          </ul>
-        </Col>
-
-        <Col md={4} lg={4}>
-          <ul className="footer-contact">
-            <li className="my-2 me-3">
+        <p className="mb-0">
+          <Icon
+            icon={Contactdetails.schooladdress.icon}
+            className="my-auto me-2 pb-1"
+          />
+          {Contactdetails.schooladdress.add1}{" "}
+          {Contactdetails.schooladdress.add2}{" "}<br className="d-block d-sm-none"/>
+          {Contactdetails.schooladdress.add3}
+        </p>
+        <Col md={12} lg={12}>
+          <ul className="footer-contact d-md-flex justify-content-evenly">
+            <li className="my-2 mx-1 mx-lg-2">
               <p>
                 <a href={Contactdetails.phone1.link}>
                   <Icon
@@ -35,7 +36,7 @@ export default function FooterLeft() {
                 </a>
               </p>
             </li>
-            <li className="my-2 me-3">
+            <li className="my-2 mx-1 mx-lg-2">
               <p>
                 <a href={Contactdetails.phone2.link}>
                   <Icon
@@ -45,13 +46,8 @@ export default function FooterLeft() {
                   {Contactdetails.phone2.text}
                 </a>
               </p>
-            </li>
-          </ul>
-        </Col>
-
-        <Col md={4} lg={4}>
-          <ul className="footer-contact">
-            <li className="my-2">
+            </li> 
+            <li className="my-2 mx-1 mx-lg-2">
               <p>
                 <Icon
                   icon={Contactdetails.fax.icon}
@@ -60,7 +56,7 @@ export default function FooterLeft() {
                 {Contactdetails.fax.text}
               </p>
             </li>
-            <li className="my-2">
+            <li className="my-2 mx-1 mx-lg-2">
               <p>
                 <a href={Contactdetails.email.link}>
                   <Icon

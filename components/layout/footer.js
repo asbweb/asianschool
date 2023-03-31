@@ -7,11 +7,9 @@ import FooterCopyright from "./footer-copyright";
 export default function Footer() {
   return (
     <footer className="bg-asb-main text-white pt-1 position-relative">
-      <Container>
-        <Row className="text-center text-md-start">
-          <FooterLeft/>
-          <FooterRight />
-        </Row>
+      <Container> 
+        <FooterRight />
+        <FooterLeft/> 
       </Container>
 
       <Container className="bg-dark py-2 px-3" fluid>
