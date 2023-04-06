@@ -3,6 +3,7 @@ import DownloadButton from "@buttons/download-button";
 import { useEffect, useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import RichTextBlock from "./rich-text-block";
+import Image from "next/image";
 
 export default function UpdatesModal({
   title,
@@ -28,6 +29,18 @@ export default function UpdatesModal({
           </Modal.Header>
           <Modal.Body>
             <RichTextBlock description={description} />
+            
+              <div className="text-center">
+                <Image
+                  className="img-fluid"
+                  src={url.url}
+                  // src="/images/sera.jpg"
+                  alt="test"
+                  width={180}
+                  height={240}
+                />
+              </div>
+              
             <div className={displayBtn}>
               {url ? (
                 <Link href={url.url} target="_blank" rel="noopener noreferrer" >
