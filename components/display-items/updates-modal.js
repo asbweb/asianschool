@@ -28,37 +28,33 @@ export default function UpdatesModal({
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
+            <div className="text-center mb-3">
+              <Image
+                className="img-fluid"
+                src={url.url}
+                // src="/images/sera.jpg"
+                alt="test"
+                width={180}
+                height={240}
+              />
+            </div>
             <RichTextBlock description={description} />
-            
-              <div className="text-center">
-                <Image
-                  className="img-fluid"
-                  src={url.url}
-                  // src="/images/sera.jpg"
-                  alt="test"
-                  width={180}
-                  height={240}
-                />
-              </div>
-              
+
             <div className={displayBtn}>
               {url ? (
-                <Link href={url.url} target="_blank" rel="noopener noreferrer" >
-                  <DownloadButton >{btnText}</DownloadButton>
+                <Link href={url.url} target="_blank" rel="noopener noreferrer">
+                  <DownloadButton>{btnText}</DownloadButton>
                 </Link>
               ) : null}
               {link ? (
-                <a href={link} target="_blank" rel="noopener noreferrer" >
-                  <DownloadButton >{btnText}</DownloadButton>
+                <a href={link} target="_blank" rel="noopener noreferrer">
+                  <DownloadButton>{btnText}</DownloadButton>
                 </a>
               ) : null}
             </div>
           </Modal.Body>
           <Modal.Footer className="border-0 mt-0 pt-0">
-            <DownloadButton
-              className="mt-0"
-              onClick={handleClose} 
-            > 
+            <DownloadButton className="mt-0" onClick={handleClose}>
               Close
             </DownloadButton>
           </Modal.Footer>
