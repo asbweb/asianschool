@@ -28,16 +28,15 @@ export default function UpdatesModal({
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <div className="text-center mb-3">
-              <Image
-                className="img-fluid"
-                src={url.url}
-                // src="/images/sera.jpg"
-                alt="test"
-                width={180}
-                height={240}
-              />
-            </div>
+//             <div className="text-center mb-3">
+//               <Image
+//                 className="img-fluid"
+//                 src={url.url} 
+//                 alt="test"
+//                 width={180}
+//                 height={240}
+//               />
+//             </div>
             <RichTextBlock description={description} />
 
             <div className={displayBtn}>
