@@ -23,11 +23,11 @@ export default function UpdatesModal({
       {display ? (
         <Modal size="lg" show={show} onHide={handleClose} centered>
           <Modal.Header className="border-0">
-          {title ? (
+       
             <Modal.Title className="fs-5 page-title text-center m-0">
               {title}
             </Modal.Title>
-            ) : null}
+           
           </Modal.Header>
           <Modal.Body>
 
