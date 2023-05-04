@@ -22,13 +22,13 @@ export default function UpdatesModal({
     <>
       {display ? (
         <Modal size="lg" show={show} onHide={handleClose} centered>
-          <Modal.Header className="border-0">
-       
-            <Modal.Title className="fs-5 page-title text-center m-0">
-              {title}
-            </Modal.Title>
-           
-          </Modal.Header>
+          {title ? (
+            <Modal.Header className="border-0">
+              <Modal.Title className="fs-5 page-title text-center m-0">
+                {title}
+              </Modal.Title>
+            </Modal.Header>
+            ) : null}
           <Modal.Body>
 
             <RichTextBlock description={description} />
