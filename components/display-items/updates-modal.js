@@ -31,6 +31,18 @@ export default function UpdatesModal({
             ) : null}
           <Modal.Body>
 
+            
+             <div className="text-center mb-3">
+              {url ? (
+                <Image
+                  className="img-fluid"
+                  src={url.url}
+                  alt="test"
+                  width={180}
+                  height={240}
+                />
+              ) : null}
+            </div>
             <RichTextBlock description={description} />
 
             <div className={displayBtn}>
