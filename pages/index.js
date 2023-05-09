@@ -42,6 +42,8 @@ export default function Home({
           title={updatesModal.title}
           display={updatesModal.display}
           description={updatesModal.description}
+          imageWidth={updatesModal.imageWidth}
+          image={updatesModal.image.url}
           url={updatesModal.url}
           link={updatesModal.link}
           btnText={updatesModal.btnText}
@@ -137,7 +139,8 @@ export default function Home({
   );
 }
 
-export async function getStaticProps() {
+export async function getStaticProps(context) {
+  // console.log("context: ", context)
   const result = await fetch(
     `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}/environments/master`,
 
@@ -198,6 +201,13 @@ export async function getStaticProps() {
           title
           display
           displayBtn
+          imageWidth
+          image {
+            url
+            title
+            width
+            height
+          }
           url {
             url
           }
@@ -205,6 +215,19 @@ export async function getStaticProps() {
           btnText
           description {
             json
+            links{
+              assets{
+                block{
+                  sys{
+                    id
+                  }
+                  url
+                  width
+                  height
+                  description
+                }
+              }
+            }
           }
         }`,
       }),

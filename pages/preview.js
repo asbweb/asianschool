@@ -56,6 +56,8 @@ export default function HomePreview({
               title={updatesModalPreview.title}
               display={updatesModalPreview.display}
               description={updatesModalPreview.description}
+              imageWidth={updatesModalPreview.imageWidth}
+              image={updatesModalPreview.image}
               url={updatesModalPreview.url}
               link={updatesModalPreview.link}
               btnText={updatesModalPreview.btnText}
@@ -223,6 +225,13 @@ export async function getStaticProps() {
           title
           display
           displayBtn
+          imageWidth
+          image {
+            url
+            title
+            width
+            height
+          }
           url {
             url
           }
@@ -230,6 +239,19 @@ export async function getStaticProps() {
           btnText
           description {
             json
+            links{
+              assets{
+                block{
+                  sys{
+                    id
+                  }
+                  url
+                  width
+                  height
+                  description
+                }
+              }
+            }
           }
         }`,
       }),
