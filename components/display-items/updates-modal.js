@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import RichTextBlock from "./rich-text-block";
 import Image from "next/image";
-import RichTextBlockTest from "./rich-text-block-test";
 
 export default function UpdatesModal({
   title,
