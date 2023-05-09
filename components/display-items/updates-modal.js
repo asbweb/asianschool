@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import RichTextBlock from "./rich-text-block";
 import Image from "next/image";
+import RichTextBlockTest from "./rich-text-block-test";
 
 export default function UpdatesModal({
   title,
@@ -11,6 +12,8 @@ export default function UpdatesModal({
   description,
   displayBtn,
   btnText,
+  image,
+  imageWidth,
   url,
   link,
 }) {
@@ -28,22 +31,21 @@ export default function UpdatesModal({
                 {title}
               </Modal.Title>
             </Modal.Header>
-            ) : null}
+            ) : null} 
           <Modal.Body>
-
-            
-             <div className="text-center mb-3">
-              {url ? (
+            <div className="text-center mb-3">
+              {image ? (
                 <Image
-                  className="img-fluid"
-                  src={url.url}
-                  alt="test"
-                  width={180}
-                  height={240}
+                  className={imageWidth}
+                  src={image.url}
+                  alt={image.title}
+                  width={image.width}
+                  height={image.height}
                 />
               ) : null}
             </div>
             <RichTextBlock description={description} />
+            {/* <RichTextBlockTest description={description} /> */}
 
             <div className={displayBtn}>
               {url ? (
