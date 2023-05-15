@@ -17,6 +17,7 @@ import HomeHero from "@home-page/home-hero";
 import HomeAbout from "@home-page/home-about";
 import Carousel from "react-bootstrap/Carousel";
 import UpdatesModal from "@display-items/updates-modal";
+import HomeVideo from "@display-items/home-video";
 
 export default function HomePreview({
   homeSliderCollection,
@@ -150,6 +151,7 @@ export default function HomePreview({
                 title={abouttheSchool.title}
                 description={abouttheSchool.description}
               />
+              <HomeVideo/>    
             </Col>
           </Container>
         </section>
