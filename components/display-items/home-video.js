@@ -8,7 +8,7 @@ export default function HomeVideo() {
           src="https://www.youtube.com/embed/zch89gbDf3o"
           title="The Asian School video"
           frameborder="0"
-          allow="accelerometer; autoplay"
+          allow="accelerometer; autoplay; fullscreen"
           // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
