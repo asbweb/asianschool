@@ -44,7 +44,7 @@ export default function Home({
           display={updatesModal.display}
           description={updatesModal.description}
           imageWidth={updatesModal.imageWidth}
-          image={updatesModal.image.url}
+          image={updatesModal.image}
           url={updatesModal.url}
           link={updatesModal.link}
           btnText={updatesModal.btnText}
