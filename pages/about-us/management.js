@@ -37,7 +37,8 @@ export default function Management({ managingDirector, director }) {
             </Col>
             <Col className="mx-auto">
               {director.map((a) => (
-                <Director
+                // <Director
+                <TopManagement
                   key={a.sys.id}
                   profilePicture={a.profilePicture.url}
                   role={a.role}
