@@ -4,14 +4,19 @@ import {
   SITE_DESCRIPTION,
   imgblurDataURL,
   HOME_OG_IMAGE_URL,
-} from "../../lib/constants"; 
+} from "../../lib/constants";
 import Head from "next/head";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
-import TopManagement from "@staff/top-management";
-import Director from "@staff/director";
+import Row from "react-bootstrap/Row";
+import TopManagement from "@staff/top-management"; 
+import AdminDirector from "@staff/admindirector";
 
-export default function Management({ managingDirector, director }) {
+export default function Management({
+  managingDirector,
+  director,
+  admindirector,
+}) {
   return (
     <>
       <Head>
@@ -33,11 +38,10 @@ export default function Management({ managingDirector, director }) {
                   name={a.name}
                   description={a.description}
                 />
-              ))} 
+              ))}
             </Col>
             <Col className="mx-auto">
               {director.map((a) => (
-                // <Director
                 <TopManagement
                   key={a.sys.id}
                   profilePicture={a.profilePicture.url}
@@ -45,7 +49,19 @@ export default function Management({ managingDirector, director }) {
                   name={a.name}
                   description={a.description}
                 />
-              ))} 
+              ))}
+            </Col> 
+            <Col md={10} className="mx-auto">
+              <Row>
+                {admindirector.map((a) => (
+                  <AdminDirector
+                    key={a.sys.id}
+                    profilePicture={a.profilePicture.url}
+                    name={a.name}
+                    role={a.role}
+                  />
+                ))}
+              </Row>
             </Col>
           </Container>
         </section>
@@ -70,6 +86,9 @@ export async function getStaticProps() {
             ...directors
           }
           director: atTheHelmCollection(order: weight_ASC, skip: 4, limit: 3) {
+            ...directors
+          }
+          admindirector: atTheHelmCollection(order: weight_ASC, skip: 7, limit: 5) {
             ...directors
           }
         }
@@ -103,11 +122,13 @@ export async function getStaticProps() {
   const { data } = await result.json();
   const managingDirector = data.managingDirector.items;
   const director = data.director.items;
+  const admindirector = data.admindirector.items;
 
   return {
     props: {
       managingDirector,
       director,
+      admindirector,
     },
     revalidate: 60,
   };
