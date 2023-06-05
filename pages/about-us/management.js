@@ -69,7 +69,7 @@ export async function getStaticProps() {
           managingDirector: atTheHelmCollection(order: weight_ASC, limit: 1) {
             ...directors
           }
-          director: atTheHelmCollection(order: weight_ASC, skip: 4, limit: 10) {
+          director: atTheHelmCollection(order: weight_ASC, skip: 4, limit: 3) {
             ...directors
           }
         }
