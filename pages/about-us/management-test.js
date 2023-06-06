@@ -13,7 +13,7 @@ import TopManagement from "@staff/top-management";
 import AdminDirector from "@staff/admindirector";
 import TopManagementThreeCol from "@staff/top-management-three-col";
 
-export default function Management({
+export default function Management({ 
   managingDirector,
   director,
   admindirector,
