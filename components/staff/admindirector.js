@@ -21,8 +21,8 @@ export default function AdminDirector({ profilePicture, name, role }) {
                 alt="Asian School Bharain"
               />
             ) : null} 
-             {name ? ( <p className="text-center text-asb-secondary mb-0 fw-bold">{name}</p> ) : null}
-             {role ? ( <h3 className="text-asb-main text-center fw-bold">{role}</h3> ) : null} 
+             {name ? ( <h6 className="text-center text-asb-secondary">{name}</h6>) : null}
+             {role ? ( <h4 className="text-asb-main text-center fw-bold">{role}</h4> ) : null} 
             </div>
           </Card.Body>
         </Card>
