@@ -22,7 +22,7 @@ export default function AdminDirector({ profilePicture, name, role }) {
               />
             ) : null} 
              {name ? ( <p className="text-center text-asb-secondary mb-0 fw-bold">{name}</p> ) : null}
-             {role ? ( <p className="text-center text-asb-secondary mb-0 fs-6">{role}</p> ) : null}
+             {role ? ( <h3 className="text-asb-main text-center fw-bold">{role}</h3> ) : null} 
             </div>
           </Card.Body>
         </Card>
