@@ -53,3 +53,19 @@
     }
   } 
 }
+
+/* Management Directors*/
+.truncate p:first-child {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 12;
+          line-clamp: 12; 
+  -webkit-box-orient: vertical;
+}
+
+.truncate p:nth-child(2),
+.truncate p:nth-child(3),
+.truncate p:nth-child(4) {
+  display: none;
+}
