@@ -54,7 +54,7 @@ export default function Management({
                 </Col>
               ))}
             </Row> 
-            <Col md={10} className="mx-auto">
+            <Col className="mx-auto">
               <Row>
                 {admindirector.map((a) => (
                   <AdminDirector
