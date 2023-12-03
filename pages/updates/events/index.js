@@ -6,7 +6,7 @@ import EventsList from "@events/events-list";
 
 export default function Events({ events }) {
   const [filteredList, setFilteredList] = useState(events); 
-  const [selectedYear, setSelectedYear] = useState(2022);
+  const [selectedYear, setSelectedYear] = useState();
 
  
   const filterByYear = (filteredData) => {
