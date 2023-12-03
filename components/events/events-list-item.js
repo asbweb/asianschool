@@ -18,8 +18,8 @@ export default function EventsListItem({ slug, title, date, featuredImage }) {
       <Col md={4} className="events-card mb-3">
         <Link href={`/updates/events/${slug}`}>
           
-            <Card className="shadow-sm border p-3">
-              <div className="text-center overflow-hidden">
+            <Card className="shadow-sm border p-2">
+              <div className="text-center overflow-hidden ratio ratio-16x9">
                 <Image
                   className="img-fluid"
                   src={featuredImage}
