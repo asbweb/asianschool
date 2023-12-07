@@ -80,7 +80,7 @@ export async function getStaticProps() {
       body: JSON.stringify({
         query: `
         query {
-            eventCollection (order: date_ASC) {
+            eventCollection (order: date_DESC) {
               items {
                 sys {
                   id
