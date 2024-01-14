@@ -36,7 +36,7 @@ export default function AdmissionParentPortal() {
 
             <div className="mx-auto my-3 text-center">
               <a
-                href="http://portal.asianschool.bh/ASBDC/"
+                href="https://asbdc.ethdigitalcampus.com/ASBDC/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
