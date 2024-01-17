@@ -57,7 +57,7 @@ export default function AdmissionParentPortal() {
             </h6>
 
             <Link
-              href="/pdf/admission-instructions/Online-Admission-Process-for-General-Applications.pdf"
+              href="/pdf/admission-instructions/Online-Application-Process-for-General-Admissions.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
