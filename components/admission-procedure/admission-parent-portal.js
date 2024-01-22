@@ -29,7 +29,7 @@ export default function AdmissionParentPortal() {
                     width={24}
                     className="me-3"
                   />
-                  Instructional document (sibling admission)
+                  Instructional document (Sibling admission)
                 </h6>
               </DownloadButton>
             </Link>
@@ -52,7 +52,7 @@ export default function AdmissionParentPortal() {
 
             <h6 className="fw-light text-start">
               If you are applying to The Asian School for the first time OR DO
-              NOT have a child currently studying at The Asian School, Please
+              NOT have a child currently studying at The Asian School, please
               read the instructional document AND Login to the Admission Portal
             </h6>
 
@@ -68,7 +68,7 @@ export default function AdmissionParentPortal() {
                     width={24}
                     className="me-3"
                   />
-                  Instructional document (new admission)
+                  Instructional document (New admission)
                 </h6>
               </DownloadButton>
             </Link>
