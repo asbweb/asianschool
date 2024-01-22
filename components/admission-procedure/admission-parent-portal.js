@@ -80,14 +80,9 @@ export default function AdmissionParentPortal() {
                 rel="noopener noreferrer"
               >
                 <RoundIconButton btnicon="fa-solid:door-open" iconwidth="36">
-                  Parent Portal Registration
+                  Admission Portal Registration
                 </RoundIconButton>
               </a>
-              <h6 className="fw-light text-start">
-                (Please enter your details first in ‘Create an Account’ to get
-                your User Id and Password and then continue to fill the form for
-                entering the child’s details)
-              </h6>
             </div>
           </Col>
         </Row>
