@@ -75,7 +75,7 @@ export default function AdmissionParentPortal() {
 
             <div className="mx-auto my-3 text-center">
               <a
-                href="https://asbdc.ethdigitalcampus.com/OAWeb/form/jsp_admission/Enquiry.jsp"
+                href="https://asbdc.ethdigitalcampus.com/OAWeb?dbConnVar=ASBDC"
                 target="_blank"
                 rel="noopener noreferrer"
               >
