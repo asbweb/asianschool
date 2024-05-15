@@ -55,7 +55,7 @@ export default function Achievements({
                 className="homemenu "
               >
                 <Row className="py-5 mx-0 bg-asb-accent">
-                  <h4 className="text-center my-3">SCHOOL TOPPERS 2021-2022</h4>
+                  <h4 className="text-center my-3">SCHOOL TOPPERS 2023-2024</h4>
 
                   <h3 className="text-center text-uppercase my-3">GRADE 10</h3>
 
