@@ -144,8 +144,6 @@ export default function Achievements({
                       aggregate={a.aggregate}
                     />
                   ))}
-                </Row>
-              </Tab>
 			  
                   <h3 className="text-center text-uppercase my-3">GRADE 10</h3>
 
@@ -191,6 +189,8 @@ export default function Achievements({
                       aggregate={a.aggregate}
                     />
                   ))}
+                </Row>
+              </Tab>
               {/* **********************************Team****************************************** */}
               <Tab eventKey="team" title="Team">
                 <Row className="py-5 mx-0 bg-asb-accent">
