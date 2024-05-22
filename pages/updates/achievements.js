@@ -20,6 +20,7 @@ export default function Achievements({
   grade10toppers,
   grade1095AndAbove,
   grade10SubjectToppers,
+  grade12toppers,
   grade12Humanities,
   grade12Commerce,
   grade12Science,
@@ -57,6 +58,95 @@ export default function Achievements({
                 <Row className="py-5 mx-0 bg-asb-accent">
                   <h4 className="text-center my-3">SCHOOL TOPPERS 2023-2024</h4>
 
+                  <h3 className="text-center text-uppercase my-3">Grade 12 </h3>
+
+                  {grade12toppers.map((a, index) => (
+                    <StudentAchievers
+                      key={index}
+                      profilPicture={a.profilPicture.url}
+                      name={a.name}
+                      achievement={a.achievement}
+                      weight={a.weight}
+                      rank={a.rank}
+                      aggregate={a.aggregate}
+                    />
+                  ))}
+
+                  <h4 className="text-center text-uppercase my-3">
+                    Humanities Toppers
+                  </h4>
+
+                  {grade12Humanities.map((a, index) => (
+                    <StudentAchievers
+                      key={index}
+                      profilPicture={a.profilPicture.url}
+                      name={a.name}
+                      achievement={a.achievement}
+                      weight={a.weight}
+                      rank={a.rank}
+                      aggregate={a.aggregate}
+                    />
+                  ))}
+
+                  <h4 className="text-center text-uppercase my-3">Commerce Toppers</h4>
+
+                  {grade12Commerce.map((a, index) => (
+                    <StudentAchievers
+                      key={index}
+                      profilPicture={a.profilPicture.url}
+                      name={a.name}
+                      achievement={a.achievement}
+                      weight={a.weight}
+                      rank={a.rank}
+                      aggregate={a.aggregate}
+                    />
+                  ))}
+
+                  <h4 className="text-center text-uppercase my-3">Science Toppers</h4>
+                  {grade12Science.map((a, index) => (
+                    <StudentAchievers
+                      key={index}
+                      profilPicture={a.profilPicture.url}
+                      name={a.name}
+                      achievement={a.achievement}
+                      weight={a.weight}
+                      rank={a.rank}
+                      aggregate={a.aggregate}
+                    />
+                  ))}
+
+                  <h4 className="text-center text-uppercase my-3">
+                    STUDENTS WHO SCORED POSITIONAL A1 IN ALL SUBJECTS
+                  </h4>
+                  {grade12FullA1.map((a, index) => (
+                    <StudentAchievers
+                      key={index}
+                      profilPicture={a.profilPicture.url}
+                      name={a.name}
+                      achievement={a.achievement}
+                      weight={a.weight}
+                      rank={a.rank}
+                      aggregate={a.aggregate}
+                    />
+                  ))}
+
+                  <h4 className="text-center text-uppercase my-3">
+                    Subject Toppers
+                  </h4>
+                  {grade12SubjectToppers.map((a, index) => (
+                    <StudentAchievers
+                      key={index}
+                      profilPicture={a.profilPicture.url}
+                      name={a.name}
+                      achievement={a.achievement}
+                      weight={a.weight}
+                      rank={a.rank}
+                      aggregate={a.aggregate}
+                    />
+                  ))}
+                </Row>
+              </Tab>
+			  
                   <h3 className="text-center text-uppercase my-3">GRADE 10</h3>
 
                   {grade10toppers.map((a, index) => (
@@ -101,82 +191,6 @@ export default function Achievements({
                       aggregate={a.aggregate}
                     />
                   ))}
-
-                  <h3 className="text-center text-uppercase my-3">Grade 12 </h3>
-                  <h4 className="text-center text-uppercase my-3">
-                    Humanities
-                  </h4>
-
-                  {grade12Humanities.map((a, index) => (
-                    <StudentAchievers
-                      key={index}
-                      profilPicture={a.profilPicture.url}
-                      name={a.name}
-                      achievement={a.achievement}
-                      weight={a.weight}
-                      rank={a.rank}
-                      aggregate={a.aggregate}
-                    />
-                  ))}
-
-                  <h4 className="text-center text-uppercase my-3">Commerce</h4>
-
-                  {grade12Commerce.map((a, index) => (
-                    <StudentAchievers
-                      key={index}
-                      profilPicture={a.profilPicture.url}
-                      name={a.name}
-                      achievement={a.achievement}
-                      weight={a.weight}
-                      rank={a.rank}
-                      aggregate={a.aggregate}
-                    />
-                  ))}
-
-                  <h4 className="text-center text-uppercase my-3">Science</h4>
-                  {grade12Science.map((a, index) => (
-                    <StudentAchievers
-                      key={index}
-                      profilPicture={a.profilPicture.url}
-                      name={a.name}
-                      achievement={a.achievement}
-                      weight={a.weight}
-                      rank={a.rank}
-                      aggregate={a.aggregate}
-                    />
-                  ))}
-
-                  <h4 className="text-center text-uppercase my-3">
-                    STUDENTS WHO SCORED A1 IN ALL SUBJECTS
-                  </h4>
-                  {grade12FullA1.map((a, index) => (
-                    <StudentAchievers
-                      key={index}
-                      profilPicture={a.profilPicture.url}
-                      name={a.name}
-                      achievement={a.achievement}
-                      weight={a.weight}
-                      rank={a.rank}
-                      aggregate={a.aggregate}
-                    />
-                  ))}
-
-                  <h4 className="text-center text-uppercase my-3">
-                    Subject Toppers
-                  </h4>
-                  {grade12SubjectToppers.map((a, index) => (
-                    <StudentAchievers
-                      key={index}
-                      profilPicture={a.profilPicture.url}
-                      name={a.name}
-                      achievement={a.achievement}
-                      weight={a.weight}
-                      rank={a.rank}
-                      aggregate={a.aggregate}
-                    />
-                  ))}
-                </Row>
-              </Tab>
               {/* **********************************Team****************************************** */}
               <Tab eventKey="team" title="Team">
                 <Row className="py-5 mx-0 bg-asb-accent">
@@ -211,20 +225,8 @@ export async function getStaticProps() {
       },
       body: JSON.stringify({
         query: `query {
-          grade10toppers: individualAchieversCollection(
-            where: { category: "grade10toppers" }
-            order: weight_ASC
-          ) {
-            ...topperFields
-          }
-          grade1095AndAbove: individualAchieversCollection(
-            where: { category: "grade1095AndAbove" }
-            order: weight_ASC
-          ) {
-            ...topperFields
-          }
-          grade10SubjectToppers: individualAchieversCollection(
-            where: { category: "grade10SubjectToppers" }
+          grade12toppers: individualAchieversCollection(
+            where: { category: "grade12toppers" }
             order: weight_ASC
           ) {
             ...topperFields
@@ -255,6 +257,24 @@ export async function getStaticProps() {
           }
           grade12SubjectToppers: individualAchieversCollection(
             where: { category: "grade12SubjectToppers" }
+            order: weight_ASC
+          ) {
+            ...topperFields
+          }
+          grade10toppers: individualAchieversCollection(
+            where: { category: "grade10toppers" }
+            order: weight_ASC
+          ) {
+            ...topperFields
+          }
+          grade1095AndAbove: individualAchieversCollection(
+            where: { category: "grade1095AndAbove" }
+            order: weight_ASC
+          ) {
+            ...topperFields
+          }
+          grade10SubjectToppers: individualAchieversCollection(
+            where: { category: "grade10SubjectToppers" }
             order: weight_ASC
           ) {
             ...topperFields
@@ -299,28 +319,30 @@ export async function getStaticProps() {
   }
 
   const { data } = await result.json();
-  const grade10toppers = data.grade10toppers.items;
-  const grade1095AndAbove = data.grade1095AndAbove.items;
-  const grade10SubjectToppers = data.grade10SubjectToppers.items;
+  const grade12toppers = data.grade12toppers.items;
   const grade12Humanities = data.grade12Humanities.items;
   const grade12Commerce = data.grade12Commerce.items;
   const grade12Science = data.grade12Science.items;
   const grade12FullA1 = data.grade12FullA1.items;
   const grade12SubjectToppers = data.grade12SubjectToppers.items;
+  const grade10toppers = data.grade10toppers.items;
+  const grade1095AndAbove = data.grade1095AndAbove.items;
+  const grade10SubjectToppers = data.grade10SubjectToppers.items;
   const teamAchievementCollection = data.teamAchievementCollection.items;
 
   teamAchievementCollection;
 
   return {
     props: {
-      grade10toppers,
-      grade1095AndAbove,
-      grade10SubjectToppers,
-      grade12Humanities,
+      grade12toppers,
+	  grade12Humanities,
       grade12Commerce,
       grade12Science,
       grade12FullA1,
       grade12SubjectToppers,
+      grade10toppers,
+      grade1095AndAbove,
+      grade10SubjectToppers,
       teamAchievementCollection,
     },
     revalidate: 60,
