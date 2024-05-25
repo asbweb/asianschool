@@ -116,7 +116,7 @@ export default function Achievements({
                   ))}
 
                   <h4 className="text-center text-uppercase my-3">
-                    STUDENTS WHO SCORED POSITIONAL A1 IN ALL SUBJECTS
+                    STUDENTS WHO SECURED A POSITIONAL A1 IN ALL SUBJECTS
                   </h4>
                   {grade12FullA1.map((a, index) => (
                     <StudentAchievers
