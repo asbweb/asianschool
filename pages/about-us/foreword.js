@@ -17,7 +17,7 @@ export default function Foreword({ foreword }) {
   return (
     <>
       <Head>
-        <title> Asian Scool Bahrain | Foreword </title>
+        <title> Asian School Bahrain | Foreword </title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href={SITE_FAVICON} />
       </Head>
@@ -85,3 +85,4 @@ export async function getStaticProps() {
     revalidate: 60,
   };
 }
+
